@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg"/>
+
+    <GuiElement profile="ia_mapinit_dialogBg" id="dialogElement">
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall" position="6px 0px"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall" position="6px 90px"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom" position="6px 0px"/>
+
+        <BoxLayout profile="ia_mapinit_contentLayout" id="contentLayoutElement">
+            <BoxLayout profile="ia_mapinit_tabBar" id="tabBarElement">
+                <Button profile="ia_mapinit_tabButton" id="tabStoryButton" text="$l10n_gui_mapinit_tab_story" onClick="onClickTabStory" />
+                <Button profile="ia_mapinit_tabButton" id="tabSettingsButton" text="$l10n_gui_mapinit_tab_settings" onClick="onClickTabSettings" />
+            </BoxLayout>
+
+            <BoxLayout profile="ia_mapinit_mainArea" id="storyContainer">
+                <BoxLayout profile="ia_mapinit_storyColumnsRow" id="storyColumnsRow">
+                    <!-- Left column (~34%): small help card pinned top-left + character list below -->
+                    <BoxLayout profile="ia_mapinit_storyLeftColumn" id="storyLeftColumn">
+                        <!-- Help card: small, white-bordered (thin colored bars, transparent interior), sticks to upper-left corner -->
+                        <GuiElement profile="ia_mapinit_storyHelpBox" id="storyHelpBox">
+                            <GuiElement profile="ia_mapinit_storyHelpBorderTop"/>
+                            <GuiElement profile="ia_mapinit_storyHelpBorderBottom"/>
+                            <GuiElement profile="ia_mapinit_storyHelpBorderLeft"/>
+                            <GuiElement profile="ia_mapinit_storyHelpBorderRight"/>
+                            <BoxLayout profile="ia_mapinit_storyHelpTextLayout" id="storyHelpTextLayout">
+                                <Text profile="ia_mapinit_storyHelpTitle" text="$l10n_gui_mapinit_help_info_title" />
+                                <Text profile="ia_mapinit_storyHelpBody" text="$l10n_gui_mapinit_help_info_body" />
+                            </BoxLayout>
+                        </GuiElement>
+
+                        <!-- Character list (scrollable). Populated at runtime from the template button. -->
+                        <Text profile="ia_mapinit_label" text="$l10n_gui_mapinit_characters_title" id="storyCharacterListLabel" />
+                        <GuiElement profile="ia_mapinit_storyListScrollContainer" id="storyCharacterListScrollContainer">
+                            <ThreePartBitmap profile="fs25_textInputBg" position="-15px 0px"/>
+                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout" id="storyCharacterListScrollingLayout">
+                                <BoxLayout profile="ia_mapinit_placeButtonsBox" id="storyCharacterListBox">
+                                    <Button profile="ia_mapinit_placeButton" id="storyCharacterButtonTemplate" name="storyCharacterButtonTemplate" onClick="onClickStoryCharacter" />
+                                </BoxLayout>
+                            </ScrollingLayout>
+                        </GuiElement>
+                    </BoxLayout>
+
+                    <!-- Right area (~66%): selected character portrait + relationship -->
+                    <BoxLayout profile="ia_mapinit_storyRightColumn" id="storyRightColumn">
+                        <Text profile="ia_mapinit_title" text="-" id="storyCharacterDataTitle" />
+                        <GuiElement profile="ia_mapinit_storyDataPanel" id="storyCharacterDataPanel">
+                            <!-- No negative x-offset here: it would bleed the grey background into the gap between the two columns. -->
+                            <ThreePartBitmap profile="fs25_textInputBg" position="0px 0px"/>
+                            <BoxLayout profile="ia_mapinit_storyDataContent" id="storyCharacterDataContent">
+                                <BoxLayout profile="ia_mapinit_storyPortraitRow" id="storyPortraitRow">
+                                    <Bitmap profile="ia_mapinit_storyPortrait" id="storyCharacterPortrait" />
+                                    <BoxLayout profile="ia_mapinit_storyInfoColumn" id="storyInfoColumn">
+                                        <Text profile="ia_mapinit_storyDetailLabel" text="$l10n_gui_mapinit_story_relationship" id="storyRelationshipLabel" />
+                                        <Text profile="ia_mapinit_storyDetailValue" text="-" id="storyRelationshipValue" />
+                                        <Text profile="ia_mapinit_storyDetailLabel" text="$l10n_gui_mapinit_story_relationship_level" id="storyRelationshipLevelLabel" />
+                                        <Text profile="ia_mapinit_storyDetailValueLarge" text="-" id="storyRelationshipLevelValue" />
+                                    </BoxLayout>
+                                </BoxLayout>
+                                <Text profile="ia_mapinit_storyDetailLabel" text="$l10n_gui_mapinit_story_relationship_points" id="storyRelationshipPointsLabel" />
+                                <GuiElement profile="ia_mapinit_storyProgressContainer" id="storyRelationshipProgressContainer">
+                                    <Bitmap profile="ia_mapinit_storyProgressBg" id="storyRelationshipProgressBg" />
+                                    <Bitmap profile="ia_mapinit_storyProgressFill" id="storyRelationshipProgressFill" />
+                                    <Text profile="ia_mapinit_storyProgressText" text="0 / 0" id="storyRelationshipProgressText" />
+                                </GuiElement>
+                            </BoxLayout>
+                        </GuiElement>
+                    </BoxLayout>
+                </BoxLayout>
+            </BoxLayout>
+
+            <BoxLayout profile="ia_mapinit_mainArea" id="settingsContainer">
+            <BoxLayout profile="ia_mapinit_columnsRow" id="columnsRowElement">
+                <!-- Column 1 (existing map init content; max width via inner wrapper) -->
+                <BoxLayout profile="ia_mapinit_columnContainer" id="column1">
+                    <BoxLayout profile="ia_mapinit_contentWrapper" id="contentWrapperElement">
+                        <Text profile="ia_mapinit_title" text="$l10n_gui_mapinit_dialog_title" id="titleElement" />
+                        <Text profile="ia_mapinit_message" text="$l10n_gui_mapinit_dialog_message" id="messageElement" />
+                        <Button profile="ia_mapinit_sizeButton" id="placeSizeButton" text="$l10n_gui_mapinit_place_size_character" onClick="onClickPlaceSize" />
+                        <Text profile="ia_mapinit_label" text="$l10n_gui_mapinit_place_type_label" />
+                        <GuiElement profile="ia_mapinit_scrollContainer" id="placeButtonsScrollContainer">
+                            <!-- Subtle framed background so it's obvious this list can scroll -->
+                            <ThreePartBitmap profile="fs25_textInputBg" position="-15px 0px"/>
+                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout" id="placeButtonsScrollingLayout">
+                                <BoxLayout profile="ia_mapinit_placeButtonsBox" id="placeButtonsBox">
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_shop" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_gas_station" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_roadside" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_dirt_road" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_public_place" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_player_farm" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_public_relax_place" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_private_relax_place" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_sell_point" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_church" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_public_infrastructure" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_roadside_trees" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_industry" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_workshop" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_shed" onClick="onClickPlaceType" />
+                                    <Button profile="ia_mapinit_placeButton" id="characterHomeButtonTemplate" name="characterHomeButtonTemplate" onClick="onClickPlaceType" />
+                                </BoxLayout>
+                            </ScrollingLayout>
+                        </GuiElement>
+                        <BoxLayout profile="ia_mapinit_actionsColumn" id="mapInitActionsColumn">
+                            <BoxLayout profile="ia_mapinit_actionsLayout">
+                                <Button profile="ia_mapinit_actionButton" text="$l10n_gui_mapinit_remove_nearest" onClick="onClickRemoveNearestPlace" />
+                                <Button profile="ia_mapinit_actionButton" id="togglePlaceMarkersButton" text="$l10n_gui_mapinit_show_place_markers" onClick="onClickTogglePlaceDebugMarkers" />
+                                <Button profile="ia_mapinit_actionButton" text="$l10n_gui_mapinit_nudge_vehicle_left" onClick="onClickNudgeVehicleLeft" />
+                            </BoxLayout>
+                            <Button profile="ia_mapinit_actionButtonFull" text="$l10n_gui_mapinit_end_init" onClick="onClickEndInitPhase" />
+                        </BoxLayout>
+                    </BoxLayout>
+                </BoxLayout>
+
+                <!-- Column 2 (placeholder content for later implementation) -->
+                <BoxLayout profile="ia_mapinit_columnContainer" id="column2">
+                    <BoxLayout profile="ia_mapinit_contentWrapper" id="charactersWrapperElement">
+                        <Text profile="ia_mapinit_title" text="$l10n_gui_mapinit_characters_title" id="charactersTitleElement" />
+                        <Text profile="ia_mapinit_message" text="$l10n_gui_mapinit_characters_message" id="charactersMessageElement" />
+
+                        <!-- Character selector (simple switch: prev/next + current name label) -->
+                        <BoxLayout profile="ia_mapinit_characterSelectorRow" id="characterSelectorRow">
+                            <Button profile="ia_mapinit_characterSwitchButton" id="characterPrevButton" text="&lt;" onClick="onClickCharacterPrev" />
+                            <Text profile="ia_mapinit_characterSelectedLabel" id="characterSelectedLabel" text="-" />
+                            <Button profile="ia_mapinit_characterSwitchButton" id="characterNextButton" text="&gt;" onClick="onClickCharacterNext" />
+                        </BoxLayout>
+
+                        <!-- Character details (scrollable, same container/scroll structure as left box) -->
+                        <GuiElement profile="ia_mapinit_scrollContainer" id="characterDetailsScrollContainer">
+                            <ThreePartBitmap profile="fs25_textInputBg" position="-15px 0px"/>
+                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout" id="characterDetailsScrollingLayout">
+                                <BoxLayout profile="ia_mapinit_characterDetailsBox" id="characterDetailsBox">
+                                    <Text profile="ia_mapinit_characterDetailText" id="characterDetailName" text="Name: -" />
+                                    <Text profile="ia_mapinit_characterDetailText" id="characterDetailJob" text="Job: -" />
+                                    <Text profile="ia_mapinit_characterDetailText" id="characterDetailRole" text="Role: -" />
+
+                                    <Text profile="ia_mapinit_characterDetailHeader" id="characterDetailVehiclesHeader" text="Vehicles" />
+                                    <Text profile="ia_mapinit_characterDetailText" id="characterDetailVehiclesList" text="-" />
+
+                                    <Text profile="ia_mapinit_characterDetailHeader" id="characterDetailCurrentSituationHeader" text="Current situation" />
+                                    <Text profile="ia_mapinit_characterDetailText" id="characterDetailCurrentSituation" text="-" />
+
+                                    <Text profile="ia_mapinit_characterDetailHeader" id="characterDetailScheduleHeader" text="Planned fieldwork (today)" />
+                                    <Text profile="ia_mapinit_characterDetailText" id="characterDetailSchedule" text="-" />
+                                </BoxLayout>
+                            </ScrollingLayout>
+                        </GuiElement>
+
+                        <!-- Character actions -->
+                        <BoxLayout profile="ia_mapinit_characterActionsLayout" id="characterActionsLayout">
+                            <Button profile="ia_mapinit_characterActionButton" id="resetCharacterButton" text="RESET Character" onClick="onClickResetCharacter" />
+                            <Button profile="ia_mapinit_characterActionButton" id="deleteCharacterButton" text="DELETE Character" onClick="onClickDeleteCharacter" />
+                            <Button profile="ia_mapinit_characterActionButton" id="addNearestHomebaseButton" text="$l10n_gui_mapinit_add_nearest_homebase" onClick="onClickAddNearestHomebase" />
+                            <Button profile="ia_mapinit_characterActionButton" id="removeHomeplacesButton" text="Remove Homeplaces" onClick="onClickRemoveHomeplaces" />
+                        </BoxLayout>
+                    </BoxLayout>
+                </BoxLayout>
+
+                <!-- Column 3 (placeholder content for later implementation) -->
+                <BoxLayout profile="ia_mapinit_columnContainer" id="column3">
+                    <BoxLayout profile="ia_mapinit_contentWrapper" id="placeholderWrapper3">
+                        <Text profile="ia_mapinit_title" text="$l10n_gui_mapinit_general_actions_title" id="generalActionsTitleElement" />
+                        <Text profile="ia_mapinit_message" text="$l10n_gui_mapinit_general_actions_message" id="generalActionsMessageElement" />
+
+                        <BoxLayout profile="ia_mapinit_characterActionsLayout" id="generalActionsButtonsLayout">
+                            <Button profile="ia_mapinit_characterActionButton" id="hideNearestGateButton" text="$l10n_gui_mapinit_hide_nearest_gate" onClick="onClickHideNearestGate" />
+                            <Button profile="ia_mapinit_characterActionButton" id="removeModButton" text="$l10n_gui_mapinit_remove_mod" onClick="onClickRemoveMod" />
+                            <Text profile="ia_mapinit_disclaimerText" id="removeModDisclaimerText" text="$l10n_gui_mapinit_remove_mod_disclaimer" />
+                        </BoxLayout>
+                    </BoxLayout>
+                </BoxLayout>
+            </BoxLayout>
+        </BoxLayout>
+        </BoxLayout>
+
+        <BoxLayout profile="fs25_dialogButtonBox" position="6px 32px">
+            <Button profile="buttonBack" text="$l10n_gui_dialog_button_cancel" onClick="onClickCancel" />
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ia_mapinit_dialogBg" extends="baseReference" with="pivotMiddleCenter">
+            <size value="95% 80%"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_contentLayout" extends="baseReference" with="pivotTopLeft">
+            <size value="100% 100%"/>
+            <position value="26px 26px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fitFlowToElements value="false"/>
+            <elementSpacing value="10px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_tabBar" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 44px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="horizontal"/>
+            <fillDirectionX value="leftToRight"/>
+            <elementSpacing value="8px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="middle"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_tabButton" extends="baseReference">
+            <size value="180px 40px"/>
+            <textAlignment value="center"/>
+            <textSize value="16px"/>
+            <imageColor value="$preset_fs25_colorMainDark_90"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <imageFocusedColor value="$preset_fs25_colorMainDark"/>
+            <handleFocus value="true"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_mainArea" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fitFlowToElements value="false"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_columnsRow" extends="baseReference" with="anchorTopLeft">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="horizontal"/>
+            <fillDirectionX value="leftToRight"/>
+            <elementSpacing value="0px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_columnContainer" extends="baseReference" with="anchorTopLeft">
+            <size value="33% 100%"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="0px"/>
+            <alignmentX value="center"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <!-- Wrapper fills content layout (inset is on content layout position/size). -->
+        <Profile name="ia_mapinit_contentWrapper" extends="baseReference" with="anchorTopCenter pivotTopCenter">
+            <size value="380px 100%"/>
+            <position value="0px 0px"/>
+            <margin value="0px 0px 0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="8px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterSelectorRow" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 36px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="horizontal"/>
+            <fillDirectionX value="leftToRight"/>
+            <elementSpacing value="8px"/>
+            <alignmentX value="center"/>
+            <alignmentY value="middle"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterSwitchButton" extends="baseReference">
+            <size value="44px 36px"/>
+            <textAlignment value="center"/>
+            <textSize value="18px"/>
+            <imageColor value="$preset_fs25_colorMainDark_90"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <imageFocusedColor value="$preset_fs25_colorMainDark"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterSelectedLabel" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 36px"/>
+            <textSize value="16px"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterDetailHeader" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 22px"/>
+            <textSize value="16px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterDetailText" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 0px"/>
+            <textSize value="14px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <textAutoHeight value="true"/>
+            <textMaxWidth value="350px"/>
+            <!-- Omitting textMaxNumLines defaults to single-line + ellipsis; allow long wrapped / newline-separated lists. -->
+            <textMaxNumLines value="1000"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_title" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 28px"/>
+            <position value="0px 0px"/>
+            <textSize value="22px"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_message" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 48px"/>
+            <position value="0px 0px"/>
+            <textSize value="16px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <textAutoHeight value="true"/>
+            <textMaxWidth value="350px"/>
+            <textMaxNumLines value="5"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_label" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 22px"/>
+            <position value="0px 0px"/>
+            <textSize value="16px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <!-- ===== Story tab layout: left column (help card + character list) | right data area ===== -->
+        <!-- Spacing comes from the column margins (outer edges + shared gap), like columnContainer/contentWrapper; no elementSpacing here. -->
+        <Profile name="ia_mapinit_storyColumnsRow" extends="baseReference" with="anchorTopLeft">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="horizontal"/>
+            <fillDirectionX value="leftToRight"/>
+            <elementSpacing value="0px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <!-- margin = left top right bottom. 24px outer-left + 12px half of the gap; widths + margins stay < 100%. -->
+        <Profile name="ia_mapinit_storyLeftColumn" extends="baseReference" with="anchorTopLeft">
+            <size value="33% 100%"/>
+            <position value="0px 0px"/>
+            <margin value="24px 0px 12px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="10px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <!-- 12px half of the gap + 24px outer-right edge. -->
+        <Profile name="ia_mapinit_storyRightColumn" extends="baseReference" with="anchorTopLeft">
+            <size value="60% 100%"/>
+            <position value="0px 0px"/>
+            <margin value="12px 0px 24px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="8px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <!-- Small help card pinned to the upper-left of the story area. Transparent interior; white outline drawn by 4 border bars. -->
+        <Profile name="ia_mapinit_storyHelpBox" extends="emptyPanel" with="anchorTopStretchingX pivotTopLeft">
+            <size value="100% 160px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <!-- White border bars: each renders a solid quad via its color (no texture needed). -->
+        <Profile name="ia_mapinit_storyHelpBorder" extends="baseReference">
+            <imageColor value="0 0 0 0"/>
+            <color value="1 1 1 1"/>
+        </Profile>
+        <Profile name="ia_mapinit_storyHelpBorderTop" extends="ia_mapinit_storyHelpBorder" with="anchorTopLeft pivotTopLeft">
+            <size value="100% 2px"/>
+            <position value="0px 0px"/>
+        </Profile>
+        <Profile name="ia_mapinit_storyHelpBorderBottom" extends="ia_mapinit_storyHelpBorder" with="anchorBottomLeft pivotBottomLeft">
+            <size value="100% 2px"/>
+            <position value="0px 0px"/>
+        </Profile>
+        <Profile name="ia_mapinit_storyHelpBorderLeft" extends="ia_mapinit_storyHelpBorder" with="anchorTopLeft pivotTopLeft">
+            <size value="2px 100%"/>
+            <position value="0px 0px"/>
+        </Profile>
+        <Profile name="ia_mapinit_storyHelpBorderRight" extends="ia_mapinit_storyHelpBorder" with="anchorTopRight pivotTopRight">
+            <size value="2px 100%"/>
+            <position value="0px 0px"/>
+        </Profile>
+
+        <!-- Stretch + margin = padding so the text doesn't touch the white border. -->
+        <Profile name="ia_mapinit_storyHelpTextLayout" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <margin value="16px 14px 16px 14px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="6px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyHelpTitle" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 22px"/>
+            <textSize value="16px"/>
+            <textBold value="true"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyHelpBody" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 0px"/>
+            <textSize value="13px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <textAutoHeight value="true"/>
+            <textMaxWidth value="300px"/>
+            <textMaxNumLines value="8"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <!-- Story character list viewport. anchorTopStretchingX (not stretchingY) so it keeps its flow slot and doesn't overlap the help card. -->
+        <Profile name="ia_mapinit_storyListScrollContainer" extends="emptyPanel" with="anchorTopStretchingX pivotTopLeft">
+            <size value="100% 300px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <!-- Right-side character data panel with portrait and relationship info. -->
+        <Profile name="ia_mapinit_storyDataPanel" extends="emptyPanel" with="anchorTopStretchingX pivotTopLeft">
+            <size value="100% 460px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyDataContent" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <margin value="18px 18px 18px 18px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="12px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyPortraitRow" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 180px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="horizontal"/>
+            <fillDirectionX value="leftToRight"/>
+            <elementSpacing value="16px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyPortrait" extends="baseReference" with="anchorTopLeft pivotTopLeft">
+            <size value="180px 180px"/>
+            <position value="0px 0px"/>
+            <imageColor value="1 1 1 1"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <!-- Width must leave room for the 180px portrait to its left (horizontal row); 100% would push it out of the dialog. -->
+        <Profile name="ia_mapinit_storyInfoColumn" extends="baseReference" with="anchorTopLeft">
+            <size value="70% 180px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="4px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="false"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyDetailLabel" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 20px"/>
+            <textSize value="14px"/>
+            <textBold value="true"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyDetailValue" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 28px"/>
+            <textSize value="20px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyDetailValueLarge" extends="ia_mapinit_storyDetailValue">
+            <size value="100% 36px"/>
+            <textSize value="28px"/>
+            <textBold value="true"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyProgressContainer" extends="emptyPanel" with="anchorTopStretchingX pivotTopLeft">
+            <size value="100% 28px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyProgressBg" extends="baseReference" with="anchorTopStretchingX pivotTopLeft">
+            <size value="100% 28px"/>
+            <position value="0px 0px"/>
+            <imageColor value="$preset_fs25_colorMainDark_90"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyProgressFill" extends="baseReference" with="anchorTopLeft pivotTopLeft">
+            <size value="0px 28px"/>
+            <position value="0px 0px"/>
+            <imageColor value="$preset_fs25_colorGreen"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_storyProgressText" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <textSize value="14px"/>
+            <textBold value="true"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <!-- Same idea as ia_chatHistoryContainer (IADialogGUI): stretch + explicit px height so ScrollingLayout gets a real viewport. -->
+        <Profile name="ia_mapinit_scrollContainer" extends="emptyPanel" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="100% 420px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_placeButtonsScrollingLayout" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <elementSpacing value="6px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <autoValidateLayout value="true"/>
+            <handleFocus value="true"/>
+            <!-- Inset content so it doesn't touch/overlap the framed background -->
+            <margin value="10px 10px 10px 10px"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_placeButtonsBox" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 0px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <elementSpacing value="6px"/>
+            <fitFlowToElements value="true"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterHomesBox" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 0px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <elementSpacing value="6px"/>
+            <fitFlowToElements value="true"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_actionsColumn" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 0px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="8px"/>
+            <fitFlowToElements value="true"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+        <Profile name="ia_mapinit_actionsLayout" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 36px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="horizontal"/>
+            <elementSpacing value="8px"/>            
+        </Profile>
+        <Profile name="ia_mapinit_actionButton" extends="baseReference">
+            <size value="49% 36px"/>
+            <imageColor value="$preset_fs25_colorMainDark_90"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <imageFocusedColor value="$preset_fs25_colorMainDark"/>
+            <textAlignment value="center"/>
+            <textSize value="14px"/>
+        </Profile>
+        <Profile name="ia_mapinit_actionButtonFull" extends="ia_mapinit_actionButton" with="anchorTopStretchingX">
+            <size value="100% 36px"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterActionsLayout" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 168px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="8px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="true"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterActionButton" extends="ia_mapinit_actionButton" with="anchorTopStretchingX">
+            <size value="100% 36px"/>
+            <handleFocus value="true"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_disclaimerText" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 0px"/>
+            <textSize value="13px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <textAutoHeight value="true"/>
+            <textMaxWidth value="350px"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_characterDetailsBox" extends="baseReference" with="anchorTopLeft pivotTopLeft">
+            <!-- Intrinsic height from auto-height Text children (like placeButtonsBox); ScrollingLayout scrolls the result. -->
+            <size value="100% 0px"/>
+            <position value="0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="6px"/>
+            <fitFlowToElements value="true"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+        <Profile name="ia_mapinit_placeButton" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 44px"/>
+            <position value="0px 0px"/>
+            <margin value="0px 4px 0px 4px"/>
+            <textSize value="14px"/>
+            <textMaxNumLines value="3"/>
+            <textMaxWidth value="300px"/>
+            <textAlignment value="left"/>
+            <textOffset value="5px 0px"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="$preset_fs25_colorMainDark_90"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <imageFocusedColor value="$preset_fs25_colorMainDark"/>
+        </Profile>
+        <Profile name="ia_mapinit_sizeButton" extends="ia_mapinit_placeButton">
+            <size value="100% 34px"/>
+            <textAlignment value="center"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

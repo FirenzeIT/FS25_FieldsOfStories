@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--
+  Per-character voice + text catalog for dynamic conversations
+  (conversations/dynamic/<characterId>/<topic>/<variant>/).
+
+  OGG filenames: {lang}_{gender}_{voiceId}_{suffix}.ogg — voiceId comes from the neighbour (character-specific).
+
+  Each entry maps a placeholder VALUE (`#key`) to:
+    * `#suffix` — voice clip filename stem (used for both subtitle audio and helper-generated TTS),
+    * `#text`   — English subtitle text substituted in for the placeholder,
+    * `#textDe` — German subtitle text substituted in for the placeholder.
+
+  Variable catalogs (element name == placeholder variable, case-insensitive):
+    <jobType>                 — keyed by IAFieldwork.JobType.* (cultivate, harrow, harvest, manure_spreading, slurry_spreading, fertilizer_spreading, spray, seed, plow, ia_field_outcome, other)
+    <vehicleNameWithArticle>  — keyed by the same enum value as jobType
+    <extraRefillNote>         — keyed by "needed" (set only when the implement consumes refillable material)
+    <FieldNumber>             — numeric keys (clamped) shared by {fieldNumber}, {fieldNumbers}, {totalHectares}
+
+  Optional <character id="…"> sections override or extend the defaults for that neighbour id.
+-->
+<voiceCatalog>
+	<defaults>
+		<jobType key="cultivate" suffix="job_cultivate" text="I need your help with Cultivating." textDe="ich bräuchte deine Hilfe beim Grubbern"/>
+		<jobType key="harrow" suffix="job_harrow" text="I need your help with Harrowing." textDe="ich bräuchte deine Hilfe beim Eggen"/>
+		<jobType key="harvest" suffix="job_harvest" text="I need your help with Harvesting." textDe="ich bräuchte deine Hilfe beim Ernten"/>
+		<jobType key="manure_spreading" suffix="job_manure_spreading" text="I need your help with spreading Manure." textDe="ich bräuchte deine Hilfe beim Mistausbringen"/>
+		<jobType key="slurry_spreading" suffix="job_slurry_spreading" text="I need your help with spreading Slurry." textDe="ich bräuchte deine Hilfe beim Gülleausbringen"/>
+		<jobType key="fertilizer_spreading" suffix="job_fertilizer_spreading" text="I need your help with spreading mineral Fertilizer." textDe="ich bräuchte deine Hilfe beim Mineraldüngerstreuen"/>
+		<jobType key="spray" suffix="job_spray" text="I need your help with Spraying." textDe="ich bräuchte deine Hilfe beim Spritzen"/>
+		<jobType key="seed" suffix="job_seed" text="I need your help with Seeding." textDe="ich bräuchte deine Hilfe beim Ansäen"/>
+		<jobType key="plow" suffix="job_plow" text="I need your help with Plowing." textDe="ich bräuchte deine Hilfe beim Pflügen"/>
+		<jobType key="ia_field_outcome" suffix="job_other" text="I need your help with Fieldwork." textDe="ich bräuchte deine Hilfe beim Ackern"/>
+		<jobType key="other" suffix="job_other" text="I need your help with Fieldwork." textDe="ich bräuchte deine Hilfe beim Ackern"/>
+		<vehicleNameWithArticle key="cultivate" suffix="ia_fieldwork_equip_cultivate" text="i would need to use your cultivator." textDe="ich müsste aber deinen Grubber nutzen."/>
+		<vehicleNameWithArticle key="harrow" suffix="ia_fieldwork_equip_harrow" text="i would need to use your harrow." textDe="ich müsste aber deine Egge nutzen."/>
+		<vehicleNameWithArticle key="harvest" suffix="ia_fieldwork_equip_harvest" text="i would need to use your harvester." textDe="ich müsste aber deinen Mähdrescher nutzen."/>
+		<vehicleNameWithArticle key="manure_spreading" suffix="ia_fieldwork_equip_manure" text="i would need to use your manure spreader." textDe="ich müsste aber deinen Miststreuer nutzen."/>
+		<vehicleNameWithArticle key="slurry_spreading" suffix="ia_fieldwork_equip_slurry" text="i would need to use your slurry tanker." textDe="ich müsste aber dein Güllefass nutzen."/>
+		<vehicleNameWithArticle key="fertilizer_spreading" suffix="ia_fieldwork_equip_mineral_fertilizer" text="i would need to use your fertilizer spreader." textDe="ich müsste aber deinen Mineraldüngerstreuer nutzen."/>
+		<vehicleNameWithArticle key="spray" suffix="ia_fieldwork_equip_herbicide" text="i would need to use your field sprayer." textDe="ich müsste aber deine Feldspritze nutzen."/>
+		<vehicleNameWithArticle key="seed" suffix="ia_fieldwork_equip_seed" text="i would need to use your seeder." textDe="ich müsste aber deine Sämaschine nutzen."/>
+		<vehicleNameWithArticle key="plow" suffix="ia_fieldwork_equip_plow" text="i would need to use your plow." textDe="ich müsste aber deinen Pflug nutzen."/>
+		<vehicleNameWithArticle key="ia_field_outcome" suffix="ia_fieldwork_equip_generic" text="i would need to use your equipment." textDe="ich müsste aber deine Geräte nutzen."/>
+		<vehicleNameWithArticle key="other" suffix="ia_fieldwork_equip_generic" text="i would need to use your equipment." textDe="ich müsste aber deine Geräte nutzen."/>
+		<extraRefillNote key="needed" suffix="extra_refill_needed" text="If it runs empty, come back to the yard to refill." textDe="Wenn es leer wird, komm zum Auffüllen vorbei."/>
+		<FieldNumber key="1" suffix="fld_1" text="one." textDe="eins"/>
+		<FieldNumber key="2" suffix="fld_2" text="two." textDe="zwei"/>
+		<FieldNumber key="3" suffix="fld_3" text="three." textDe="drei"/>
+		<FieldNumber key="4" suffix="fld_4" text="four." textDe="vier"/>
+		<FieldNumber key="5" suffix="fld_5" text="five." textDe="fünf"/>
+		<FieldNumber key="6" suffix="fld_6" text="six." textDe="sechs"/>
+		<FieldNumber key="7" suffix="fld_7" text="seven." textDe="sieben"/>
+		<FieldNumber key="8" suffix="fld_8" text="eight." textDe="acht"/>
+		<FieldNumber key="9" suffix="fld_9" text="nine." textDe="neun"/>
+		<FieldNumber key="10" suffix="fld_10" text="ten." textDe="zehn"/>
+		<FieldNumber key="11" suffix="fld_11" text="eleven." textDe="elf"/>
+		<FieldNumber key="12" suffix="fld_12" text="twelve." textDe="zwölf"/>
+		<FieldNumber key="13" suffix="fld_13" text="thirteen." textDe="dreizehn"/>
+		<FieldNumber key="14" suffix="fld_14" text="fourteen." textDe="vierzehn"/>
+		<FieldNumber key="15" suffix="fld_15" text="fifteen." textDe="fünfzehn"/>
+		<FieldNumber key="16" suffix="fld_16" text="sixteen." textDe="sechzehn"/>
+		<FieldNumber key="17" suffix="fld_17" text="seventeen." textDe="siebzehn"/>
+		<FieldNumber key="18" suffix="fld_18" text="eighteen." textDe="achtzehn"/>
+		<FieldNumber key="19" suffix="fld_19" text="nineteen." textDe="neunzehn"/>
+		<FieldNumber key="20" suffix="fld_20" text="twenty." textDe="zwanzig"/>
+		<FieldNumber key="21" suffix="fld_21" text="twenty one." textDe="einundzwanzig"/>
+		<FieldNumber key="22" suffix="fld_22" text="twenty two." textDe="zweiundzwanzig"/>
+		<FieldNumber key="23" suffix="fld_23" text="twenty three." textDe="dreiundzwanzig"/>
+		<FieldNumber key="24" suffix="fld_24" text="twenty four." textDe="vierundzwanzig"/>
+		<FieldNumber key="25" suffix="fld_25" text="twenty five." textDe="fünfundzwanzig"/>
+		<FieldNumber key="26" suffix="fld_26" text="twenty six." textDe="sechsundzwanzig"/>
+		<FieldNumber key="27" suffix="fld_27" text="twenty seven." textDe="siebenundzwanzig"/>
+		<FieldNumber key="28" suffix="fld_28" text="twenty eight." textDe="achtundzwanzig"/>
+		<FieldNumber key="29" suffix="fld_29" text="twenty nine." textDe="neunundzwanzig"/>
+		<FieldNumber key="30" suffix="fld_30" text="thirty." textDe="dreißig"/>
+		<FieldNumber key="31" suffix="fld_31" text="thirty one." textDe="einunddreißig"/>
+		<FieldNumber key="32" suffix="fld_32" text="thirty two." textDe="zweiunddreißig"/>
+		<FieldNumber key="33" suffix="fld_33" text="thirty three." textDe="dreiunddreißig"/>
+		<FieldNumber key="34" suffix="fld_34" text="thirty four." textDe="vierunddreißig"/>
+		<FieldNumber key="35" suffix="fld_35" text="thirty five." textDe="fünfunddreißig"/>
+		<FieldNumber key="36" suffix="fld_36" text="thirty six." textDe="sechsunddreißig"/>
+		<FieldNumber key="37" suffix="fld_37" text="thirty seven." textDe="siebenunddreißig"/>
+		<FieldNumber key="38" suffix="fld_38" text="thirty eight." textDe="achtunddreißig"/>
+		<FieldNumber key="39" suffix="fld_39" text="thirty nine." textDe="neununddreißig"/>
+		<FieldNumber key="40" suffix="fld_40" text="forty." textDe="vierzig"/>
+		<FieldNumber key="41" suffix="fld_41" text="forty one." textDe="einundvierzig"/>
+		<FieldNumber key="42" suffix="fld_42" text="forty two." textDe="zweiundvierzig"/>
+		<FieldNumber key="43" suffix="fld_43" text="forty three." textDe="dreiundvierzig"/>
+		<FieldNumber key="44" suffix="fld_44" text="forty four." textDe="vierundvierzig"/>
+		<FieldNumber key="45" suffix="fld_45" text="forty five." textDe="fünfundvierzig"/>
+		<FieldNumber key="46" suffix="fld_46" text="forty six." textDe="sechsundvierzig"/>
+		<FieldNumber key="47" suffix="fld_47" text="forty seven." textDe="siebenundvierzig"/>
+		<FieldNumber key="48" suffix="fld_48" text="forty eight." textDe="achtundvierzig"/>
+		<FieldNumber key="49" suffix="fld_49" text="forty nine." textDe="neunundvierzig"/>
+		<FieldNumber key="50" suffix="fld_50" text="fifty." textDe="fünfzig"/>
+		<FieldNumber key="51" suffix="fld_51" text="fifty one." textDe="einundfünfzig"/>
+		<FieldNumber key="52" suffix="fld_52" text="fifty two." textDe="zweiundfünfzig"/>
+		<FieldNumber key="53" suffix="fld_53" text="fifty three." textDe="dreiundfünfzig"/>
+		<FieldNumber key="54" suffix="fld_54" text="fifty four." textDe="vierundfünfzig"/>
+		<FieldNumber key="55" suffix="fld_55" text="fifty five." textDe="fünfundfünfzig"/>
+		<FieldNumber key="56" suffix="fld_56" text="fifty six." textDe="sechsundfünfzig"/>
+		<FieldNumber key="57" suffix="fld_57" text="fifty seven." textDe="siebenundfünfzig"/>
+		<FieldNumber key="58" suffix="fld_58" text="fifty eight." textDe="achtundfünfzig"/>
+		<FieldNumber key="59" suffix="fld_59" text="fifty nine." textDe="neunundfünfzig"/>
+		<FieldNumber key="60" suffix="fld_60" text="sixty." textDe="sechzig"/>
+		<FieldNumber key="61" suffix="fld_61" text="sixty one." textDe="einundsechzig"/>
+		<FieldNumber key="62" suffix="fld_62" text="sixty two." textDe="zweiundsechzig"/>
+		<FieldNumber key="63" suffix="fld_63" text="sixty three." textDe="dreiundsechzig"/>
+		<FieldNumber key="64" suffix="fld_64" text="sixty four." textDe="vierundsechzig"/>
+		<FieldNumber key="65" suffix="fld_65" text="sixty five." textDe="fünfundsechzig"/>
+		<FieldNumber key="66" suffix="fld_66" text="sixty six." textDe="sechsundsechzig"/>
+		<FieldNumber key="67" suffix="fld_67" text="sixty seven." textDe="siebenundsechzig"/>
+		<FieldNumber key="68" suffix="fld_68" text="sixty eight." textDe="achtundsechzig"/>
+		<FieldNumber key="69" suffix="fld_69" text="sixty nine." textDe="neunundsechzig"/>
+		<FieldNumber key="70" suffix="fld_70" text="seventy." textDe="siebzig"/>
+		<FieldNumber key="71" suffix="fld_71" text="seventy one." textDe="einundsiebzig"/>
+		<FieldNumber key="72" suffix="fld_72" text="seventy two." textDe="zweiundsiebzig"/>
+		<FieldNumber key="73" suffix="fld_73" text="seventy three." textDe="dreiundsiebzig"/>
+		<FieldNumber key="74" suffix="fld_74" text="seventy four." textDe="vierundsiebzig"/>
+		<FieldNumber key="75" suffix="fld_75" text="seventy five." textDe="fünfundsiebzig"/>
+		<FieldNumber key="76" suffix="fld_76" text="seventy six." textDe="sechsundsiebzig"/>
+		<FieldNumber key="77" suffix="fld_77" text="seventy seven." textDe="siebenundsiebzig"/>
+		<FieldNumber key="78" suffix="fld_78" text="seventy eight." textDe="achtundsiebzig"/>
+		<FieldNumber key="79" suffix="fld_79" text="seventy nine." textDe="neunundsiebzig"/>
+		<FieldNumber key="80" suffix="fld_80" text="eighty." textDe="achtzig"/>
+		<FieldNumber key="81" suffix="fld_81" text="eighty one." textDe="einundachtzig"/>
+		<FieldNumber key="82" suffix="fld_82" text="eighty two." textDe="zweiundachtzig"/>
+		<FieldNumber key="83" suffix="fld_83" text="eighty three." textDe="dreiundachtzig"/>
+		<FieldNumber key="84" suffix="fld_84" text="eighty four." textDe="vierundachtzig"/>
+		<FieldNumber key="85" suffix="fld_85" text="eighty five." textDe="fünfundachtzig"/>
+		<FieldNumber key="86" suffix="fld_86" text="eighty six." textDe="sechsundachtzig"/>
+		<FieldNumber key="87" suffix="fld_87" text="eighty seven." textDe="siebenundachtzig"/>
+		<FieldNumber key="88" suffix="fld_88" text="eighty eight." textDe="achtundachtzig"/>
+		<FieldNumber key="89" suffix="fld_89" text="eighty nine." textDe="neunundachtzig"/>
+		<FieldNumber key="90" suffix="fld_90" text="ninety." textDe="neunzig"/>
+		<FieldNumber key="91" suffix="fld_91" text="ninety one." textDe="einundneunzig"/>
+		<FieldNumber key="92" suffix="fld_92" text="ninety two." textDe="zweiundneunzig"/>
+		<FieldNumber key="93" suffix="fld_93" text="ninety three." textDe="dreiundneunzig"/>
+		<FieldNumber key="94" suffix="fld_94" text="ninety four." textDe="vierundneunzig"/>
+		<FieldNumber key="95" suffix="fld_95" text="ninety five." textDe="fünfundneunzig"/>
+		<FieldNumber key="96" suffix="fld_96" text="ninety six." textDe="sechsundneunzig"/>
+		<FieldNumber key="97" suffix="fld_97" text="ninety seven." textDe="siebenundneunzig"/>
+		<FieldNumber key="98" suffix="fld_98" text="ninety eight." textDe="achtundneunzig"/>
+		<FieldNumber key="99" suffix="fld_99" text="ninety nine." textDe="neunundneunzig"/>
+		<FieldNumber key="100" suffix="fld_100" text="one hundred." textDe="einhundert "/>
+		<FieldNumber key="200" suffix="fld_200" text="two hundred." textDe="zweihundert "/>
+		<FieldNumber key="300" suffix="fld_300" text="three hundred." textDe="dreihundert "/>
+		<FieldNumber key="400" suffix="fld_400" text="four hundred." textDe="vierhundert "/>
+		<FieldNumber key="500" suffix="fld_500" text="five hundred." textDe="fünfhundert "/>
+		<FieldNumber key="600" suffix="fld_600" text="six hundred." textDe="sechshundert "/>
+		<FieldNumber key="700" suffix="fld_700" text="seven hundred." textDe="siebenhundert "/>
+		<FieldNumber key="800" suffix="fld_800" text="eight hundred." textDe="achthundert "/>
+		<FieldNumber key="900" suffix="fld_900" text="nine hundred." textDe="neunhundert "/>
+		<FieldNumber key="1000" suffix="fld_1000" text="one thousand." textDe="eintausend "/>
+	</defaults>
+</voiceCatalog>

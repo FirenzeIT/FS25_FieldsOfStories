@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg"/>
+
+    <!-- Portrait phone shell: bezel image with UI drawn in the inset "screen" -->
+    <GuiElement profile="ia_phone_dialogBg" id="dialogElement">
+        <!-- Bezel via overlay texture (see gui/IAPhoneTexture.xml + IANeighbours.ensurePhoneDialogLoaded). -->
+        <Bitmap profile="ia_phone_frameOuter">
+            <Bitmap profile="ia_phone_frameInner" id="phoneFrameElement"/>
+        </Bitmap>
+        <GuiElement profile="ia_phone_screenArea" id="phoneScreenElement">
+            <BoxLayout profile="ia_phone_dialog_contentLayout" id="contentLayoutElement">
+                <Text profile="ia_phone_dialog_title" text="$l10n_gui_phone_title" id="titleElement" />
+                <Text profile="ia_phone_dialog_message" text="$l10n_gui_phone_message" id="messageElement" />
+                <BoxLayout profile="ia_phone_buttonRow">
+                    <Button profile="buttonOK" text="$l10n_gui_phone_answer" onClick="onClickAnswer" id="answerButton" />
+                    <Button profile="buttonCancel" text="$l10n_gui_phone_decline" onClick="onClickDecline" id="declineButton" />
+                </BoxLayout>
+            </BoxLayout>
+        </GuiElement>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ia_phone_frameOuter" extends="baseReference" with="anchorStretchingYStretchingX">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <color value="0 0 0 0"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+        <!-- fs25_menuHeaderIcon ties to the small header icon atlas; stretched = whole icon sheet. -->
+        <!-- fs25_helpLineImage is for arbitrary help/content bitmaps and respects overlay imageSliceId. -->
+        <Profile name="ia_phone_frameInner" extends="fs25_helpLineImage" with="anchorStretchingYStretchingX">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <imageSliceId value="iaPhone.bezel"/>
+        </Profile>
+
+        <Profile name="ia_phone_dialogBg" extends="baseReference" with="pivotMiddleCenter">
+            <size value="420px 780px"/>
+            <flowDirection value="vertical"/>
+            <alignmentX value="center"/>
+            <alignmentY value="center"/>
+            <!-- Avoid default light quad behind the bezel if the texture fails or has transparency -->
+            <color value="0.04 0.04 0.06 1"/>
+        </Profile>
+
+        <!-- Inset matches the transparent screen cutout on iphone.dds; tweak margin if art changes -->
+        <Profile name="ia_phone_screenArea" extends="baseReference" with="anchorStretchingYStretchingX">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <margin value="88px 36px 124px 36px"/>
+            <color value="0 0 0 0"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_phone_dialog_contentLayout" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 100%"/>
+            <position value="0px -100px"/>
+            <margin value="0px 0px 0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0.03 0.03 0.05 0.92"/>
+            <flowDirection value="vertical"/>
+            <elementSpacing value="10px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+
+        <Profile name="ia_phone_dialog_title" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 28px"/>
+            <textSize value="25px"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <textColor value="0.96 0.97 1 1"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_phone_dialog_message" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 440px"/>
+            <textSize value="15px"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="top"/>
+            <textAutoHeight value="true"/>
+            <textMaxWidth value="320px"/>
+            <textMaxNumLines value="12"/>
+            <textColor value="0.82 0.84 0.9 1"/>
+            <textLineHeightScale value="1.2"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_phone_buttonRow" extends="baseReference" with="anchorBottomStretchingX">
+            <size value="100% 52px"/>
+            <margin value="4px 0px 0px 0px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="horizontal"/>
+            <elementSpacing value="10px"/>
+            <alignmentX value="center"/>
+            <alignmentY value="center"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

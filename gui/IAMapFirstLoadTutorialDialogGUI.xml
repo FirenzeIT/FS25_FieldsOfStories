@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg"/>
+
+    <GuiElement profile="ia_mapplaces_firstload_dialogBg" id="dialogElement">
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall" position="6px 0px"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall" position="6px 90px"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom" position="6px 0px"/>
+
+        <BoxLayout profile="ia_mapplaces_firstload_contentLayout" id="contentLayoutElement">
+            <Text profile="ia_mapplaces_firstload_title" text="$l10n_gui_firstload_tutorial_title" id="titleElement" />
+            <Text profile="ia_mapplaces_firstload_message" text="$l10n_gui_firstload_tutorial_message" id="messageElement" />
+            <Text profile="ia_mapplaces_firstload_message2" text="$l10n_gui_firstload_tutorial_message2" id="message2Element" />
+            <Text profile="ia_mapplaces_firstload_message2" text="$l10n_gui_firstload_tutorial_message3" id="message3Element" />
+            <Text profile="ia_mapplaces_firstload_message2" text="$l10n_gui_firstload_tutorial_message4" id="message4Element" />
+            <Text profile="ia_mapplaces_firstload_message2" text="$l10n_gui_firstload_tutorial_message5" id="message5Element" />
+            <Text profile="ia_mapplaces_firstload_message2" text="$l10n_gui_firstload_tutorial_message6" id="message6Element" />
+        </BoxLayout>
+
+        <BoxLayout profile="fs25_dialogButtonBox" position="6px 32px">
+            <Button profile="buttonOK" text="$l10n_gui_dialog_button_ok" onClick="onClickOk" id="okButton" />
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ia_mapplaces_firstload_dialogBg" extends="baseReference" with="pivotMiddleCenter">
+            <size value="800px 700px"/>
+        </Profile>
+
+        <Profile name="ia_mapplaces_firstload_contentLayout" extends="baseReference" with="pivotTopLeft">
+            <size value="700px 700px"/>
+            <position value="26px 26px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <elementSpacing value="12px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="true"/>
+        </Profile>
+
+        <Profile name="ia_mapplaces_firstload_title" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 28px"/>
+            <textSize value="22px"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapplaces_firstload_message" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 120px"/>
+            <textSize value="16px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <textAutoHeight value="true"/>
+            <textMaxWidth value="650px"/>
+            <textMaxNumLines value="12"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ia_mapplaces_firstload_message2" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 90px"/>
+            <textSize value="15px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <!-- Fixed paragraph box height to prevent overlapping/overflows. -->
+            <textAutoHeight value="false"/>
+            <textMaxWidth value="650px"/>
+            <textMaxNumLines value="12"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>
+

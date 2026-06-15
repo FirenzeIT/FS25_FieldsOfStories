@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<texture>
+    <meta>
+        <filename>iphone.dds</filename>
+        <size width="1024" height="1024"/>
+    </meta>
+    <slices>
+        <slice id="bezel" uvs="0px 0px 489px 996px"/>
+    </slices>
+</texture>

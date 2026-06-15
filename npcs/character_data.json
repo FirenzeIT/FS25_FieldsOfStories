@@ -1,0 +1,1297 @@
+﻿{
+    "footwear":  [
+                     {
+                         "id":  1,
+                         "name":  "workBoots2"
+                     },
+                     {
+                         "id":  2,
+                         "name":  "workBoots1"
+                     },
+                     {
+                         "id":  3,
+                         "name":  "crok"
+                     },
+                     {
+                         "id":  4,
+                         "name":  "galoshes"
+                     },
+                     {
+                         "id":  5,
+                         "name":  "racing"
+                     },
+                     {
+                         "id":  6,
+                         "name":  "riding"
+                     },
+                     {
+                         "id":  7,
+                         "name":  "laceUpSneaker"
+                     },
+                     {
+                         "id":  8,
+                         "name":  "chelsea01"
+                     },
+                     {
+                         "id":  9,
+                         "name":  "chelsea02"
+                     },
+                     {
+                         "id":  10,
+                         "name":  "sandal01"
+                     },
+                     {
+                         "id":  11,
+                         "name":  "sandal02"
+                     },
+                     {
+                         "id":  12,
+                         "name":  "sandal03"
+                     },
+                     {
+                         "id":  13,
+                         "name":  "sandal04"
+                     },
+                     {
+                         "id":  14,
+                         "name":  "loafers"
+                     },
+                     {
+                         "id":  15,
+                         "name":  "sneakers"
+                     },
+                     {
+                         "id":  16,
+                         "name":  "sportSneakers"
+                     },
+                     {
+                         "id":  17,
+                         "name":  "cowboy"
+                     },
+                     {
+                         "id":  18,
+                         "name":  "eltenTerenceXXG5"
+                     },
+                     {
+                         "id":  19,
+                         "name":  "eltenMaverick"
+                     },
+                     {
+                         "id":  20,
+                         "name":  "eltenArborist"
+                     },
+                     {
+                         "id":  21,
+                         "name":  "eltenSensationXX10"
+                     },
+                     {
+                         "id":  22,
+                         "name":  "eltenAlessio"
+                     },
+                     {
+                         "id":  23,
+                         "name":  "eltenMaddoxLowRed"
+                     },
+                     {
+                         "id":  24,
+                         "name":  "eltenMaddoxLowBlack"
+                     },
+                     {
+                         "id":  25,
+                         "name":  "eltenMaddoxLowBlue"
+                     },
+                     {
+                         "id":  26,
+                         "name":  "eltenMaddoxLowGrey"
+                     },
+                     {
+                         "id":  27,
+                         "name":  "eltenMaddoxLowYellow"
+                     },
+                     {
+                         "id":  28,
+                         "name":  "husqvarnaBoots"
+                     },
+                     {
+                         "id":  29,
+                         "name":  "johnDeereBoots"
+                     },
+                     {
+                         "id":  30,
+                         "name":  "newHollandBoots"
+                     }
+                 ],
+    "hats":  {
+
+             },
+    "glasses":  [
+                    {
+                        "id":  1,
+                        "name":  "aviator"
+                    },
+                    {
+                        "id":  2,
+                        "name":  "classic"
+                    },
+                    {
+                        "id":  3,
+                        "name":  "reading"
+                    },
+                    {
+                        "id":  4,
+                        "name":  "safety"
+                    },
+                    {
+                        "id":  5,
+                        "name":  "sports1"
+                    },
+                    {
+                        "id":  6,
+                        "name":  "sports2"
+                    },
+                    {
+                        "id":  7,
+                        "name":  "vintage"
+                    }
+                ],
+    "tops":  [
+                 {
+                     "id":  1,
+                     "name":  "tShirt01"
+                 },
+                 {
+                     "id":  2,
+                     "name":  "tShirt02"
+                 },
+                 {
+                     "id":  3,
+                     "name":  "tankTop"
+                 },
+                 {
+                     "id":  4,
+                     "name":  "collaredShirt"
+                 },
+                 {
+                     "id":  5,
+                     "name":  "topLightSweater"
+                 },
+                 {
+                     "id":  6,
+                     "name":  "topPlaidShirt"
+                 },
+                 {
+                     "id":  7,
+                     "name":  "topShirtLongSleeve"
+                 },
+                 {
+                     "id":  8,
+                     "name":  "aviatorJacket"
+                 },
+                 {
+                     "id":  9,
+                     "name":  "denimJacket"
+                 },
+                 {
+                     "id":  10,
+                     "name":  "leather"
+                 },
+                 {
+                     "id":  11,
+                     "name":  "topVest"
+                 },
+                 {
+                     "id":  12,
+                     "name":  "topVestM"
+                 },
+                 {
+                     "id":  13,
+                     "name":  "topFarmJacketM"
+                 },
+                 {
+                     "id":  14,
+                     "name":  "waterProof"
+                 },
+                 {
+                     "id":  15,
+                     "name":  "zipNeckPullover"
+                 },
+                 {
+                     "id":  16,
+                     "name":  "constructionVest"
+                 },
+                 {
+                     "id":  17,
+                     "name":  "windbreaker"
+                 },
+                 {
+                     "id":  18,
+                     "name":  "puffJacket"
+                 },
+                 {
+                     "id":  19,
+                     "name":  "topDeck"
+                 },
+                 {
+                     "id":  20,
+                     "name":  "winterVest"
+                 },
+                 {
+                     "id":  21,
+                     "name":  "workJacket"
+                 },
+                 {
+                     "id":  22,
+                     "name":  "tweedFieldCoat"
+                 },
+                 {
+                     "id":  23,
+                     "name":  "tweedSportsJacket"
+                 },
+                 {
+                     "id":  24,
+                     "name":  "straussSweatshirt"
+                 },
+                 {
+                     "id":  25,
+                     "name":  "straussTShirtMerino"
+                 },
+                 {
+                     "id":  26,
+                     "name":  "straussTShirtMerino2nd"
+                 },
+                 {
+                     "id":  27,
+                     "name":  "concreteJacket"
+                 },
+                 {
+                     "id":  28,
+                     "name":  "motion2020Jacket"
+                 },
+                 {
+                     "id":  29,
+                     "name":  "motion2020Jacket2nd"
+                 },
+                 {
+                     "id":  30,
+                     "name":  "motionJacket"
+                 },
+                 {
+                     "id":  31,
+                     "name":  "caseih"
+                 },
+                 {
+                     "id":  32,
+                     "name":  "claas"
+                 },
+                 {
+                     "id":  33,
+                     "name":  "topEltenTShirt"
+                 },
+                 {
+                     "id":  34,
+                     "name":  "topEltenHoodie"
+                 },
+                 {
+                     "id":  35,
+                     "name":  "eroSweater"
+                 },
+                 {
+                     "id":  36,
+                     "name":  "fendt"
+                 },
+                 {
+                     "id":  37,
+                     "name":  "farmSimTshirt"
+                 },
+                 {
+                     "id":  38,
+                     "name":  "farmSimHoodie"
+                 },
+                 {
+                     "id":  39,
+                     "name":  "topHoodieGiants"
+                 },
+                 {
+                     "id":  40,
+                     "name":  "hardiTshirt"
+                 },
+                 {
+                     "id":  41,
+                     "name":  "husqvarnaJacket"
+                 },
+                 {
+                     "id":  42,
+                     "name":  "JDShirt"
+                 },
+                 {
+                     "id":  43,
+                     "name":  "JDHoodie"
+                 },
+                 {
+                     "id":  44,
+                     "name":  "kroneVest"
+                 },
+                 {
+                     "id":  45,
+                     "name":  "kubotaHoodieDark"
+                 },
+                 {
+                     "id":  46,
+                     "name":  "kubotaHoodieWhite"
+                 },
+                 {
+                     "id":  47,
+                     "name":  "kubotaSweatshirt"
+                 },
+                 {
+                     "id":  48,
+                     "name":  "kubotaPolo"
+                 },
+                 {
+                     "id":  49,
+                     "name":  "MFHoodie1"
+                 },
+                 {
+                     "id":  50,
+                     "name":  "MFHoodie2"
+                 },
+                 {
+                     "id":  51,
+                     "name":  "planETHoodie"
+                 },
+                 {
+                     "id":  52,
+                     "name":  "ValtraShirt"
+                 },
+                 {
+                     "id":  53,
+                     "name":  "ValtraJacket"
+                 },
+                 {
+                     "id":  54,
+                     "name":  "vermeerHoodie"
+                 },
+                 {
+                     "id":  55,
+                     "name":  "vermeerSweater"
+                 },
+                 {
+                     "id":  56,
+                     "name":  "vermeerTshirt"
+                 },
+                 {
+                     "id":  57,
+                     "name":  "volvoFunctionalJacket"
+                 },
+                 {
+                     "id":  58,
+                     "name":  "volvoSoftJacket"
+                 },
+                 {
+                     "id":  59,
+                     "name":  "volvoSoftJacket2"
+                 },
+                 {
+                     "id":  60,
+                     "name":  "VolvoShirt"
+                 },
+                 {
+                     "id":  61,
+                     "name":  "PoettingerShirt"
+                 },
+                 {
+                     "id":  62,
+                     "name":  "PoettingerSweater"
+                 }
+             ],
+    "bottoms":  [
+                    {
+                        "id":  1,
+                        "name":  "jeans"
+                    },
+                    {
+                        "id":  2,
+                        "name":  "chinos"
+                    },
+                    {
+                        "id":  3,
+                        "name":  "cargo"
+                    },
+                    {
+                        "id":  4,
+                        "name":  "equestrian"
+                    },
+                    {
+                        "id":  5,
+                        "name":  "leather"
+                    },
+                    {
+                        "id":  6,
+                        "name":  "tweedTrousers"
+                    },
+                    {
+                        "id":  7,
+                        "name":  "waterProof"
+                    },
+                    {
+                        "id":  8,
+                        "name":  "jeanShorts"
+                    },
+                    {
+                        "id":  9,
+                        "name":  "cargoShorts"
+                    },
+                    {
+                        "id":  10,
+                        "name":  "botSlacks"
+                    },
+                    {
+                        "id":  11,
+                        "name":  "skirt01"
+                    },
+                    {
+                        "id":  12,
+                        "name":  "skirt02"
+                    },
+                    {
+                        "id":  13,
+                        "name":  "skirt03"
+                    },
+                    {
+                        "id":  14,
+                        "name":  "skirt04"
+                    },
+                    {
+                        "id":  15,
+                        "name":  "straussTrousers"
+                    },
+                    {
+                        "id":  16,
+                        "name":  "straussTrousers2nd"
+                    },
+                    {
+                        "id":  17,
+                        "name":  "straussTrousers3rd"
+                    },
+                    {
+                        "id":  18,
+                        "name":  "straussTrousers4th"
+                    },
+                    {
+                        "id":  19,
+                        "name":  "concretePants"
+                    },
+                    {
+                        "id":  20,
+                        "name":  "motion2020Pants"
+                    },
+                    {
+                        "id":  21,
+                        "name":  "motion2020Pants2nd"
+                    },
+                    {
+                        "id":  22,
+                        "name":  "motionPants"
+                    },
+                    {
+                        "id":  23,
+                        "name":  "claas"
+                    },
+                    {
+                        "id":  24,
+                        "name":  "fendt"
+                    },
+                    {
+                        "id":  25,
+                        "name":  "husqvarnaPants"
+                    },
+                    {
+                        "id":  26,
+                        "name":  "JDPants01"
+                    },
+                    {
+                        "id":  27,
+                        "name":  "JDPants02"
+                    },
+                    {
+                        "id":  28,
+                        "name":  "ValtraPants"
+                    },
+                    {
+                        "id":  29,
+                        "name":  "VolvoPants"
+                    },
+                    {
+                        "id":  30,
+                        "name":  "PoettingerShorts"
+                    }
+                ],
+    "hairStyles":  [
+                       {
+                           "id":  1,
+                           "name":  "hair01"
+                       },
+                       {
+                           "id":  2,
+                           "name":  "hair02"
+                       },
+                       {
+                           "id":  3,
+                           "name":  "hair03"
+                       },
+                       {
+                           "id":  4,
+                           "name":  "hair04"
+                       },
+                       {
+                           "id":  5,
+                           "name":  "hair05"
+                       },
+                       {
+                           "id":  6,
+                           "name":  "hair06"
+                       },
+                       {
+                           "id":  7,
+                           "name":  "hair07"
+                       },
+                       {
+                           "id":  8,
+                           "name":  "hair08"
+                       },
+                       {
+                           "id":  9,
+                           "name":  "hair09"
+                       },
+                       {
+                           "id":  10,
+                           "name":  "hair10"
+                       },
+                       {
+                           "id":  11,
+                           "name":  "hair11"
+                       },
+                       {
+                           "id":  12,
+                           "name":  "hair12"
+                       },
+                       {
+                           "id":  13,
+                           "name":  "hair13"
+                       },
+                       {
+                           "id":  14,
+                           "name":  "hair14"
+                       },
+                       {
+                           "id":  15,
+                           "name":  "hair15"
+                       },
+                       {
+                           "id":  16,
+                           "name":  "hair16"
+                       },
+                       {
+                           "id":  17,
+                           "name":  "gearHair"
+                       }
+                   ],
+    "headgear":  [
+                     {
+                         "id":  1,
+                         "name":  "ballcap"
+                     },
+                     {
+                         "id":  2,
+                         "name":  "beanie"
+                     },
+                     {
+                         "id":  3,
+                         "name":  "beret"
+                     },
+                     {
+                         "id":  4,
+                         "name":  "cowboy"
+                     },
+                     {
+                         "id":  5,
+                         "name":  "fisherman"
+                     },
+                     {
+                         "id":  6,
+                         "name":  "militia"
+                     },
+                     {
+                         "id":  7,
+                         "name":  "motorbike"
+                     },
+                     {
+                         "id":  8,
+                         "name":  "outback"
+                     },
+                     {
+                         "id":  9,
+                         "name":  "racing"
+                     },
+                     {
+                         "id":  10,
+                         "name":  "riding"
+                     },
+                     {
+                         "id":  11,
+                         "name":  "vintage"
+                     },
+                     {
+                         "id":  12,
+                         "name":  "headgearBandana"
+                     },
+                     {
+                         "id":  13,
+                         "name":  "derbyTweedHat"
+                     },
+                     {
+                         "id":  14,
+                         "name":  "ballCapTweed"
+                     },
+                     {
+                         "id":  15,
+                         "name":  "strawHat"
+                     },
+                     {
+                         "id":  16,
+                         "name":  "hatWoolen"
+                     },
+                     {
+                         "id":  17,
+                         "name":  "husqvarna"
+                     },
+                     {
+                         "id":  18,
+                         "name":  "jonsered"
+                     },
+                     {
+                         "id":  19,
+                         "name":  "mcculloch"
+                     },
+                     {
+                         "id":  20,
+                         "name":  "stihl"
+                     },
+                     {
+                         "id":  21,
+                         "name":  "strauss"
+                     },
+                     {
+                         "id":  22,
+                         "name":  "caseih"
+                     },
+                     {
+                         "id":  23,
+                         "name":  "eroHat"
+                     },
+                     {
+                         "id":  24,
+                         "name":  "farmSimHat"
+                     },
+                     {
+                         "id":  25,
+                         "name":  "giants"
+                     },
+                     {
+                         "id":  26,
+                         "name":  "JDBlack"
+                     },
+                     {
+                         "id":  27,
+                         "name":  "JDGreen"
+                     },
+                     {
+                         "id":  28,
+                         "name":  "kroneHat"
+                     },
+                     {
+                         "id":  29,
+                         "name":  "kubotaHat"
+                     },
+                     {
+                         "id":  30,
+                         "name":  "kubotaHat2"
+                     },
+                     {
+                         "id":  31,
+                         "name":  "MFhat"
+                     },
+                     {
+                         "id":  32,
+                         "name":  "newHolland"
+                     },
+                     {
+                         "id":  33,
+                         "name":  "planETHat"
+                     },
+                     {
+                         "id":  34,
+                         "name":  "ValtraHat"
+                     },
+                     {
+                         "id":  35,
+                         "name":  "vermeerHat"
+                     },
+                     {
+                         "id":  36,
+                         "name":  "VolvoHat"
+                     },
+                     {
+                         "id":  37,
+                         "name":  "poettingerCap"
+                     },
+                     {
+                         "id":  38,
+                         "name":  "kinlaigCrown"
+                     }
+                 ],
+    "faces":  [
+                  {
+                      "id":  1,
+                      "name":  "head01"
+                  },
+                  {
+                      "id":  2,
+                      "name":  "head02"
+                  },
+                  {
+                      "id":  3,
+                      "name":  "head03"
+                  },
+                  {
+                      "id":  4,
+                      "name":  "head04"
+                  },
+                  {
+                      "id":  5,
+                      "name":  "head05"
+                  },
+                  {
+                      "id":  6,
+                      "name":  "head06"
+                  },
+                  {
+                      "id":  7,
+                      "name":  "headNPCQG01"
+                  },
+                  {
+                      "id":  8,
+                      "name":  "head07"
+                  },
+                  {
+                      "id":  9,
+                      "name":  "head08"
+                  },
+                  {
+                      "id":  10,
+                      "name":  "headFisherman01"
+                  }
+              ],
+    "onepieces":  [
+                      {
+                          "id":  1,
+                          "name":  "beekeeper"
+                      },
+                      {
+                          "id":  2,
+                          "name":  "racing"
+                      },
+                      {
+                          "id":  3,
+                          "name":  "synthetic"
+                      },
+                      {
+                          "id":  4,
+                          "name":  "jeans"
+                      },
+                      {
+                          "id":  5,
+                          "name":  "jumpsuit"
+                      },
+                      {
+                          "id":  6,
+                          "name":  "mechanic"
+                      },
+                      {
+                          "id":  7,
+                          "name":  "motion2020Suit"
+                      },
+                      {
+                          "id":  8,
+                          "name":  "motionSuit"
+                      },
+                      {
+                          "id":  9,
+                          "name":  "motion2020Suit2nd"
+                      },
+                      {
+                          "id":  10,
+                          "name":  "fendt"
+                      },
+                      {
+                          "id":  11,
+                          "name":  "emergPack"
+                      },
+                      {
+                          "id":  12,
+                          "name":  "JDSuit"
+                      },
+                      {
+                          "id":  13,
+                          "name":  "KubotaSuit"
+                      },
+                      {
+                          "id":  14,
+                          "name":  "MFSuit"
+                      },
+                      {
+                          "id":  15,
+                          "name":  "ValtraSuit"
+                      },
+                      {
+                          "id":  16,
+                          "name":  "VolvoSuit"
+                      },
+                      {
+                          "id":  17,
+                          "name":  "VolvoServSuit"
+                      },
+                      {
+                          "id":  18,
+                          "name":  "PoettingerOverall"
+                      },
+                      {
+                          "id":  19,
+                          "name":  "bodyNPCQG01"
+                      },
+                      {
+                          "id":  20,
+                          "name":  "bodyFisherman01"
+                      }
+                  ],
+    "gloves":  [
+                   {
+                       "id":  1,
+                       "name":  "generic"
+                   },
+                   {
+                       "id":  2,
+                       "name":  "riding"
+                   },
+                   {
+                       "id":  3,
+                       "name":  "kevlar"
+                   },
+                   {
+                       "id":  4,
+                       "name":  "leather"
+                   },
+                   {
+                       "id":  5,
+                       "name":  "mechanic"
+                   },
+                   {
+                       "id":  6,
+                       "name":  "racing"
+                   },
+                   {
+                       "id":  7,
+                       "name":  "rubber"
+                   },
+                   {
+                       "id":  8,
+                       "name":  "husqvarnaGloves"
+                   },
+                   {
+                       "id":  9,
+                       "name":  "jonseredGloves"
+                   },
+                   {
+                       "id":  10,
+                       "name":  "mccullochGloves"
+                   },
+                   {
+                       "id":  11,
+                       "name":  "stihlGloves"
+                   },
+                   {
+                       "id":  12,
+                       "name":  "esTrailLight"
+                   },
+                   {
+                       "id":  13,
+                       "name":  "esTrailLight02"
+                   }
+               ],
+    "beards":  [
+                   {
+                       "id":  1,
+                       "name":  "stubble_head01"
+                   },
+                   {
+                       "id":  2,
+                       "name":  "stubble_head02"
+                   },
+                   {
+                       "id":  3,
+                       "name":  "stubble_head03"
+                   },
+                   {
+                       "id":  4,
+                       "name":  "stubble_head04"
+                   },
+                   {
+                       "id":  5,
+                       "name":  "stubble_head05"
+                   },
+                   {
+                       "id":  6,
+                       "name":  "stubble_head06"
+                   },
+                   {
+                       "id":  7,
+                       "name":  "trimmedBeard_head01"
+                   },
+                   {
+                       "id":  8,
+                       "name":  "trimmedBeard_head02"
+                   },
+                   {
+                       "id":  9,
+                       "name":  "trimmedBeard_head03"
+                   },
+                   {
+                       "id":  10,
+                       "name":  "trimmedBeard_head04"
+                   },
+                   {
+                       "id":  11,
+                       "name":  "trimmedBeard_head05"
+                   },
+                   {
+                       "id":  12,
+                       "name":  "trimmedBeard_head06"
+                   },
+                   {
+                       "id":  13,
+                       "name":  "trimmedBeard_head07"
+                   },
+                   {
+                       "id":  14,
+                       "name":  "goatee01_head01"
+                   },
+                   {
+                       "id":  15,
+                       "name":  "goatee01_head02"
+                   },
+                   {
+                       "id":  16,
+                       "name":  "goatee01_head03"
+                   },
+                   {
+                       "id":  17,
+                       "name":  "goatee01_head04"
+                   },
+                   {
+                       "id":  18,
+                       "name":  "goatee01_head05"
+                   },
+                   {
+                       "id":  19,
+                       "name":  "goatee01_head06"
+                   },
+                   {
+                       "id":  20,
+                       "name":  "goatee02_head01"
+                   },
+                   {
+                       "id":  21,
+                       "name":  "goatee02_head02"
+                   },
+                   {
+                       "id":  22,
+                       "name":  "goatee02_head03"
+                   },
+                   {
+                       "id":  23,
+                       "name":  "goatee02_head04"
+                   },
+                   {
+                       "id":  24,
+                       "name":  "goatee02_head05"
+                   },
+                   {
+                       "id":  25,
+                       "name":  "goatee02_head06"
+                   },
+                   {
+                       "id":  26,
+                       "name":  "muttonChops01_head01"
+                   },
+                   {
+                       "id":  27,
+                       "name":  "muttonChops01_head02"
+                   },
+                   {
+                       "id":  28,
+                       "name":  "muttonChops01_head03"
+                   },
+                   {
+                       "id":  29,
+                       "name":  "muttonChops01_head04"
+                   },
+                   {
+                       "id":  30,
+                       "name":  "muttonChops01_head05"
+                   },
+                   {
+                       "id":  31,
+                       "name":  "muttonChops01_head06"
+                   },
+                   {
+                       "id":  32,
+                       "name":  "muttonChops02_head01"
+                   },
+                   {
+                       "id":  33,
+                       "name":  "muttonChops02_head02"
+                   },
+                   {
+                       "id":  34,
+                       "name":  "muttonChops02_head03"
+                   },
+                   {
+                       "id":  35,
+                       "name":  "muttonChops02_head04"
+                   },
+                   {
+                       "id":  36,
+                       "name":  "muttonChops02_head05"
+                   },
+                   {
+                       "id":  37,
+                       "name":  "muttonChops02_head06"
+                   },
+                   {
+                       "id":  38,
+                       "name":  "muttonChops03_head01"
+                   },
+                   {
+                       "id":  39,
+                       "name":  "muttonChops03_head02"
+                   },
+                   {
+                       "id":  40,
+                       "name":  "muttonChops03_head03"
+                   },
+                   {
+                       "id":  41,
+                       "name":  "muttonChops03_head04"
+                   },
+                   {
+                       "id":  42,
+                       "name":  "muttonChops03_head05"
+                   },
+                   {
+                       "id":  43,
+                       "name":  "muttonChops03_head06"
+                   },
+                   {
+                       "id":  44,
+                       "name":  "fullBeard_head01"
+                   },
+                   {
+                       "id":  45,
+                       "name":  "fullBeard_head02"
+                   },
+                   {
+                       "id":  46,
+                       "name":  "fullBeard_head03"
+                   },
+                   {
+                       "id":  47,
+                       "name":  "fullBeard_head04"
+                   },
+                   {
+                       "id":  48,
+                       "name":  "fullBeard_head05"
+                   },
+                   {
+                       "id":  49,
+                       "name":  "fullBeard_head06"
+                   },
+                   {
+                       "id":  50,
+                       "name":  "trimmed_head01"
+                   },
+                   {
+                       "id":  51,
+                       "name":  "trimmed_head02"
+                   },
+                   {
+                       "id":  52,
+                       "name":  "trimmed_head03"
+                   },
+                   {
+                       "id":  53,
+                       "name":  "trimmed_head04"
+                   },
+                   {
+                       "id":  54,
+                       "name":  "trimmed_head05"
+                   },
+                   {
+                       "id":  55,
+                       "name":  "trimmed_head06"
+                   },
+                   {
+                       "id":  56,
+                       "name":  "walrusTame_head01"
+                   },
+                   {
+                       "id":  57,
+                       "name":  "walrusTame_head02"
+                   },
+                   {
+                       "id":  58,
+                       "name":  "walrusTame_head03"
+                   },
+                   {
+                       "id":  59,
+                       "name":  "walrusTame_head04"
+                   },
+                   {
+                       "id":  60,
+                       "name":  "walrusTame_head05"
+                   },
+                   {
+                       "id":  61,
+                       "name":  "walrusTame_head06"
+                   },
+                   {
+                       "id":  62,
+                       "name":  "fullStash_head01"
+                   },
+                   {
+                       "id":  63,
+                       "name":  "fullStash_head02"
+                   },
+                   {
+                       "id":  64,
+                       "name":  "fullStash_head03"
+                   },
+                   {
+                       "id":  65,
+                       "name":  "fullStash_head04"
+                   },
+                   {
+                       "id":  66,
+                       "name":  "fullStash_head05"
+                   },
+                   {
+                       "id":  67,
+                       "name":  "fullStash_head06"
+                   },
+                   {
+                       "id":  68,
+                       "name":  "upwardHandlebar_head01"
+                   },
+                   {
+                       "id":  69,
+                       "name":  "upwardHandlebar_head02"
+                   },
+                   {
+                       "id":  70,
+                       "name":  "upwardHandlebar_head03"
+                   },
+                   {
+                       "id":  71,
+                       "name":  "upwardHandlebar_head04"
+                   },
+                   {
+                       "id":  72,
+                       "name":  "upwardHandlebar_head05"
+                   },
+                   {
+                       "id":  73,
+                       "name":  "upwardHandlebar_head06"
+                   },
+                   {
+                       "id":  74,
+                       "name":  "horseshoe_head01"
+                   },
+                   {
+                       "id":  75,
+                       "name":  "horseshoe_head02"
+                   },
+                   {
+                       "id":  76,
+                       "name":  "horseshoe_head03"
+                   },
+                   {
+                       "id":  77,
+                       "name":  "horseshoe_head04"
+                   },
+                   {
+                       "id":  78,
+                       "name":  "horseshoe_head05"
+                   },
+                   {
+                       "id":  79,
+                       "name":  "horseshoe_head06"
+                   },
+                   {
+                       "id":  80,
+                       "name":  "walrusFull_head01"
+                   },
+                   {
+                       "id":  81,
+                       "name":  "walrusFull_head02"
+                   },
+                   {
+                       "id":  82,
+                       "name":  "walrusFull_head03"
+                   },
+                   {
+                       "id":  83,
+                       "name":  "walrusFull_head04"
+                   },
+                   {
+                       "id":  84,
+                       "name":  "walrusFull_head05"
+                   },
+                   {
+                       "id":  85,
+                       "name":  "walrusFull_head06"
+                   },
+                   {
+                       "id":  86,
+                       "name":  "walrusXL_head01"
+                   },
+                   {
+                       "id":  87,
+                       "name":  "walrusXL_head02"
+                   },
+                   {
+                       "id":  88,
+                       "name":  "walrusXL_head03"
+                   },
+                   {
+                       "id":  89,
+                       "name":  "walrusXL_head04"
+                   },
+                   {
+                       "id":  90,
+                       "name":  "walrusXL_head05"
+                   },
+                   {
+                       "id":  91,
+                       "name":  "walrusXL_head06"
+                   }
+               ]
+}

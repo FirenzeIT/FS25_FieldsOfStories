@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUIProfiles>
+    <Presets>
+        <Preset name="colorMainUI"    value="0.0227 0.5346 0.8519 1.0"/>
+        <Preset name="colorWhite" value="1 1 1 1"/>
+        <Preset name="colorGrayHeader" value="0.4 0.4 0.4 1"/>
+        <Preset name="colorListHeaderBackground" value="0 0 0 0.35" />
+    </Presets>
+
+    <Profile name="ia_fs25_dialogContentContainer" extends="fs25_dialogContentContainer">
+        <flowDirection value="vertical" />
+        <elementSpacing value="10px" />
+        <alignmentX value="center" />
+        <textLayoutMode value="scrolling"/>
+    </Profile>
+
+    <Profile name="ingameMenuFieldsOfStoriesMenuHeaderIcon" extends="fs25_menuHeaderIcon">
+        <imageFilename value="icon_Fields_of_Stories.dds"/>
+    </Profile>
+
+</GUIProfiles>

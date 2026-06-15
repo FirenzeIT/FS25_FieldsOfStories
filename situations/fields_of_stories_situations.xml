@@ -1,0 +1,1958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<situations>
+  <situation id="59">
+    <type>Work</type>
+    <intent>Assess fire risk</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>0</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-20 18:21:20</createdAt>
+    <updatedAt>2026-03-20 18:21:20</updatedAt>
+    <months>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+    </months>
+    <placetypes>
+      <item>roadside_trees</item>
+      <item>roadside</item>
+      <item>offroad</item>
+      <item>dirt_road</item>
+      <item>forest</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Forester</item>
+    </characterJobs>
+  </situation>
+  <situation id="54">
+    <type>Work</type>
+    <intent>assess tree and forest health</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>0</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-20 18:12:42</createdAt>
+    <updatedAt>2026-03-20 18:15:49</updatedAt>
+    <placetypes>
+      <item>roadside_trees</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Forester</item>
+    </characterJobs>
+  </situation>
+  <situation id="6">
+    <type>Work</type>
+    <intent>check vehicle for damage or misfunction</intent>
+    <roleplayDescription>Character stopped as he/she discovered a strange sound coming from the vehicle.</roleplayDescription>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>2</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-01-01 22:33:22</createdAt>
+    <updatedAt>2026-05-31 01:01:51</updatedAt>
+    <placetypes>
+      <item>roadside</item>
+      <item>public_place</item>
+      <item>dirt_road</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <endActions>
+      <item>MISSION_BUY_REPLACEMENT_PARTS</item>
+      <item>END</item>
+    </endActions>
+  </situation>
+  <situation id="47">
+    <type>Idle</type>
+    <intent>do a small workout</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>2</minFrequency>
+    <vehicles>no</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-16 21:29:40</createdAt>
+    <updatedAt>2026-04-11 13:19:00</updatedAt>
+    <placetypes>
+      <item>dirt_road</item>
+      <item>forest</item>
+      <item>public_relax_place</item>
+    </placetypes>
+  </situation>
+  <situation id="74">
+    <type>Idle</type>
+    <intent>Drescher auftanken</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <daytime>evening</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-05-14 17:07:34</createdAt>
+    <updatedAt>2026-05-17 14:56:48</updatedAt>
+    <months>
+      <item>7</item>
+      <item>8</item>
+    </months>
+    <placetypes>
+      <item>gas_station</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Combine</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="73">
+    <type>Work</type>
+    <intent>Drescher Staub ausblasen</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>evening</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-05-14 17:05:15</createdAt>
+    <updatedAt>2026-05-31 01:03:00</updatedAt>
+    <months>
+      <item>7</item>
+      <item>8</item>
+    </months>
+    <placetypes>
+      <item>character_homebase</item>
+    </placetypes>
+    <placeSizes>
+      <item>large_area</item>
+    </placeSizes>
+    <vehicleTypes>
+      <item>Combine</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="58">
+    <type>Work</type>
+    <intent>engage with logging contractors</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>3</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>4</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-20 18:19:57</createdAt>
+    <updatedAt>2026-03-20 18:19:57</updatedAt>
+    <placetypes>
+      <item>industry</item>
+      <item>public_place</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Forester</item>
+    </characterJobs>
+  </situation>
+  <situation id="66">
+    <type>Fieldwork</type>
+    <intent>Fertilizing first stage after sowing with manure</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <fieldwork>manure_spreading</fieldwork>
+    <createdAt>2026-03-29 10:02:16</createdAt>
+    <updatedAt>2026-05-24 13:27:46</updatedAt>
+    <vehicleTypes>
+      <item>Tractor Large</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Manure Spreader</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerFruitTypeIndex>
+      <item>WHEAT</item>
+      <item>BARLEY</item>
+      <item>CANOLA</item>
+      <item>OAT</item>
+      <item>MAIZE</item>
+      <item>SUNFLOWER</item>
+      <item>SOYBEAN</item>
+      <item>POTATO</item>
+      <item>SUGARBEET</item>
+      <item>SUGARCANE</item>
+      <item>SORGHUM</item>
+      <item>BEETROOT</item>
+      <item>CARROT</item>
+      <item>PARSNIP</item>
+      <item>GREENBEAN</item>
+      <item>PEA</item>
+      <item>SPINACH</item>
+    </triggerFruitTypeIndex>
+    <triggerGrowthState>
+      <item>greenSmall</item>
+    </triggerGrowthState>
+    <triggerGroundType>
+      <item>8</item>
+      <item>9</item>
+      <item>10</item>
+    </triggerGroundType>
+    <triggerSprayLevel>
+      <item>0</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="20">
+    <type>Fieldwork</type>
+    <intent>Fertilizing first stage after sowing with slurry</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>slurry_spreading</fieldwork>
+    <createdAt>2026-01-27 22:23:31</createdAt>
+    <updatedAt>2026-05-24 13:28:00</updatedAt>
+    <vehicleTypes>
+      <item>Tractor Large</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Slurry Tank</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerFruitTypeIndex>
+      <item>WHEAT</item>
+      <item>BARLEY</item>
+      <item>CANOLA</item>
+      <item>OAT</item>
+      <item>MAIZE</item>
+      <item>SUNFLOWER</item>
+      <item>SOYBEAN</item>
+      <item>POTATO</item>
+      <item>SUGARBEET</item>
+      <item>SUGARCANE</item>
+      <item>SORGHUM</item>
+      <item>BEETROOT</item>
+      <item>CARROT</item>
+      <item>PARSNIP</item>
+      <item>GREENBEAN</item>
+      <item>PEA</item>
+      <item>SPINACH</item>
+    </triggerFruitTypeIndex>
+    <triggerGrowthState>
+      <item>greenSmall</item>
+    </triggerGrowthState>
+    <triggerGroundType>
+      <item>8</item>
+      <item>9</item>
+      <item>10</item>
+    </triggerGroundType>
+    <triggerSprayLevel>
+      <item>0</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="67">
+    <type>Fieldwork</type>
+    <intent>Fertilizing first stage before sowing with manure</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>manure_spreading</fieldwork>
+    <createdAt>2026-03-29 10:04:51</createdAt>
+    <updatedAt>2026-05-24 13:28:47</updatedAt>
+    <vehicleTypes>
+      <item>Tractor Large</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Manure Spreader</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerGroundType>
+      <item>3</item>
+      <item>4</item>
+      <item>6</item>
+    </triggerGroundType>
+    <triggerSprayLevel>
+      <item>0</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="27">
+    <type>Fieldwork</type>
+    <intent>Fertilizing first stage before sowing with slurry</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>allowed</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>slurry_spreading</fieldwork>
+    <createdAt>2026-02-02 22:47:35</createdAt>
+    <updatedAt>2026-05-24 13:28:34</updatedAt>
+    <vehicleTypes>
+      <item>Tractor Large</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Slurry Tank</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerGroundType>
+      <item>3</item>
+      <item>4</item>
+      <item>6</item>
+    </triggerGroundType>
+    <triggerSprayLevel>
+      <item>0</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="45">
+    <type>Idle</type>
+    <intent>go for a walk</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-16 21:09:11</createdAt>
+    <updatedAt>2026-03-16 21:09:11</updatedAt>
+    <placetypes>
+      <item>dirt_road</item>
+      <item>forest</item>
+      <item>public_relax_place</item>
+    </placetypes>
+    <characterRoles>
+      <item>Civilian</item>
+      <item>Family Member</item>
+    </characterRoles>
+  </situation>
+  <situation id="71">
+    <type>Work</type>
+    <intent>Güllefass abschmieren, Öl nachfüllen und Gestänge einstellen</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>evening</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-05-14 16:44:48</createdAt>
+    <updatedAt>2026-05-31 01:03:21</updatedAt>
+    <months>
+      <item>3</item>
+      <item>4</item>
+      <item>9</item>
+      <item>10</item>
+    </months>
+    <placetypes>
+      <item>character_homebase</item>
+    </placetypes>
+    <placeSizes>
+      <item>large_area</item>
+    </placeSizes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Slurry Tank</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="18">
+    <type>Fieldwork</type>
+    <intent>Harvest grain</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>harvest</fieldwork>
+    <createdAt>2026-01-27 22:22:05</createdAt>
+    <updatedAt>2026-05-15 21:13:34</updatedAt>
+    <vehicleTypes>
+      <item>Attachment</item>
+      <item>Combine</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Header / Cutter</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerFruitTypeIndex>
+      <item>WHEAT</item>
+      <item>WINTERWHEAT</item>
+      <item>TRITICALE</item>
+      <item>SPELT</item>
+      <item>BARLEY</item>
+      <item>WINTERBARLEY</item>
+      <item>CANOLA</item>
+      <item>OAT</item>
+      <item>SOYBEAN</item>
+      <item>SORGHUM</item>
+    </triggerFruitTypeIndex>
+    <triggerGrowthState>
+      <item>harvestReady</item>
+    </triggerGrowthState>
+  </situation>
+  <situation id="49">
+    <type>Idle</type>
+    <intent>have a picnic</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>2</minFrequency>
+    <vehicles>no</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-16 21:45:45</createdAt>
+    <updatedAt>2026-03-16 21:45:45</updatedAt>
+    <months>
+      <item>5</item>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+    </months>
+    <placetypes>
+      <item>private_relax_place</item>
+    </placetypes>
+    <characterRoles>
+      <item>Civilian</item>
+    </characterRoles>
+  </situation>
+  <situation id="61">
+    <type>Work</type>
+    <intent>Inspect campfires and barbecue spots, enforce fire regulations</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>0</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>evening</daytime>
+    <maxDuration>4</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-20 18:25:22</createdAt>
+    <updatedAt>2026-03-20 18:25:22</updatedAt>
+    <months>
+      <item>4</item>
+      <item>5</item>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+      <item>10</item>
+    </months>
+    <placetypes>
+      <item>public_place</item>
+      <item>public_relax_place</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Forester</item>
+    </characterJobs>
+  </situation>
+  <situation id="60">
+    <type>Work</type>
+    <intent>mark trees for thinning or harvest</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-20 18:23:46</createdAt>
+    <updatedAt>2026-03-20 18:23:46</updatedAt>
+    <placetypes>
+      <item>roadside_trees</item>
+      <item>forest</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Forester</item>
+    </characterJobs>
+  </situation>
+  <situation id="55">
+    <type>Work</type>
+    <intent>measure and record trees</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>0</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-20 18:14:12</createdAt>
+    <updatedAt>2026-03-20 18:15:33</updatedAt>
+    <placetypes>
+      <item>roadside_trees</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Forester</item>
+    </characterJobs>
+  </situation>
+  <situation id="50">
+    <type>Work</type>
+    <intent>meet local residents to discuss town development</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-16 22:00:44</createdAt>
+    <updatedAt>2026-03-16 22:00:44</updatedAt>
+    <placetypes>
+      <item>public_place</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Mayor</item>
+    </characterJobs>
+  </situation>
+  <situation id="65">
+    <type>Work</type>
+    <intent>Meets with the local energy company to review the expansion of the district heating network at the location.</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>4</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-26 18:47:09</createdAt>
+    <updatedAt>2026-03-26 18:47:09</updatedAt>
+    <placetypes>
+      <item>public_infrastructure</item>
+      <item>industry</item>
+      <item>public_place</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Mayor</item>
+    </characterJobs>
+  </situation>
+  <situation id="64">
+    <type>Work</type>
+    <intent>meets with the telecommunication Company to review the expansion of the fiber optic network at the location</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>4</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-26 18:43:14</createdAt>
+    <updatedAt>2026-03-26 18:43:14</updatedAt>
+    <placetypes>
+      <item>public_infrastructure</item>
+      <item>industry</item>
+      <item>public_place</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Mayor</item>
+    </characterJobs>
+  </situation>
+  <situation id="56">
+    <type>Work</type>
+    <intent>monitor wildlife and habitats</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>0</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-20 18:15:09</createdAt>
+    <updatedAt>2026-03-20 18:15:09</updatedAt>
+    <placetypes>
+      <item>roadside_trees</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Forester</item>
+    </characterJobs>
+  </situation>
+  <situation id="15">
+    <type>Assistance</type>
+    <intent>park at the shop now and want to buy some daily goods</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-01-12 00:10:09</createdAt>
+    <updatedAt>2026-03-15 16:18:27</updatedAt>
+    <placetypes>
+      <item>shop</item>
+      <item>gas_station</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+  </situation>
+  <situation id="43">
+    <type>Work</type>
+    <intent>park the car at the machinery dealer to aquire information about new machinery</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 18:33:43</createdAt>
+    <updatedAt>2026-03-15 18:33:43</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+  </situation>
+  <situation id="40">
+    <type>Assistance</type>
+    <intent>park the car at the workshop to request a modification, inspection or repair of the car</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 18:08:42</createdAt>
+    <updatedAt>2026-03-15 18:08:42</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+  </situation>
+  <situation id="41">
+    <type>Work</type>
+    <intent>park the combine at the workshop / machine dealer for the inspection and maintenance of the combine during harvest</intent>
+    <occurrence>regular</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>evening</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-15 18:21:31</createdAt>
+    <updatedAt>2026-05-17 14:47:00</updatedAt>
+    <months>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+    </months>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Combine</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="42">
+    <type>Work</type>
+    <intent>park the combine at the workshop to request a modification, inspection or repair of the combine</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>4</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>4</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 18:26:48</createdAt>
+    <updatedAt>2026-05-17 14:47:40</updatedAt>
+    <months>
+      <item>5</item>
+      <item>11</item>
+    </months>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Combine</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="31">
+    <type>Assistance</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the cultivator</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 16:35:18</createdAt>
+    <updatedAt>2026-05-17 14:48:29</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Cultivator</item>
+      <item>Weight</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="39">
+    <type>Assistance</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the disc harrow</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 18:02:11</createdAt>
+    <updatedAt>2026-05-17 14:49:44</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Disc Harrow</item>
+      <item>Weight</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="36">
+    <type>Work</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the fertilizer spreader</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 17:54:07</createdAt>
+    <updatedAt>2026-05-17 14:50:12</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Fertilizer Spreader</item>
+      <item>Weight</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="38">
+    <type>Assistance</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the manure spreader</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 18:00:10</createdAt>
+    <updatedAt>2026-05-17 14:50:56</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Manure Spreader</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="32">
+    <type>Assistance</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the plow</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 16:42:35</createdAt>
+    <updatedAt>2026-05-17 14:46:30</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Plow</item>
+      <item>Weight</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="33">
+    <type>Work</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the seeder</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 16:43:25</createdAt>
+    <updatedAt>2026-05-17 14:51:38</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Seeder</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="37">
+    <type>Work</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the slurry tank</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 17:56:39</createdAt>
+    <updatedAt>2026-05-17 14:52:29</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Slurry Tank</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="13">
+    <type>Idle</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the tractor</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>3</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-01-12 00:05:59</createdAt>
+    <updatedAt>2026-05-17 14:59:10</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="34">
+    <type>Assistance</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the trailer</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 16:47:21</createdAt>
+    <updatedAt>2026-05-17 15:01:52</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Trailer</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="35">
+    <type>Assistance</type>
+    <intent>park the tractor at the workshop to request a modification, inspection or repair of the weed sprayer</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-03-15 16:52:58</createdAt>
+    <updatedAt>2026-05-17 15:02:55</updatedAt>
+    <placetypes>
+      <item>workshop</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Sprayer</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+      <item>Business Partner</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+      <item>Agricultural Contractor</item>
+    </characterJobs>
+  </situation>
+  <situation id="57">
+    <type>Work</type>
+    <intent>plan timber harvests</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>3</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>3</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-20 18:18:35</createdAt>
+    <updatedAt>2026-03-20 18:18:35</updatedAt>
+    <placetypes>
+      <item>roadside_trees</item>
+      <item>roadside</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Forester</item>
+    </characterJobs>
+  </situation>
+  <situation id="48">
+    <type>Idle</type>
+    <intent>play with the kids</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>2</minFrequency>
+    <vehicles>no</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-16 21:43:22</createdAt>
+    <updatedAt>2026-03-16 21:43:22</updatedAt>
+    <placetypes>
+      <item>private_relax_place</item>
+    </placetypes>
+    <characterRoles>
+      <item>Civilian</item>
+    </characterRoles>
+  </situation>
+  <situation id="75">
+    <type>Fieldwork</type>
+    <intent>Plow dead crops</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>plow</fieldwork>
+    <createdAt>2026-05-30 00:26:40</createdAt>
+    <updatedAt>2026-05-30 00:27:44</updatedAt>
+    <vehicleTypes>
+      <item>Tractor Large</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Plow</item>
+      <item>Weight</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerGrowthState>
+      <item>dead</item>
+    </triggerGrowthState>
+  </situation>
+  <situation id="29">
+    <type>Work</type>
+    <intent>prepare the harvester / combine for upcoming grain harvest</intent>
+    <occurrence>regular</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>morning</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-15 15:55:28</createdAt>
+    <updatedAt>2026-05-31 01:03:38</updatedAt>
+    <months>
+      <item>7</item>
+      <item>8</item>
+    </months>
+    <placetypes>
+      <item>character_homebase</item>
+    </placetypes>
+    <placeSizes>
+      <item>large_area</item>
+    </placeSizes>
+    <vehicleTypes>
+      <item>Combine</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+  </situation>
+  <situation id="30">
+    <type>Assistance</type>
+    <intent>prepare the tractor for the day</intent>
+    <occurrence>regular</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>morning</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-15 15:58:14</createdAt>
+    <updatedAt>2026-05-31 01:04:17</updatedAt>
+    <months>
+      <item>3</item>
+      <item>4</item>
+      <item>5</item>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+      <item>10</item>
+    </months>
+    <placetypes>
+      <item>character_homebase</item>
+    </placetypes>
+    <placeSizes>
+      <item>large_area</item>
+    </placeSizes>
+    <vehicleTypes>
+      <item>Tractor</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+  </situation>
+  <situation id="51">
+    <type>Work</type>
+    <intent>pull over for a phone call</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-17 07:03:44</createdAt>
+    <updatedAt>2026-03-17 07:03:44</updatedAt>
+    <placetypes>
+      <item>roadside</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+  </situation>
+  <situation id="52">
+    <type>Work</type>
+    <intent>pull over to check something on the phone</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-17 07:06:15</createdAt>
+    <updatedAt>2026-03-28 16:11:45</updatedAt>
+    <placetypes>
+      <item>roadside</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+  </situation>
+  <situation id="53">
+    <type>Work</type>
+    <intent>pull over to check the trailer connection</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-17 07:10:34</createdAt>
+    <updatedAt>2026-03-17 07:10:34</updatedAt>
+    <months>
+      <item>1</item>
+      <item>2</item>
+      <item>3</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+    </months>
+    <placetypes>
+      <item>roadside</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Trailer</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+  </situation>
+  <situation id="63">
+    <type>Work</type>
+    <intent>putting up posters for the next mayoral election</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>12</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>6</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-26 18:36:06</createdAt>
+    <updatedAt>2026-03-26 18:36:06</updatedAt>
+    <placetypes>
+      <item>public_place</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Mayor</item>
+    </characterJobs>
+  </situation>
+  <situation id="44">
+    <type>Idle</type>
+    <intent>read a book</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>no</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-16 21:06:06</createdAt>
+    <updatedAt>2026-03-16 21:06:06</updatedAt>
+    <months>
+      <item>3</item>
+      <item>4</item>
+      <item>5</item>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+      <item>10</item>
+    </months>
+    <placetypes>
+      <item>private_relax_place</item>
+    </placetypes>
+    <characterRoles>
+      <item>Civilian</item>
+      <item>Family Member</item>
+    </characterRoles>
+  </situation>
+  <situation id="4">
+    <type>Idle</type>
+    <intent>relax at home</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>0</minFrequency>
+    <vehicles>no</vehicles>
+    <daytime>anytime</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-01-01 22:18:23</createdAt>
+    <updatedAt>2026-03-29 14:21:03</updatedAt>
+    <placetypes>
+      <item>character_homebase</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+  </situation>
+  <situation id="46">
+    <type>Idle</type>
+    <intent>relax with friends</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>2</minFrequency>
+    <vehicles>no</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-16 21:25:54</createdAt>
+    <updatedAt>2026-04-11 06:15:16</updatedAt>
+    <months>
+      <item>1</item>
+      <item>2</item>
+      <item>3</item>
+      <item>4</item>
+      <item>5</item>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+      <item>10</item>
+      <item>11</item>
+      <item>12</item>
+    </months>
+    <placetypes>
+      <item>character_homebase</item>
+      <item>public_relax_place</item>
+      <item>private_relax_place</item>
+    </placetypes>
+  </situation>
+  <situation id="25">
+    <type>Fieldwork</type>
+    <intent>Second stage fertilization with fertilizer spreader</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>fertilizer_spreading</fieldwork>
+    <createdAt>2026-02-02 20:36:43</createdAt>
+    <updatedAt>2026-05-24 13:28:20</updatedAt>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Fertilizer Spreader</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerFruitTypeIndex>
+      <item>WHEAT</item>
+      <item>BARLEY</item>
+      <item>CANOLA</item>
+      <item>OAT</item>
+      <item>MAIZE</item>
+      <item>SUNFLOWER</item>
+      <item>SOYBEAN</item>
+      <item>POTATO</item>
+      <item>SUGARBEET</item>
+      <item>SORGHUM</item>
+      <item>BEETROOT</item>
+      <item>CARROT</item>
+      <item>PARSNIP</item>
+      <item>GREENBEAN</item>
+      <item>PEA</item>
+      <item>SPINACH</item>
+    </triggerFruitTypeIndex>
+    <triggerGrowthState>
+      <item>greenMiddle</item>
+    </triggerGrowthState>
+    <triggerSprayLevel>
+      <item>1</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="22">
+    <type>Fieldwork</type>
+    <intent>Seed: Barley</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>seed</fieldwork>
+    <createdAt>2026-01-31 11:26:02</createdAt>
+    <updatedAt>2026-03-25 16:58:02</updatedAt>
+    <months>
+      <item>9</item>
+      <item>10</item>
+    </months>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Seeder</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <seedFruitTypeIndex>BARLEY</seedFruitTypeIndex>
+    <triggerGroundType>
+      <item>3</item>
+      <item>4</item>
+      <item>6</item>
+    </triggerGroundType>
+    <triggerSprayLevel>
+      <item>1</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="23">
+    <type>Fieldwork</type>
+    <intent>Seed: Canola</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>seed</fieldwork>
+    <createdAt>2026-01-31 11:36:06</createdAt>
+    <updatedAt>2026-03-25 16:54:10</updatedAt>
+    <months>
+      <item>8</item>
+      <item>9</item>
+    </months>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Seeder</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <seedFruitTypeIndex>CANOLA</seedFruitTypeIndex>
+    <triggerGroundType>
+      <item>3</item>
+      <item>4</item>
+      <item>6</item>
+    </triggerGroundType>
+    <triggerSprayLevel>
+      <item>1</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="24">
+    <type>Fieldwork</type>
+    <intent>Seed: Oat</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>seed</fieldwork>
+    <createdAt>2026-01-31 11:37:33</createdAt>
+    <updatedAt>2026-03-25 16:50:59</updatedAt>
+    <months>
+      <item>3</item>
+      <item>4</item>
+    </months>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Seeder</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <seedFruitTypeIndex>OAT</seedFruitTypeIndex>
+    <triggerGroundType>
+      <item>3</item>
+      <item>4</item>
+      <item>6</item>
+    </triggerGroundType>
+  </situation>
+  <situation id="21">
+    <type>Fieldwork</type>
+    <intent>Seed: Wheat</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>seed</fieldwork>
+    <createdAt>2026-01-27 22:24:16</createdAt>
+    <updatedAt>2026-03-25 16:46:05</updatedAt>
+    <months>
+      <item>9</item>
+      <item>10</item>
+    </months>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Seeder</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <seedFruitTypeIndex>WHEAT</seedFruitTypeIndex>
+    <triggerGroundType>
+      <item>3</item>
+      <item>4</item>
+      <item>6</item>
+    </triggerGroundType>
+    <triggerSprayLevel>
+      <item>1</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="7">
+    <type>Work</type>
+    <intent>sell goods at a Selling Point</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-01-06 20:55:47</createdAt>
+    <updatedAt>2026-03-15 16:15:59</updatedAt>
+    <season>
+      <item>summer</item>
+      <item>fall</item>
+      <item>winter</item>
+    </season>
+    <months>
+      <item>1</item>
+      <item>8</item>
+      <item>9</item>
+      <item>10</item>
+      <item>11</item>
+      <item>12</item>
+    </months>
+    <placetypes>
+      <item>sell_point</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Trailer</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+  </situation>
+  <situation id="5">
+    <type>Idle</type>
+    <intent>sleep</intent>
+    <occurrence>regular</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <daytime>night</daytime>
+    <maxDuration>6</maxDuration>
+    <characterVisibility>no</characterVisibility>
+    <createdAt>2026-01-01 22:18:56</createdAt>
+    <updatedAt>2026-03-15 16:06:20</updatedAt>
+    <placetypes>
+      <item>character_homebase</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+  </situation>
+  <situation id="17">
+    <type>Fieldwork</type>
+    <intent>Soil cultivation: Harrowing / Cultivating</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>cultivate</fieldwork>
+    <createdAt>2026-01-21 22:17:29</createdAt>
+    <updatedAt>2026-03-29 22:09:38</updatedAt>
+    <vehicleTypes>
+      <item>Tractor Large</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Cultivator</item>
+      <item>Weight</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerGroundType>
+      <item>5</item>
+    </triggerGroundType>
+    <triggerSprayLevel>
+      <item>0</item>
+    </triggerSprayLevel>
+  </situation>
+  <situation id="28">
+    <type>Fieldwork</type>
+    <intent>Soil cultivation: Plowing</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <fieldwork>plow</fieldwork>
+    <createdAt>2026-02-15 22:29:29</createdAt>
+    <updatedAt>2026-05-24 12:40:42</updatedAt>
+    <vehicleTypes>
+      <item>Tractor Large</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Plow</item>
+      <item>Weight</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerGroundType>
+      <item>2</item>
+    </triggerGroundType>
+  </situation>
+  <situation id="26">
+    <type>Fieldwork</type>
+    <intent>Soil cultivation: Stubble cultivation</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>stubble_cultivation</fieldwork>
+    <createdAt>2026-02-02 21:59:56</createdAt>
+    <updatedAt>2026-05-04 23:17:40</updatedAt>
+    <vehicleTypes>
+      <item>Tractor Large</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Disc Harrow</item>
+      <item>Weight</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerGrowthState>
+      <item>harvested</item>
+    </triggerGrowthState>
+  </situation>
+  <situation id="68">
+    <type>Work</type>
+    <intent>tidy up the house</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>0</minFrequency>
+    <vehicles>no</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-29 14:22:00</createdAt>
+    <updatedAt>2026-03-29 14:22:00</updatedAt>
+  </situation>
+  <situation id="70">
+    <type>Work</type>
+    <intent>visit player to exchange tips about farm and vehicle winter preparation</intent>
+    <roleplayDescription>farmer wants to exchange about best practices for upcoming winter season.</roleplayDescription>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>4</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-04-24 20:09:07</createdAt>
+    <updatedAt>2026-05-14 19:56:29</updatedAt>
+    <months>
+      <item>10</item>
+      <item>11</item>
+    </months>
+    <placetypes>
+      <item>player_farm</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+    </vehicleTypes>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+  </situation>
+  <situation id="69">
+    <type>Work</type>
+    <intent>Visits player to exchange tips regarding the upcoming sowing and cultivation plan</intent>
+    <roleplayDescription>neighbour farmer wants to exchange with the player about best practices for upcoming season</roleplayDescription>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>6</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>3</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-04-24 20:07:26</createdAt>
+    <updatedAt>2026-05-14 19:59:53</updatedAt>
+    <months>
+      <item>1</item>
+      <item>2</item>
+      <item>3</item>
+    </months>
+    <placetypes>
+      <item>player_farm</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Tractor</item>
+    </vehicleTypes>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+  </situation>
+  <situation id="8">
+    <type>Idle</type>
+    <intent>Walking with the Dog</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>2</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>anytime</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>random</characterVisibility>
+    <createdAt>2026-01-11 22:41:28</createdAt>
+    <updatedAt>2026-01-18 14:27:38</updatedAt>
+    <placetypes>
+      <item>dirt_road</item>
+      <item>forest</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+  </situation>
+  <situation id="72">
+    <type>Work</type>
+    <intent>Wartung, Spülung und Düsentausch der Feldspritze</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>2</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>2</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-05-14 16:57:00</createdAt>
+    <updatedAt>2026-05-31 01:04:45</updatedAt>
+    <months>
+      <item>5</item>
+      <item>6</item>
+      <item>11</item>
+    </months>
+    <placetypes>
+      <item>character_homebase</item>
+    </placetypes>
+    <placeSizes>
+      <item>large_area</item>
+    </placeSizes>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Sprayer</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+  </situation>
+  <situation id="19">
+    <type>Fieldwork</type>
+    <intent>Weed spraying</intent>
+    <roleplayDescription>The Character is on his field and sprays weed.</roleplayDescription>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <vehicles>Force</vehicles>
+    <characterVisibility>in_car</characterVisibility>
+    <fieldwork>spray</fieldwork>
+    <createdAt>2026-01-27 22:22:45</createdAt>
+    <updatedAt>2026-03-21 21:34:17</updatedAt>
+    <vehicleTypes>
+      <item>Tractor</item>
+      <item>Attachment</item>
+    </vehicleTypes>
+    <attachmentCategories>
+      <item>Sprayer</item>
+    </attachmentCategories>
+    <characterRoles>
+      <item>Neighbour</item>
+    </characterRoles>
+    <characterJobs>
+      <item>Farmer</item>
+    </characterJobs>
+    <triggerFruitTypeIndex>
+      <item>WHEAT</item>
+      <item>BARLEY</item>
+      <item>CANOLA</item>
+      <item>OAT</item>
+      <item>MAIZE</item>
+      <item>SUNFLOWER</item>
+      <item>SOYBEAN</item>
+      <item>POTATO</item>
+      <item>SORGHUM</item>
+    </triggerFruitTypeIndex>
+    <triggerGrowthState>
+      <item>greenSmall</item>
+      <item>greenMiddle</item>
+    </triggerGrowthState>
+    <triggerWeedState>
+      <item>2</item>
+      <item>3</item>
+      <item>4</item>
+      <item>5</item>
+    </triggerWeedState>
+  </situation>
+  <situation id="62">
+    <type>Work</type>
+    <intent>working on maintenance of vehicles</intent>
+    <occurrence>regular</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>allowed</vehicles>
+    <daytime>day</daytime>
+    <maxDuration>10</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-03-21 00:51:41</createdAt>
+    <updatedAt>2026-03-21 01:07:59</updatedAt>
+    <placetypes>
+      <item>character_job</item>
+    </placetypes>
+    <characterJobs>
+      <item>Agricultural Machinery Dealer</item>
+    </characterJobs>
+  </situation>
+  <situation id="14">
+    <type>Assistance</type>
+    <intent>You stop to fill up your car during a normal commute.</intent>
+    <occurrence>random</occurrence>
+    <trigger>random</trigger>
+    <minFrequency>1</minFrequency>
+    <vehicles>Force</vehicles>
+    <daytime>anytime</daytime>
+    <maxDuration>1</maxDuration>
+    <characterVisibility>yes</characterVisibility>
+    <createdAt>2026-01-12 00:09:22</createdAt>
+    <updatedAt>2026-03-28 21:28:56</updatedAt>
+    <placetypes>
+      <item>gas_station</item>
+    </placetypes>
+    <vehicleTypes>
+      <item>Car</item>
+    </vehicleTypes>
+  </situation>
+</situations>

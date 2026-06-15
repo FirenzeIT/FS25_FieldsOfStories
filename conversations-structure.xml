@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversationsData>
+  <character id="6" index="1">
+    <situation id="4">
+      <variant id="3098"/>
+    </situation>
+    <situation id="5">
+      <variant id="3094"/>
+    </situation>
+    <situation id="6">
+      <variant id="3089"/>
+    </situation>
+    <situation id="8">
+      <variant id="3085"/>
+    </situation>
+    <situation id="14">
+      <variant id="3316"/>
+    </situation>
+    <situation id="15">
+      <variant id="3072"/>
+    </situation>
+    <situation id="40">
+      <variant id="3066"/>
+    </situation>
+    <situation id="44">
+      <variant id="3065"/>
+    </situation>
+    <situation id="45">
+      <variant id="3056"/>
+    </situation>
+    <situation id="46">
+      <variant id="3051"/>
+    </situation>
+    <situation id="47">
+      <variant id="3046"/>
+    </situation>
+    <situation id="51">
+      <variant id="3043"/>
+    </situation>
+    <situation id="52">
+      <variant id="3039"/>
+    </situation>
+    <situation id="68">
+      <variant id="3032"/>
+    </situation>
+    <situation id="69">
+      <variant id="3348"/>
+    </situation>
+  </character>
+  <character id="7" index="2">
+    <situation id="4">
+      <variant id="3016"/>
+    </situation>
+    <situation id="5">
+      <variant id="3010"/>
+    </situation>
+    <situation id="6">
+      <variant id="3005"/>
+    </situation>
+    <situation id="8">
+      <variant id="3000"/>
+    </situation>
+    <situation id="14">
+      <variant id="3314"/>
+    </situation>
+    <situation id="15">
+      <variant id="2991"/>
+    </situation>
+    <situation id="40">
+      <variant id="2985"/>
+    </situation>
+    <situation id="44">
+      <variant id="2984"/>
+    </situation>
+    <situation id="45">
+      <variant id="2975"/>
+    </situation>
+    <situation id="46">
+      <variant id="2973"/>
+    </situation>
+    <situation id="47">
+      <variant id="2966"/>
+    </situation>
+    <situation id="51">
+      <variant id="2960"/>
+    </situation>
+    <situation id="52">
+      <variant id="2956"/>
+    </situation>
+    <situation id="68">
+      <variant id="2951"/>
+    </situation>
+    <situation id="69">
+      <variant id="3347"/>
+    </situation>
+  </character>
+  <character id="15" index="10">
+    <situation id="4">
+      <variant id="3308"/>
+    </situation>
+    <situation id="5">
+      <variant id="3307"/>
+    </situation>
+    <situation id="6">
+      <variant id="3306"/>
+    </situation>
+    <situation id="8">
+      <variant id="3305"/>
+    </situation>
+    <situation id="14">
+      <variant id="3304"/>
+    </situation>
+    <situation id="15">
+      <variant id="3303"/>
+    </situation>
+    <situation id="40">
+      <variant id="3302"/>
+    </situation>
+    <situation id="44">
+      <variant id="3301"/>
+    </situation>
+    <situation id="45">
+      <variant id="3219"/>
+    </situation>
+    <situation id="46">
+      <variant id="3218"/>
+    </situation>
+    <situation id="47">
+      <variant id="3217"/>
+    </situation>
+    <situation id="48">
+      <variant id="3214"/>
+    </situation>
+    <situation id="49">
+      <variant id="3212"/>
+    </situation>
+    <situation id="51">
+      <variant id="3211"/>
+    </situation>
+    <situation id="52">
+      <variant id="3210"/>
+    </situation>
+    <situation id="68">
+      <variant id="3300"/>
+    </situation>
+  </character>
+  <character id="16" index="11">
+    <situation id="4">
+      <variant id="2206"/>
+    </situation>
+    <situation id="5">
+      <variant id="2201"/>
+    </situation>
+    <situation id="6">
+      <variant id="2196"/>
+    </situation>
+    <situation id="8">
+      <variant id="2191"/>
+    </situation>
+    <situation id="14">
+      <variant id="3208"/>
+    </situation>
+    <situation id="15">
+      <variant id="2181"/>
+    </situation>
+    <situation id="40">
+      <variant id="2176"/>
+    </situation>
+    <situation id="44">
+      <variant id="2171"/>
+    </situation>
+    <situation id="45">
+      <variant id="2166"/>
+    </situation>
+    <situation id="46">
+      <variant id="2161"/>
+    </situation>
+    <situation id="47">
+      <variant id="2156"/>
+    </situation>
+    <situation id="48">
+      <variant id="2151"/>
+    </situation>
+    <situation id="49">
+      <variant id="2146"/>
+    </situation>
+    <situation id="51">
+      <variant id="2141"/>
+    </situation>
+    <situation id="52">
+      <variant id="2136"/>
+    </situation>
+    <situation id="68">
+      <variant id="2131"/>
+    </situation>
+  </character>
+  <character id="18" index="13">
+    <situation id="4">
+      <variant id="2040"/>
+    </situation>
+    <situation id="5">
+      <variant id="2035"/>
+    </situation>
+    <situation id="6">
+      <variant id="2030"/>
+    </situation>
+    <situation id="8">
+      <variant id="2025"/>
+    </situation>
+    <situation id="14">
+      <variant id="3206"/>
+    </situation>
+    <situation id="15">
+      <variant id="2015"/>
+    </situation>
+    <situation id="40">
+      <variant id="2010"/>
+    </situation>
+    <situation id="46">
+      <variant id="2005"/>
+    </situation>
+    <situation id="47">
+      <variant id="2000"/>
+    </situation>
+    <situation id="51">
+      <variant id="1995"/>
+    </situation>
+    <situation id="52">
+      <variant id="1968"/>
+    </situation>
+    <situation id="54">
+      <variant id="1946"/>
+    </situation>
+    <situation id="55">
+      <variant id="1941"/>
+    </situation>
+    <situation id="56">
+      <variant id="1932"/>
+    </situation>
+    <situation id="57">
+      <variant id="1927"/>
+    </situation>
+    <situation id="58">
+      <variant id="1926"/>
+    </situation>
+    <situation id="59">
+      <variant id="1917"/>
+    </situation>
+    <situation id="60">
+      <variant id="1912"/>
+    </situation>
+    <situation id="61">
+      <variant id="1907"/>
+    </situation>
+    <situation id="68">
+      <variant id="1902"/>
+    </situation>
+  </character>
+  <character id="19" index="14">
+    <situation id="4">
+      <variant id="1886"/>
+    </situation>
+    <situation id="5">
+      <variant id="1881"/>
+    </situation>
+    <situation id="6">
+      <variant id="1876"/>
+    </situation>
+    <situation id="8">
+      <variant id="1871"/>
+    </situation>
+    <situation id="14">
+      <variant id="3205"/>
+    </situation>
+    <situation id="15">
+      <variant id="1861"/>
+    </situation>
+    <situation id="40">
+      <variant id="1851"/>
+    </situation>
+    <situation id="46">
+      <variant id="1846"/>
+    </situation>
+    <situation id="47">
+      <variant id="1841"/>
+    </situation>
+    <situation id="50">
+      <variant id="1836"/>
+    </situation>
+    <situation id="51">
+      <variant id="1831"/>
+    </situation>
+    <situation id="52">
+      <variant id="1830"/>
+    </situation>
+    <situation id="63">
+      <variant id="1821"/>
+    </situation>
+    <situation id="64">
+      <variant id="1816"/>
+    </situation>
+    <situation id="65">
+      <variant id="1811"/>
+    </situation>
+    <situation id="68">
+      <variant id="1806"/>
+    </situation>
+  </character>
+  <character id="20" index="15">
+    <situation id="4">
+      <variant id="1790"/>
+    </situation>
+    <situation id="5">
+      <variant id="1785"/>
+    </situation>
+    <situation id="6">
+      <variant id="1780"/>
+    </situation>
+    <situation id="8">
+      <variant id="1775"/>
+    </situation>
+    <situation id="14">
+      <variant id="3204"/>
+    </situation>
+    <situation id="15">
+      <variant id="1768"/>
+    </situation>
+    <situation id="40">
+      <variant id="1755"/>
+    </situation>
+    <situation id="46">
+      <variant id="1750"/>
+    </situation>
+    <situation id="47">
+      <variant id="1745"/>
+    </situation>
+    <situation id="51">
+      <variant id="1740"/>
+    </situation>
+    <situation id="52">
+      <variant id="1735"/>
+    </situation>
+    <situation id="68">
+      <variant id="1730"/>
+    </situation>
+  </character>
+  <character id="21" index="16">
+    <situation id="4">
+      <variant id="1714"/>
+    </situation>
+    <situation id="5">
+      <variant id="1709"/>
+    </situation>
+    <situation id="6">
+      <variant id="1672"/>
+    </situation>
+    <situation id="8">
+      <variant id="1668"/>
+    </situation>
+    <situation id="14">
+      <variant id="3203"/>
+    </situation>
+    <situation id="15">
+      <variant id="1654"/>
+    </situation>
+    <situation id="40">
+      <variant id="1647"/>
+    </situation>
+    <situation id="46">
+      <variant id="1631"/>
+    </situation>
+    <situation id="47">
+      <variant id="1623"/>
+    </situation>
+    <situation id="51">
+      <variant id="1621"/>
+    </situation>
+    <situation id="52">
+      <variant id="1609"/>
+    </situation>
+    <situation id="62">
+      <variant id="1603"/>
+    </situation>
+    <situation id="68">
+      <variant id="1704"/>
+    </situation>
+  </character>
+  <character id="22" index="17">
+    <situation id="4">
+      <variant id="1589"/>
+    </situation>
+    <situation id="5">
+      <variant id="3368"/>
+    </situation>
+    <situation id="6">
+      <variant id="1573"/>
+    </situation>
+    <situation id="8">
+      <variant id="1569"/>
+    </situation>
+    <situation id="13">
+      <variant id="3363"/>
+    </situation>
+    <situation id="14">
+      <variant id="3202"/>
+    </situation>
+    <situation id="15">
+      <variant id="3106"/>
+    </situation>
+    <situation id="31">
+      <variant id="3362"/>
+    </situation>
+    <situation id="32">
+      <variant id="3361"/>
+    </situation>
+    <situation id="33">
+      <variant id="3360"/>
+    </situation>
+    <situation id="34">
+      <variant id="3359"/>
+    </situation>
+    <situation id="35">
+      <variant id="3358"/>
+    </situation>
+    <situation id="36">
+      <variant id="3357"/>
+    </situation>
+    <situation id="37">
+      <variant id="3356"/>
+    </situation>
+    <situation id="38">
+      <variant id="3355"/>
+    </situation>
+    <situation id="39">
+      <variant id="3354"/>
+    </situation>
+    <situation id="40">
+      <variant id="1469"/>
+    </situation>
+    <situation id="41">
+      <variant id="3353"/>
+    </situation>
+    <situation id="42">
+      <variant id="3349"/>
+    </situation>
+    <situation id="46">
+      <variant id="1461"/>
+    </situation>
+    <situation id="47">
+      <variant id="1458"/>
+    </situation>
+    <situation id="51">
+      <variant id="1451"/>
+    </situation>
+    <situation id="52">
+      <variant id="1448"/>
+    </situation>
+    <situation id="68">
+      <variant id="1699"/>
+    </situation>
+    <situation id="71">
+      <variant id="3352"/>
+    </situation>
+    <situation id="73">
+      <variant id="3351"/>
+    </situation>
+    <situation id="74">
+      <variant id="3350"/>
+    </situation>
+  </character>
+  <character id="23" index="18">
+    <situation id="4">
+      <variant id="1382"/>
+    </situation>
+    <situation id="5">
+      <variant id="1363"/>
+    </situation>
+    <situation id="6">
+      <variant id="3318"/>
+    </situation>
+    <situation id="7">
+      <variant id="1351"/>
+    </situation>
+    <situation id="8">
+      <variant id="1348"/>
+    </situation>
+    <situation id="13">
+      <variant id="1342"/>
+    </situation>
+    <situation id="14">
+      <variant id="3201"/>
+    </situation>
+    <situation id="15">
+      <variant id="1330"/>
+    </situation>
+    <situation id="17">
+      <variant id="3299"/>
+    </situation>
+    <situation id="18">
+      <variant id="3298"/>
+    </situation>
+    <situation id="19">
+      <variant id="3297"/>
+    </situation>
+    <situation id="20">
+      <variant id="3296"/>
+    </situation>
+    <situation id="21">
+      <variant id="3295"/>
+    </situation>
+    <situation id="22">
+      <variant id="3294"/>
+    </situation>
+    <situation id="23">
+      <variant id="3293"/>
+    </situation>
+    <situation id="24">
+      <variant id="3292"/>
+    </situation>
+    <situation id="25">
+      <variant id="3291"/>
+    </situation>
+    <situation id="26">
+      <variant id="3290"/>
+    </situation>
+    <situation id="27">
+      <variant id="3289"/>
+    </situation>
+    <situation id="28">
+      <variant id="1312"/>
+    </situation>
+    <situation id="29">
+      <variant id="1309"/>
+    </situation>
+    <situation id="30">
+      <variant id="1301"/>
+    </situation>
+    <situation id="31">
+      <variant id="1298"/>
+    </situation>
+    <situation id="32">
+      <variant id="1291"/>
+    </situation>
+    <situation id="33">
+      <variant id="1283"/>
+    </situation>
+    <situation id="34">
+      <variant id="1280"/>
+    </situation>
+    <situation id="35">
+      <variant id="1273"/>
+    </situation>
+    <situation id="36">
+      <variant id="1269"/>
+    </situation>
+    <situation id="37">
+      <variant id="1262"/>
+    </situation>
+    <situation id="38">
+      <variant id="1253"/>
+    </situation>
+    <situation id="39">
+      <variant id="1250"/>
+    </situation>
+    <situation id="40">
+      <variant id="1247"/>
+    </situation>
+    <situation id="41">
+      <variant id="1243"/>
+    </situation>
+    <situation id="42">
+      <variant id="1233"/>
+    </situation>
+    <situation id="43">
+      <variant id="1230"/>
+    </situation>
+    <situation id="46">
+      <variant id="1227"/>
+    </situation>
+    <situation id="47">
+      <variant id="1223"/>
+    </situation>
+    <situation id="51">
+      <variant id="1212"/>
+    </situation>
+    <situation id="52">
+      <variant id="1209"/>
+    </situation>
+    <situation id="53">
+      <variant id="1206"/>
+    </situation>
+    <situation id="66">
+      <variant id="3288"/>
+    </situation>
+    <situation id="67">
+      <variant id="3287"/>
+    </situation>
+    <situation id="68">
+      <variant id="1692"/>
+    </situation>
+    <situation id="69">
+      <variant id="3346"/>
+    </situation>
+    <situation id="70">
+      <variant id="3345"/>
+    </situation>
+    <situation id="71">
+      <variant id="3335"/>
+    </situation>
+    <situation id="72">
+      <variant id="3334"/>
+    </situation>
+    <situation id="73">
+      <variant id="3333"/>
+    </situation>
+    <situation id="74">
+      <variant id="3332"/>
+    </situation>
+    <situation id="75">
+      <variant id="3367"/>
+    </situation>
+  </character>
+  <character id="24" index="19">
+    <situation id="4">
+      <variant id="1192"/>
+    </situation>
+    <situation id="5">
+      <variant id="1189"/>
+    </situation>
+    <situation id="6">
+      <variant id="1182"/>
+    </situation>
+    <situation id="7">
+      <variant id="1178"/>
+    </situation>
+    <situation id="8">
+      <variant id="3344"/>
+    </situation>
+    <situation id="13">
+      <variant id="1168"/>
+    </situation>
+    <situation id="14">
+      <variant id="3200"/>
+    </situation>
+    <situation id="15">
+      <variant id="1159"/>
+    </situation>
+    <situation id="17">
+      <variant id="3284"/>
+    </situation>
+    <situation id="18">
+      <variant id="3283"/>
+    </situation>
+    <situation id="19">
+      <variant id="3282"/>
+    </situation>
+    <situation id="20">
+      <variant id="3281"/>
+    </situation>
+    <situation id="21">
+      <variant id="3280"/>
+    </situation>
+    <situation id="22">
+      <variant id="3279"/>
+    </situation>
+    <situation id="23">
+      <variant id="3278"/>
+    </situation>
+    <situation id="24">
+      <variant id="3277"/>
+    </situation>
+    <situation id="25">
+      <variant id="3276"/>
+    </situation>
+    <situation id="26">
+      <variant id="3275"/>
+    </situation>
+    <situation id="27">
+      <variant id="3274"/>
+    </situation>
+    <situation id="28">
+      <variant id="1102"/>
+    </situation>
+    <situation id="29">
+      <variant id="1099"/>
+    </situation>
+    <situation id="30">
+      <variant id="1093"/>
+    </situation>
+    <situation id="31">
+      <variant id="1083"/>
+    </situation>
+    <situation id="32">
+      <variant id="1080"/>
+    </situation>
+    <situation id="33">
+      <variant id="1073"/>
+    </situation>
+    <situation id="34">
+      <variant id="1070"/>
+    </situation>
+    <situation id="35">
+      <variant id="1063"/>
+    </situation>
+    <situation id="36">
+      <variant id="1062"/>
+    </situation>
+    <situation id="37">
+      <variant id="1053"/>
+    </situation>
+    <situation id="38">
+      <variant id="1050"/>
+    </situation>
+    <situation id="39">
+      <variant id="1042"/>
+    </situation>
+    <situation id="40">
+      <variant id="1039"/>
+    </situation>
+    <situation id="41">
+      <variant id="1033"/>
+    </situation>
+    <situation id="42">
+      <variant id="1029"/>
+    </situation>
+    <situation id="43">
+      <variant id="1022"/>
+    </situation>
+    <situation id="46">
+      <variant id="1019"/>
+    </situation>
+    <situation id="47">
+      <variant id="1013"/>
+    </situation>
+    <situation id="51">
+      <variant id="1008"/>
+    </situation>
+    <situation id="52">
+      <variant id="1002"/>
+    </situation>
+    <situation id="53">
+      <variant id="998"/>
+    </situation>
+    <situation id="66">
+      <variant id="3273"/>
+    </situation>
+    <situation id="67">
+      <variant id="3272"/>
+    </situation>
+    <situation id="68">
+      <variant id="1687"/>
+    </situation>
+    <situation id="69">
+      <variant id="3341"/>
+    </situation>
+    <situation id="70">
+      <variant id="3340"/>
+    </situation>
+    <situation id="71">
+      <variant id="3331"/>
+    </situation>
+    <situation id="72">
+      <variant id="3330"/>
+    </situation>
+    <situation id="73">
+      <variant id="3329"/>
+    </situation>
+    <situation id="74">
+      <variant id="3328"/>
+    </situation>
+    <situation id="75">
+      <variant id="3366"/>
+    </situation>
+  </character>
+  <character id="25" index="20">
+    <situation id="4">
+      <variant id="988"/>
+    </situation>
+    <situation id="5">
+      <variant id="981"/>
+    </situation>
+    <situation id="6">
+      <variant id="978"/>
+    </situation>
+    <situation id="7">
+      <variant id="973"/>
+    </situation>
+    <situation id="8">
+      <variant id="968"/>
+    </situation>
+    <situation id="13">
+      <variant id="963"/>
+    </situation>
+    <situation id="14">
+      <variant id="3199"/>
+    </situation>
+    <situation id="15">
+      <variant id="953"/>
+    </situation>
+    <situation id="17">
+      <variant id="3269"/>
+    </situation>
+    <situation id="18">
+      <variant id="3268"/>
+    </situation>
+    <situation id="19">
+      <variant id="3267"/>
+    </situation>
+    <situation id="20">
+      <variant id="3266"/>
+    </situation>
+    <situation id="21">
+      <variant id="3265"/>
+    </situation>
+    <situation id="22">
+      <variant id="3264"/>
+    </situation>
+    <situation id="23">
+      <variant id="3263"/>
+    </situation>
+    <situation id="24">
+      <variant id="3262"/>
+    </situation>
+    <situation id="25">
+      <variant id="3261"/>
+    </situation>
+    <situation id="26">
+      <variant id="3260"/>
+    </situation>
+    <situation id="27">
+      <variant id="3259"/>
+    </situation>
+    <situation id="28">
+      <variant id="908"/>
+    </situation>
+    <situation id="29">
+      <variant id="903"/>
+    </situation>
+    <situation id="30">
+      <variant id="898"/>
+    </situation>
+    <situation id="31">
+      <variant id="891"/>
+    </situation>
+    <situation id="32">
+      <variant id="883"/>
+    </situation>
+    <situation id="33">
+      <variant id="878"/>
+    </situation>
+    <situation id="34">
+      <variant id="872"/>
+    </situation>
+    <situation id="35">
+      <variant id="863"/>
+    </situation>
+    <situation id="36">
+      <variant id="862"/>
+    </situation>
+    <situation id="37">
+      <variant id="853"/>
+    </situation>
+    <situation id="38">
+      <variant id="850"/>
+    </situation>
+    <situation id="39">
+      <variant id="843"/>
+    </situation>
+    <situation id="40">
+      <variant id="839"/>
+    </situation>
+    <situation id="41">
+      <variant id="833"/>
+    </situation>
+    <situation id="42">
+      <variant id="832"/>
+    </situation>
+    <situation id="43">
+      <variant id="821"/>
+    </situation>
+    <situation id="46">
+      <variant id="818"/>
+    </situation>
+    <situation id="47">
+      <variant id="812"/>
+    </situation>
+    <situation id="51">
+      <variant id="803"/>
+    </situation>
+    <situation id="52">
+      <variant id="802"/>
+    </situation>
+    <situation id="53">
+      <variant id="797"/>
+    </situation>
+    <situation id="66">
+      <variant id="3258"/>
+    </situation>
+    <situation id="67">
+      <variant id="3257"/>
+    </situation>
+    <situation id="68">
+      <variant id="1681"/>
+    </situation>
+    <situation id="69">
+      <variant id="3339"/>
+    </situation>
+    <situation id="70">
+      <variant id="3338"/>
+    </situation>
+    <situation id="71">
+      <variant id="3327"/>
+    </situation>
+    <situation id="72">
+      <variant id="3326"/>
+    </situation>
+    <situation id="73">
+      <variant id="3325"/>
+    </situation>
+    <situation id="74">
+      <variant id="3324"/>
+    </situation>
+    <situation id="75">
+      <variant id="3365"/>
+    </situation>
+  </character>
+  <character id="26" index="21">
+    <situation id="4">
+      <variant id="1680"/>
+    </situation>
+    <situation id="5">
+      <variant id="1990"/>
+    </situation>
+    <situation id="6">
+      <variant id="3343"/>
+    </situation>
+    <situation id="7">
+      <variant id="1985"/>
+    </situation>
+    <situation id="8">
+      <variant id="1980"/>
+    </situation>
+    <situation id="13">
+      <variant id="441"/>
+    </situation>
+    <situation id="14">
+      <variant id="3198"/>
+    </situation>
+    <situation id="15">
+      <variant id="1429"/>
+    </situation>
+    <situation id="17">
+      <variant id="3256"/>
+    </situation>
+    <situation id="18">
+      <variant id="3255"/>
+    </situation>
+    <situation id="19">
+      <variant id="3254"/>
+    </situation>
+    <situation id="20">
+      <variant id="3245"/>
+    </situation>
+    <situation id="21">
+      <variant id="3342"/>
+    </situation>
+    <situation id="22">
+      <variant id="3253"/>
+    </situation>
+    <situation id="23">
+      <variant id="3252"/>
+    </situation>
+    <situation id="24">
+      <variant id="3251"/>
+    </situation>
+    <situation id="25">
+      <variant id="3250"/>
+    </situation>
+    <situation id="26">
+      <variant id="3249"/>
+    </situation>
+    <situation id="27">
+      <variant id="3248"/>
+    </situation>
+    <situation id="28">
+      <variant id="1385"/>
+    </situation>
+    <situation id="29">
+      <variant id="782"/>
+    </situation>
+    <situation id="30">
+      <variant id="772"/>
+    </situation>
+    <situation id="31">
+      <variant id="769"/>
+    </situation>
+    <situation id="32">
+      <variant id="762"/>
+    </situation>
+    <situation id="33">
+      <variant id="758"/>
+    </situation>
+    <situation id="34">
+      <variant id="753"/>
+    </situation>
+    <situation id="35">
+      <variant id="752"/>
+    </situation>
+    <situation id="36">
+      <variant id="743"/>
+    </situation>
+    <situation id="37">
+      <variant id="742"/>
+    </situation>
+    <situation id="38">
+      <variant id="737"/>
+    </situation>
+    <situation id="39">
+      <variant id="731"/>
+    </situation>
+    <situation id="40">
+      <variant id="721"/>
+    </situation>
+    <situation id="41">
+      <variant id="702"/>
+    </situation>
+    <situation id="42">
+      <variant id="701"/>
+    </situation>
+    <situation id="43">
+      <variant id="698"/>
+    </situation>
+    <situation id="46">
+      <variant id="713"/>
+    </situation>
+    <situation id="47">
+      <variant id="695"/>
+    </situation>
+    <situation id="51">
+      <variant id="694"/>
+    </situation>
+    <situation id="52">
+      <variant id="3197"/>
+    </situation>
+    <situation id="53">
+      <variant id="3193"/>
+    </situation>
+    <situation id="66">
+      <variant id="3247"/>
+    </situation>
+    <situation id="67">
+      <variant id="3246"/>
+    </situation>
+    <situation id="68">
+      <variant id="1677"/>
+    </situation>
+    <situation id="69">
+      <variant id="3337"/>
+    </situation>
+    <situation id="70">
+      <variant id="3336"/>
+    </situation>
+    <situation id="71">
+      <variant id="3320"/>
+    </situation>
+    <situation id="72">
+      <variant id="3321"/>
+    </situation>
+    <situation id="73">
+      <variant id="3323"/>
+    </situation>
+    <situation id="74">
+      <variant id="3322"/>
+    </situation>
+    <situation id="75">
+      <variant id="3364"/>
+    </situation>
+  </character>
+</conversationsData>

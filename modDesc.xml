@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="109">
+    <version>1.0.0.0</version>
+	<author><![CDATA[AirFoxTwo]]></author>
+	<title>
+		<de>Fields Of Stories - Rollenspiel</de>
+		<en>Fields Of Stories - Roleplay</en>
+	</title>
+
+    <description>
+        <en><![CDATA[Fields of Stories – Living Characters in Farming Simulator
+
+Fields of Stories expands Farming Simulator with a dynamic neighborhood of currently 13 virtual characters who live and work independently in your world and interact with you.
+Each character has an individual daily routine and tasks.
+You meet characters randomly at the gas station, in the field, at the dealer, or anywhere across the map.
+Have conversations, build relationships, and support them when they need help.
+
+BETA note: Please check the roadmap and the features that are still planned. Report bugs and feature requests via GitHub.
+GitHub: https://github.com/AirFoxTwo/FS25_FieldsOfStories
+
+Features:
+- Up to 13 characters, including farmers, family members, mayor, contractor, grain trader, civilians, machinery dealer / mechanic.
+- 4 independently working farmers: work their own fields and use different machinery fleets. They have a cultivation plan and a daily schedule with priorities that they follow for every day.
+- Dynamic daily routines: each character has unique or irregular events, but also routines such as sleeping, working, shopping, and refueling.
+- Random encounters in the game world: characters move freely around the map, either at public places like the gas station, the park, the industrial area, or out in the field. (Roadmap: AutoDrive Compatibility)
+- Spoken, natural conversations: German & English, with individual voices, choice options, and random conversation topics. (Voice packs must be downloaded manually from the Fields of Stories Website.)
+- Phone calls: You receive phone calls from the farmers when they need help. You can answer the call and help them or decline the call.
+- Field contracts based on Farmers workload: The farmers need your help for specific tasks in their daily schedule. Sometimes, they can take care of it but if not, they will try to call you for help.
+- Borrowing machines: You can borrow a machine from the farmers yard, if you don´t have the right equipment for the contract. You need to pickup and return them.
+
+Characters:
+
+Farmers: 4 farmers work their fields independently. They plow, cultivate, seed, fertilize, and harvest. Each has a different, realistic machinery fleet.
+For farmers, that means getting up early. Machines are prepared early in the morning at their own farm and, depending on the month, are used until late in the evening.
+After that, routine tasks like maintenance, appointments, and shopping still need doing. Sometimes there’s also time for a bit of free time.
+Depending on the workload, they will try to call you for help.
+All their machines have defined parking spots at the farm. Visit your fellow farmers regularly. You might occasionally be allowed to borrow a machine or they will help you for free (see roadmap).
+Contractor: supports during peak periods and with special jobs such as harvesting potatoes, sugar beets, or specialty crops (see roadmap).
+Forester: takes care of the forests and forest paths. In summer, he pays special attention to the risk of wildfires (see roadmap).
+Mayor: is often out and about in public places. A good relationship with the mayor helps you expand your farm in the long run. He is a good contact for field areas and the local economy (see roadmap).
+Grain trader: travels the region and buys grain from the farmers (see roadmap).
+Family: helps you with routine tasks on the farm and in the fields (see roadmap).
+Machinery dealer: responsible for maintenance, repair, and the sale of machines (see roadmap).
+
+Roadmap:
+Individual small talk for each character with positive and negative relationship development.
+Farmer gameplay features (taking over or helping with field and farm work, borrowing machines, etc.).
+Communication with characters by phone (jobs, meetings, small talk).
+Assign farm and field tasks to helpers (via phone and in person).
+Driving around the map on supported maps.
+Movement of characters within the situation.
+Contractor gameplay features (assigning contracts).
+Forester gameplay features (forest maintenance, etc.).
+Mayor gameplay features (subsidy programs, land purchases, municipal services, etc.).
+Machinery dealer / mechanic gameplay features (maintenance, repair, sale, etc.).
+Grain trader gameplay features (buying, selling, stock, prices, etc.).
+Small missions & random events.
+Story mode with long-term story arcs.
+Free-form communication.
+
+Supported maps:
+All GIANTS standard maps (Riverbend Springs, Hutan Pantai, and Zielonka are already optimized).
+All mod maps (locations are created automatically and may need to be added or removed. Finished map configurations can be uploaded/downloaded via fields-of-stories.com).
+
+Controls:
+SHIFT + R: Start conversation.
+SHIFT + F3: Fields of Stories menu.
+Story tab: Overview of all characters with relationship, relationship level, and relationship points.
+Map locations: Place encounter locations (on foot, with a vehicle, or with a vehicle + implement) of various categories on the map.
+Character settings: Individual characters can be reset or removed, and their home locations can be removed.
+Mod settings: Function to remove all mod contents (reset is possible by saving the game and reloading).
+Game Settings: Adjust the number of contract calls per day.
+
+Optimize maps:
+Generator (only for unknown maps): On the first start of the mod on a map without a stored configuration, a location generator will detect known objects on the map and automatically create locations.
+Home locations: Move the home locations for the characters if the houses don’t fit the character. Create additional parking spots and implement/tool spots for the 4 farmers so their machines and implements can be parked.
+Field paths: Drive the field paths once and add parking spots in suitable places, because these cannot be detected automatically.
+Cleanup: Remove faulty locations where a character cannot be placed safely or sensibly (e.g., sideways across a parking space).
+Misc: You can add various other location types to create a more varied gameplay experience (e.g., industry, leisure locations).
+Release: If you want to publish/share the map configuration, you can upload the map via fields-of-stories.com.
+
+Other:
+Relationships: Relationships are measured with points and levels. Each conversation gives points for the character’s relationship strength. The relationship points and levels are also credited to you in the form of money.
+Conversations: Conversations are based on the current situation and the characters behavior (e.g. suspicious, friendly, etc.). They have real vehicle and work informations in it, like regular outages of Skoda cars, hydraulic parts of a tractor, etc.
+Voices: All conversations are voiced in German and English. Language and voice are determined automatically by the downloaded voice pack.
+Missions: In later versions, the current conversations will be expanded with missions that you can accept as a player. There are already conversations hinting at this, but they currently don’t trigger any missions yet.
+]]></en>
+		<de><![CDATA[Fields of Stories – Lebendige Charaktere im Landwirtschafts-Simulator
+
+Fields of Stories erweitert den Landwirtschafts-Simulator um eine dynamische Nachbarschaft mit aktuell 13 virtuellen Charakteren, die eigenständig in deiner Welt leben, arbeiten und mit dir interagieren.
+Jeder Charakter hat einen individuellen Tagesablauf und Aufgaben.
+Du begegnest Charakteren zufällig an der Tankstelle, auf dem Feld, beim Händler oder überall verteilt auf der Karte.
+Führe Gespräche, baue Beziehungen auf und unterstütze sie, wenn sie Hilfe benötigen.
+
+BETA-Hinweis: Beachte bitte die Roadmap und die Features, die noch geplant sind. Melde Fehler und Feature-Wünsche über GitHub.
+GitHub: https://github.com/AirFoxTwo/FS25_FieldsOfStories
+
+Features:
+- Bis zu 13 Charaktere, darunter Landwirte, Familienmitglieder, Bürgermeister, Lohnunternehmer, Getreidehändler, Zivilisten, Maschinenhändler bzw. Mechaniker.
+- 4 selbstständig arbeitende Landwirte: Sie bearbeiten ihre eigenen Felder und nutzen unterschiedliche Maschinenparks. Sie haben einen Anbauplan und einen Tagesablauf mit Prioritäten, denen sie an jedem Tag folgen.
+- Dynamischer Tagesablauf: Jeder Charakter hat einmalige oder unregelmäßige Ereignisse, aber auch Routinen wie Schlafen, Arbeiten, Einkaufen und Tanken.
+- Zufällige Begegnungen in der Spielwelt: Charaktere sind frei auf der Karte unterwegs, entweder an öffentlichen Orten wie der Tankstelle, dem Park, im Industriegebiet oder auf dem Feld. (Roadmap: AutoDrive-Kompatibilität)
+- Gesprochene, natürliche Konversationen: Deutsch & Englisch, mit individuellen Stimmen, Auswahlmöglichkeiten und zufälligen Gesprächsthemen. (Sprachpakete müssen manuell von der Fields of Stories Webseite heruntergeladen werden.)
+- Telefonanrufe: Du erhältst Anrufe von den Landwirten, wenn sie Hilfe benötigen. Du kannst den Anruf annehmen und ihnen helfen oder ihn ablehnen.
+- Feldaufträge basierend auf der Auslastung der Landwirte: Die Landwirte benötigen deine Hilfe für bestimmte Aufgaben in ihrem Tagesablauf. Manchmal schaffen sie es selbst, wenn nicht, versuchen sie dich für Hilfe anzurufen.
+- Maschinen ausleihen: Du kannst dir eine Maschine vom Hof der Landwirte ausleihen, wenn du nicht das richtige Gerät für den Auftrag hast. Du musst sie dort abholen und zurückbringen.
+
+Charaktere:
+
+Landwirte: 4 Landwirte bearbeiten ihre Felder selbstständig. Sie pflügen, grubbern, säen, düngen und ernten. Jeder verfügt über einen anderen, realistischen Maschinenpark.
+Für Landwirte heißt es früh aufstehen. Die Maschinen werden früh morgens auf dem eigenen Hof vorbereitet und je nach Monat bis spät abends eingesetzt.
+Danach sind noch Routineaufgaben wie Wartung, Termine und Einkäufe zu erledigen. Manchmal ist auch Zeit für ein bisschen Freizeit.
+Je nach Auslastung versuchen sie dich anzurufen, um dich nach Unterstützung zu fragen.
+Alle ihre Maschinen haben definierte Parkplätze auf dem Hof. Besuche deine Mitstreiter regelmäßig. Vielleicht darfst du dir gelegentlich eine Maschine ausleihen oder sie helfen dir kostenlos (siehe Roadmap).
+Lohnunternehmer: Unterstützt in Stoßzeiten und bei speziellen Aufgaben wie der Ernte von Kartoffeln, Zuckerrüben oder Sonderkulturen (siehe Roadmap).
+Förster: Übernimmt die Pflege der Wälder und Waldwege. Im Sommer achtet er besonders auf die Gefahr von Waldbränden (siehe Roadmap).
+Bürgermeister: Ist vor allem viel an öffentlichen Orten unterwegs. Eine gute Beziehung zum Bürgermeister hilft dir langfristig, deinen Hof auszubauen. Er ist ein guter Ansprechpartner für Feldflächen und die lokale Wirtschaft (siehe Roadmap).
+Getreidehändler: Ist in der Region unterwegs und kauft Getreide von den Landwirten (siehe Roadmap).
+Familie: Hilft dir bei den Routineaufgaben auf dem Hof und auf den Feldern (siehe Roadmap).
+Maschinenhändler: Zuständig für Wartung, Reparatur und Verkauf von Maschinen (siehe Roadmap).
+
+Roadmap:
+Individueller Smalltalk für jeden Charakter mit positiver und negativer Beziehungsentwicklung.
+Gameplay-Funktionen der Landwirte (Übernahme oder Hilfe bei Feld- und Hofarbeiten, Maschinen ausleihen, etc.).
+Kommunikation mit Charakteren über das Telefon (Aufträge, Treffen, Smalltalk).
+Hof- und Feld-Aufgaben an Helfer vergeben (via Telefon und persönlich).
+Fahrten über die Karte bei unterstützten Karten.
+Bewegung der Charaktere innerhalb der Situation.
+Gameplay-Funktionen des Lohnunternehmers (Aufträge vergeben).
+Gameplay-Funktionen des Försters (Waldpflege, etc.).
+Gameplay-Funktionen des Bürgermeisters (Subventionsprogramme, Flächenkäufe, kommunale Dienstleistungen, etc.).
+Gameplay-Funktionen des Maschinenhändlers bzw. Mechanikers (Wartung, Reparatur, Verkauf, etc.).
+Gameplay-Funktionen der Getreidehändlerin (Kaufen, Verkaufen, Lagerbestand, Preise, etc.).
+Kleine Missionen & Zufällige Ereignisse.
+Story-Modus mit langfristigen Handlungssträngen.
+Freie Kommunikation.
+
+Unterstützte Karten:
+Alle Standardkarten von GIANTS (Riverbend Springs, Hutan Pantai und Zielonka sind bereits optimiert).
+Alle Mod-Karten (Orte werden automatisch erstellt und müssen ggf. ergänzt oder entfernt werden. Fertige Karten-Konfigurationen können über die FieldsWebseite hoch- und heruntergeladen werden).
+
+Steuerung:
+SHIFT + R: Gespräch starten.
+SHIFT + F3: Einrichtungs-Menü.
+Story-Tab: Übersicht aller Charaktere mit Beziehung, Beziehungsstufe und Beziehungspunkten.
+Karten-Orte: Platzieren von Ereignis-Orten (zu Fuß, mit Fahrzeug oder Fahrzeug mit Anbaugerät) verschiedener Kategorien auf der Karte.
+Charakter-Einstellungen: Einzelne Charaktere können zurückgesetzt oder entfernt werden, sowie dessen Heimat-Orte entfernt werden.
+Mod-Einstellungen: Funktion zum Entfernen aller Mod-Inhalte (Zurücksetzen möglich, indem das Spiel gespeichert und neu geladen wird).
+Spiel-Einstellungen: Anpassen der Anzahl der Auftragsanrufe pro Tag.
+
+Karten optimieren:
+Generator (nur bei unbekannten Karten): Beim ersten Starten der Mod auf einer Karte ohne hinterlegte Konfiguration wird ein Orts-Generator bekannte Objekte auf der Karte erkennen und automatisch Orte erstellen.
+Heimatorte: Versetze die Heimatorte für die Charaktere, wenn die Häuser nicht zum Charakter passen. Erstelle weitere Parkplätze und Geräteplätze für die 4 Landwirte, damit ihre Maschinen und Anbaugeräte geparkt werden können.
+Feldwege: Fahre einmal die Feldwege ab und ergänze an passenden Stellen Parkplätze, da diese nicht automatisch erkannt werden können.
+Bereinigung: Entferne fehlerhafte Orte, bei denen ein Charakter nicht sicher oder nicht sinnvoll platziert werden kann (z.B. quer auf einem Parkplatz).
+Sonstige: Du kannst noch diverse Ortstypen hinzufügen, um ein abwechslungsreicheres Spielerlebnis zu bekommen (z.B. Industrie, Freizeitorte).
+Freigabe: Wenn du die Karten-Konfiguration veröffentlichen/teilen möchtest, kannst du die Karte über fields-of-stories.com hochladen.
+
+Sonstiges:
+Beziehungen: Beziehungen werden mit Punkten und Leveln gemessen. Jedes Gespräch gibt Punkte für die Beziehungsstärke des Charakters. Die Beziehungspunkte und Level werden dir in Form von Geld gutgeschrieben.
+Gespräche: Gespräche basieren auf der aktuellen Situation und dem Verhalten der Charaktere (z.B. misstrauisch, freundlich, etc.). Sie enthalten echte Fahrzeug- und Arbeitsinformationen, wie regelmäßige Ausfälle von Skoda-Fahrzeugen, Hydraulikteile eines bestimmten Traktors, etc.
+Stimmen: Alle Gespräche sind in Deutsch und Englisch vertont. Sprache und Stimme ergeben sich automatisch aus dem heruntergeladenen Sprachpaket.
+Missionen: In späteren Versionen werden die bisherigen Gespräche um Missionen erweitert, die du als Spieler annehmen kannst. Es gibt bereits Gespräche, die darauf hindeuten, aber aktuell lösen sie noch keine Missionen aus.
+]]></de>
+	</description>
+	<iconFilename>icon_FieldsOfStories.dds</iconFilename>
+	<l10n filenamePrefix="languages/l10n" />
+	<helpLines>
+		<category title="$l10n_gui_help_category_title">
+			<page title="$l10n_gui_help_overview_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_overview_body"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_general.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_controls_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_controls_body"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_characters_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_characters_body"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_1"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/1.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_1" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_2"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/2.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_2" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_11"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/11.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_11" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_21"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/21.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_21" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_20"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/20.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_20" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_19"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/19.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_19" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_18"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/18.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_18" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_17"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/17.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_17" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_16"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/16.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_16" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_15"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/15.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_15" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_14"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/14.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_14" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_13"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/13.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_13" alignToImage="false"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_char_name_10"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/10.dds" uvs="0px 0px 256px 256px" size="256 256" aspectRatio="1" displaySize="256px 256px"/>
+					<text text="$l10n_gui_help_char_desc_10" alignToImage="false"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_conversations_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_conversations_body"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_conversation_choices.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_relationships_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_relationships_body"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_story_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_story_body"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_contracts_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_contracts_body"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_contract_cap_call_info"/>
+					<image filename="images/help/help_mission_call_info.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1" displaySize="512px 512px"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_contract_cap_call"/>
+					<image filename="images/help/help_mission_call.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1" displaySize="512px 512px"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_contract_cap_choices"/>
+					<image filename="images/help/help_mission_phonecall_choices.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1" displaySize="512px 512px"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_contracts_body2"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_contract_cap_borrow_map"/>
+					<image filename="images/help/help_borrow_map.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1" displaySize="512px 512px"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_contract_cap_borrow_attach"/>
+					<image filename="images/help/help_borrow_attach.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1" displaySize="512px 512px"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_contract_cap_fieldwork"/>
+					<image filename="images/help/help_fieldwork.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1" displaySize="512px 512px"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_schedule_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_schedule_body"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_privatelife_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_privatelife_body"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_privatelife.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_voices_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_voices_body"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_support_title" iconSliceId="helpline.icon_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_support_body"/>
+				</paragraph>
+			</page>
+		</category>
+		<category title="$l10n_gui_help_category_setup_title">
+            <page title="$l10n_gui_help_homebases_title" iconSliceId="helpline.firstSteps_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_homebases_body"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_homebases.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_places_title" iconSliceId="helpline.firstSteps_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_places_body"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_mapplaces.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_mapplaces_menu.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+			</page>
+			<page title="$l10n_gui_help_homebasedesign_title" iconSliceId="helpline.firstSteps_shop">
+				<paragraph>
+					<text text="$l10n_gui_help_homebasedesign_body"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_farmbases.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+				<paragraph>
+					<text text="$l10n_gui_help_homebasedesign_body2"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_borrow_objectblock.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+				<paragraph>
+					<image filename="images/help/help_hide_gates.png" size="1024 1024" uvs="0px 0px 1024px 1024px" aspectRatio="1"/>
+				</paragraph>
+			</page>
+        </category>
+	</helpLines>
+  <multiplayer supported="true"/>
+	<extraSourceFiles>
+		<sourceFile filename="IANeighbours.lua" />
+	</extraSourceFiles>
+
+
+	<inputBinding>
+        <actionBinding action="IAStartConversation">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_r" />
+        </actionBinding>
+        <actionBinding action="IAMapInitDialog">
+			    <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_f3" />
+        </actionBinding>
+    </inputBinding>
+
+    <actions>
+        <action name="IAStartConversation" />
+        <action name="IAMapInitDialog" />
+    </actions>
+</modDesc>

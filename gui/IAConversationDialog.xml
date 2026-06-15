@@ -1,0 +1,181 @@
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="conversationDialogBg" id="box">
+        <RoundCorner profile="converationTextBox" id="textBox">
+            <BoxLayout profile="conversationDialogTextLayoutWrapper" id="textLayoutWrapper">
+                <BoxLayout profile="conversationDialogTextLayout" id="textLayout">
+                    <Text profile="conversationDialogNpcName" text="" id="npcNameElement"/>
+                    <Text profile="conversationDialogText" text="" id="textElement"/>
+                    <Button profile="conversationSkipButton" id="clickToAdvanceButton" name="clickToAdvanceButton" text="Skip" onClick="onClickAdvance"/>
+                </BoxLayout>
+            </BoxLayout>
+        </RoundCorner>
+        <RoundCorner profile="conversationOptionsBackground" id="optionBoxBackground">
+            <GuiElement profile="conversationOptionsContainer" id="optionsContainer">
+                <ScrollingLayout profile="conversationOptionsScrollingLayout" id="optionsScrollingLayout">
+                    <BoxLayout profile="conversationOptionItemBox" id="optionButtonTemplate">
+                        <RoundCorner profile="conversationOptionRowBackground">
+                            <Button profile="conversationOptionButton" text="" onClick="onClickOption" name="text">
+                                <Bitmap profile="conversationOptionButtonIcon"/>
+                            </Button>
+                        </RoundCorner>
+                    </BoxLayout>
+                </ScrollingLayout>
+            </GuiElement>
+        </RoundCorner>
+    </GuiElement>
+    <GUIProfiles>
+        <Profile name="conversationDialogBg" extends="baseReference" with="anchorTopCenter">
+            <!--position value="0px 30px"/>-->
+            <size value="850px 400px"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="bottomToTop"/>
+        </Profile>
+        <!-- Box: anchor top so it grows down; align content top so text stays at top of box -->
+        <Profile name="converationTextBox" extends="baseReference">
+            <size value="850px 300px"/>
+            <position value="0px 0px"/>
+            <margin value="0px 11px 0px 11px"/>
+            <color value="$preset_fs25_colorMainDark_90"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+        <!-- Wrapper: same as options – margin creates inset from box border (like conversationOptionsBackground 5px) -->
+        <Profile name="conversationDialogTextLayoutWrapper" extends="baseReference" with="anchorTopLeft">
+            <size value="100% 100%"/>
+            <position value="0px 0px"/>
+            <margin value="0px 11px 0px 24px"/>
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="0px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+        </Profile>
+        <!-- Layout: name + text, flows top to bottom -->
+        <Profile name="conversationDialogTextLayout" with="anchorTopLeft">
+            <size value="100% 60px"/>
+            <margin value="22px 10px 22px 24px"/>
+            <flowDirection value="vertical"/>
+            <fillDirectionY value="topToBottom"/>
+            <elementSpacing value="4px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <fitFlowToElements value="true"/>
+        </Profile>
+        <!-- Name: textOffset like conversationOptionButton (30px) for label indent -->
+        <Profile name="conversationDialogNpcName" extends="dialogText" with="anchorTopStretchingX">
+            <position value="0px 0px"/>
+            <size value="100% 24px"/>
+            <margin value="0px 0px 0px 0px"/>
+            <textOffset value="0px 0px"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <textSize value="22px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <textAutoHeight value="true"/>
+            <textBold value="true"/>
+        </Profile>
+        <!-- Text: no extra textOffset; inset from wrapper margin -->
+        <Profile name="conversationDialogText">
+            <size value="100% 40px"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <textLineHeightScale value="1.25"/>
+            <textSize value="22px"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <textAutoHeight value="true"/>
+            <textMaxWidth value="800px"/>
+        </Profile>
+        <!-- Skip button: visible, right-aligned below conversation box -->
+        <Profile name="conversationSkipButton" extends="wideButton" with="anchorTopRight">
+            <position value="0px 0px"/>
+            <size value="90px 36px"/>
+            <margin value="0px 0px 0px 0px"/>
+            <textSize value="20px"/>
+            <textColor value="$preset_fs25_colorMainDark"/>
+            <color value="$preset_fs25_colorGreen_40"/>
+            <imageColor value="$preset_fs25_colorGreen"/>
+        </Profile>
+        <!-- Options: same structure as IADialogGUI chat history – container + ScrollingLayout + item template -->
+        <Profile name="conversationOptionsBackground" extends="baseReference">
+            <size value="850px 400px"/>
+            <margin value="5px 5px 5px 5px"/>
+            <color value="$preset_fs25_colorMainDark_90"/>
+        </Profile>
+        <!-- Container for scroll area (like ia_chatHistoryContainer) -->
+        <Profile name="conversationOptionsContainer" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="850px 100%"/>
+            
+            <imageColor value="0 0 0 0"/>
+            <color value="0 0 0 0"/>
+        </Profile>
+        <!-- Scrolling layout (like ia_chatHistoryScrollingLayout): vertical list, scroll when more options -->
+        <Profile name="conversationOptionsScrollingLayout" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="100% 100%"/>
+            <color value="0 0 0 0"/>
+            <imageColor value="0 0 0 0"/>
+            <flowDirection value="vertical"/>
+            <elementSpacing value="5px"/>
+            <alignmentX value="left"/>
+            <alignmentY value="top"/>
+            <autoValidateLayout value="true"/>
+        </Profile>
+        <!-- Option item template (like ia_chatBoxItemBox): one row per option -->
+        <Profile name="conversationOptionItemBox" extends="baseReference" with="anchorTopStretchingX">
+            
+            <color value="0 0 0 0"/>
+            <imageColor value="0 0 0 0"/>
+            <margin value="5px 5px 5px 5px"/>
+            <size value="830px 40px"/>
+            <position value="0px 0px"/>
+            <alignmentX value="left"/>
+        </Profile>
+        <!-- Row background: green tint by default; stronger green on hover/focus -->
+        <Profile name="conversationOptionRowBackground" extends="baseReference" with="anchorTopStretchingX">
+            <size value="830px 40px"/>
+            <color value="$preset_fs25_colorGreen_40"/>
+            <colorHighlighted value="$preset_fs25_colorGreen"/>
+            <colorSelected value="$preset_fs25_colorGreen"/>
+            <colorFocused value="$preset_fs25_colorGreen"/>
+            <margin value="5px 5px 5px 5px"/>
+        </Profile>
+        <!-- Button: green text by default (wideButton may override; set all text state colors to green) -->
+        <Profile name="conversationOptionButton" extends="wideButton" with="anchorTopStretchingX">
+            <size value="830px 10px"/>
+            <margin value="0px 0px 0px 0px"/>
+            <handleFocus value="true"/>
+            <iconSize value="0px 0px"/>
+            <fitToContent value="false"/>
+            <textOffset value="30px 2px"/>
+            <textAutoWidth value="false"/>
+            <textAutoHeight value="true"/>
+            <textSize value="22px"/>
+            <textBold value="false"/>
+            <textFocusedBold value="true"/>
+            <textHighlightedBold value="true"/>
+            <textIconOffset value="0px 0px"/>
+            <textMaxNumLines value="15"/>
+            <textMaxWidth value="810px"/>
+            <textUpperCase value="false"/>
+            <textColor value="$preset_fs25_colorGreen"/>
+            <textFocusedColor value="$preset_fs25_colorMainDark"/>
+            <textHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <textSelectedColor value="$preset_fs25_colorMainDark"/>
+            <imageColor value="0 0 0 0"/>
+            <imageHighlightedColor value="0 0 0 0"/>
+            <imageSelectedColor value="0 0 0 0"/>
+            <imageFocusedColor value="0 0 0 0"/>
+        </Profile>
+        <Profile name="conversationOptionButtonIcon" extends="baseReference" with="anchorTopLeft">
+            <size value="15px 16px"/>
+            <position value="15px -2px"/>
+            <imageTextOffset value="-10px -1px"/>
+            <imageSliceId value="gui.dialogue_arrow"/>
+            <imageColor value="1 1 1 0"/>
+            <imageSelectedColor value="$preset_fs25_colorGreen"/>
+            <imageHighlightedColor value="$preset_fs25_colorGreen"/>
+            <imageFocusedColor value="$preset_fs25_colorGreen"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

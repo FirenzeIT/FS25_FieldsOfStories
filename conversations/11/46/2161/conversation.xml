@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversation>
+  <entry id="1" previousId="0" speaker="npc" text_en="Well Joe, you're still out and about, or are you just pretending to do something important?" text_de="Na Joe, du auch noch unterwegs, oder tust du nur so, als würdest du was Wichtiges machen?"/>
+  <entry id="2" previousId="1" speaker="player" text_en="I act busy until someone offers me something to eat." text_de="Ich tu so beschäftigt, bis mir jemand was zu essen anbietet."/>
+  <entry id="3" previousId="2" speaker="npc" text_en="I call that a solid plan, but I can only offer you some stretching exercises." text_de="Das nenn ich einen soliden Plan, aber ich kann dir höchstens ein paar Dehnübungen anbieten."/>
+  <entry id="4" previousId="3" speaker="player" text_en="As long as the stretching exercises don't take place in front of an audience, I'm in." text_de="Solange die Dehnübungen nicht vor Publikum stattfinden, bin ich dabei."/>
+  <entry id="5" previousId="4" speaker="npc" text_en="I won't do anything embarrassing with you in front of an audience anyway, don't worry." text_de="Vor Publikum mach ich sowieso nichts mit dir, was peinlich werden könnte, keine Sorge." relationship="plus"/>
+  <entry id="6" previousId="3" speaker="player" text_en="No exercises today, I just wanted to chat a bit." text_de="Heute keine Übungen, ich wollte nur ein bisschen quatschen."/>
+  <entry id="7" previousId="6" speaker="npc" text_en="Chatting is also training, just for the brain." text_de="Quatschen ist auch Training, nur halt fürs Hirn." relationship="plus"/>
+  <entry id="8" previousId="3" speaker="player" text_en="Honestly, I've let my routine slip, I need a push again." text_de="Ehrlich, ich hab meine Routine schleifen lassen, ich brauch wieder nen Schubs."/>
+  <entry id="9" previousId="8" speaker="npc" text_en="Noticing it is already half the battle, the rest is just a bit of persistence." text_de="Dass du es merkst, ist schon mal die halbe Miete, der Rest ist nur noch ein bisschen Durchziehen." relationship="plus"/>
+  <entry id="10" previousId="1" speaker="player" text_en="I'm done for today, I just wanted to clear my head for a moment." text_de="Bin durch für heute, ich wollte nur kurz den Kopf frei kriegen."/>
+  <entry id="11" previousId="10" speaker="npc" text_en="I can clear my head, as long as you don't want to run off in the middle of a sentence again." text_de="Kopf frei kriegen krieg ich hin, solange du mir nicht wieder mitten im Satz abhauen willst."/>
+  <entry id="12" previousId="11" speaker="player" text_en="I won't run off on you today, I promise." text_de="Ich hau dir heute nicht ab, versprochen."/>
+  <entry id="13" previousId="12" speaker="npc" text_en="I want to see that, then I can finally start a longer sentence for once." text_de="Das will ich sehen, dann kann ich ja ausnahmsweise mal einen längeren Satz anfangen." relationship="plus"/>
+  <entry id="14" previousId="11" speaker="player" text_en="It depends on how motivating your speech is." text_de="Kommt drauf an, wie motivierend deine Ansprache wird."/>
+  <entry id="15" previousId="14" speaker="npc" text_en="I can do a motivating speech, but I don't want to scare you off right away." text_de="Motivierende Ansprache kann ich, aber ich will dich ja nicht gleich wieder verschrecken." relationship="plus"/>
+  <entry id="16" previousId="11" speaker="player" text_en="Actually, I wanted to ask you if you ever have days when you just don't feel like training." text_de="Eigentlich wollte ich dich fragen, ob du auch mal Tage hast, wo du gar keinen Bock auf Training hast."/>
+  <entry id="17" previousId="16" speaker="npc" text_en="Of course I have those, I'm just a human, not a fitness robot." text_de="Klar hab ich die, ich bin auch nur ein Mensch und kein Fitnessroboter." relationship="plus"/>
+  <entry id="18" previousId="1" speaker="player" text_en="I wanted to catch you anyway, my back has been complaining since the last session." text_de="Ich wollte dich eh erwischen, mein Rücken meckert seit der letzten Einheit."/>
+  <entry id="19" previousId="18" speaker="npc" text_en="Okay, a complaining back is never good, but let's take a look at what exactly you've done." text_de="Okay, Rücken meckert ist nie gut, aber lass uns mal in Ruhe schauen, was du da genau gemacht hast."/>
+  <entry id="20" previousId="19" speaker="player" text_en="I probably wanted too much at once again, typical me." text_de="Wahrscheinlich hab ich wieder zu viel auf einmal gewollt, typisch ich."/>
+  <entry id="21" previousId="20" speaker="npc" text_en="Yes, that's you, all or nothing, but your back doesn’t always find that funny." text_de="Ja, das bist du, alles oder nichts, aber dein Rücken findet das halt nicht immer so witzig." relationship="plus"/>
+  <entry id="22" previousId="19" speaker="player" text_en="It might also be that I cheated on the exercises." text_de="Kann auch sein, dass ich bei den Übungen geschummelt hab."/>
+  <entry id="23" previousId="22" speaker="npc" text_en="Ah, cheating catches up with the body faster than in school unfortunately." text_de="Ah, Schummeln rächt sich beim Körper leider schneller als in der Schule." relationship="plus"/>
+  <entry id="24" previousId="19" speaker="player" text_en="If this were serious, you would tell me, right?" text_de="Wenn das ernst wäre, würdest du mir das sagen, oder?"/>
+  <entry id="25" previousId="24" speaker="npc" text_en="If I were worried, I'd be acting much more serious already, believe me." text_de="Wenn ich mir Sorgen machen würde, wär ich jetzt schon sehr viel ernster unterwegs, glaub mir." relationship="plus"/>
+</conversation>

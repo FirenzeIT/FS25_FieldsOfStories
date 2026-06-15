@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversation>
+  <entry id="1" previousId="0" speaker="npc" text_en="Ah, Joe, give me a second, I'm just quickly sorting something out regarding a hunting permit." text_de="Ah, Joe, gib mir eine Sekunde, ich kläre nur schnell was wegen einer Jagderlaubnis."/>
+  <entry id="2" previousId="1" speaker="player" text_en="All good, I didn't want to disturb you, just looked like there was a problem." text_de="Alles gut, ich wollt dich nicht stören, sah nur nach einem Problem aus."/>
+  <entry id="3" previousId="2" speaker="npc" text_en="It's fine, the callback had to happen anyway; otherwise, the approval gets stuck." text_de="Schon okay, der Rückruf musste sowieso sein, sonst hängt die Freigabe fest."/>
+  <entry id="4" previousId="3" speaker="player" text_en="Sounds like you spend more time with paperwork than in the woods." text_de="Klingt, als würdest du mehr Zeit mit Zetteln verbringen als im Wald."/>
+  <entry id="5" previousId="4" speaker="npc" text_en="The trees don't complain if I keep them waiting, but the callers do." text_de="Die Bäume beschweren sich immerhin nicht, wenn ich sie warten lasse, die Anrufer schon." relationship="plus"/>
+  <entry id="6" previousId="3" speaker="player" text_en="I understand, if something goes wrong, you're the one they'll come to." text_de="Versteh ich, wenn da was schiefgeht, bist am Ende du der Ansprechpartner."/>
+  <entry id="7" previousId="6" speaker="npc" text_en="Exactly, in the end, no one calls the applicant, but me." text_de="Genau das ist der Punkt, am Ende ruft keiner den Antragsteller an, sondern mich." relationship="plus"/>
+  <entry id="8" previousId="3" speaker="player" text_en="Do you actually need support with stuff like this, or do you prefer to do it alone?" text_de="Brauchst du bei solchen Sachen eigentlich mal Unterstützung, oder machst du das lieber allein?"/>
+  <entry id="9" previousId="8" speaker="npc" text_en="With permits, it's easier if everything goes through one hand." text_de="Bei den Genehmigungen ist es einfacher, wenn alles durch eine Hand geht." relationship="plus"/>
+  <entry id="10" previousId="1" speaker="player" text_en="Is it about trouble in the area, or is it just paperwork?" text_de="Geht es um Ärger im Revier, oder ist das nur Papierkram?"/>
+  <entry id="11" previousId="10" speaker="npc" text_en="Right now, it's just paperwork, but if that's not in order, there will be trouble in the area later." text_de="Im Moment ist es nur Papierkram, aber wenn der nicht passt, gibt es später Ärger im Revier."/>
+  <entry id="12" previousId="11" speaker="player" text_en="You know every corner out there; you notice when someone is messing around." text_de="Du kennst jeden Winkel da draußen, dir fällt schon auf, wenn jemand Blödsinn macht."/>
+  <entry id="13" previousId="12" speaker="npc" text_en="You see more than people think when you're often outside." text_de="Man sieht mehr, als die Leute denken, wenn man oft draußen ist." relationship="plus"/>
+  <entry id="14" previousId="11" speaker="player" text_en="Sometimes I feel like you make it extra hard for people." text_de="Manchmal hab ich das Gefühl, ihr macht es den Leuten extra schwer."/>
+  <entry id="15" previousId="14" speaker="npc" text_en="If someone sees it that way, they usually haven't noticed what's already happened." text_de="Wenn jemand das so sieht, hat er meistens nicht mitbekommen, was schon alles passiert ist." relationship="minus"/>
+  <entry id="16" previousId="11" speaker="player" text_en="I would be way too nervous about something like this; one shot at the wrong moment and everything is gone." text_de="Ich wär bei so was viel zu nervös, einen Schuss im falschen Moment und alles ist hin."/>
+  <entry id="17" previousId="16" speaker="npc" text_en="Being nervous is even healthy in that situation." text_de="Nervös sein ist da sogar gesund." relationship="plus"/>
+  <entry id="18" previousId="1" speaker="player" text_en="Another person who wants to quickly get out in the area, right?" text_de="Schon wieder jemand, der auf die Schnelle ins Revier will, was?"/>
+  <entry id="19" previousId="18" speaker="npc" text_en="This year, a striking number of people think they can just get started here." text_de="Dieses Jahr melden sich auffällig viele, die meinen, sie könnten hier einfach so loslegen."/>
+  <entry id="20" previousId="19" speaker="player" text_en="Sounds like a full inbox for you." text_de="Klingt nach einem vollen Postfach bei dir."/>
+  <entry id="21" previousId="20" speaker="npc" text_en="The inquiries have indeed increased since many think hunting is just a leisure activity." text_de="Die Anfragen häufen sich tatsächlich, seit viele meinen, Jagd wäre nur Freizeitspaß." relationship="plus"/>
+  <entry id="22" previousId="19" speaker="player" text_en="Better a strict forester than one who approves everything." text_de="Lieber ein Förster, der streng ist, als einer, der alles durchwinkt."/>
+  <entry id="23" previousId="22" speaker="npc" text_en="It doesn't always make you popular, but I can live with that." text_de="Beliebt macht man sich damit nicht immer, aber ich kann damit leben." relationship="plus"/>
+  <entry id="24" previousId="19" speaker="player" text_en="And on top of that, you are also supposed to maintain paths and keep reforestation in mind." text_de="Und nebenbei sollst du ja auch noch Wege pflegen und Aufforstung im Blick haben."/>
+  <entry id="25" previousId="24" speaker="npc" text_en="Exactly, the paperwork is just an added burden." text_de="Genau, der Papierkram kommt ja nur oben drauf." relationship="plus"/>
+</conversation>

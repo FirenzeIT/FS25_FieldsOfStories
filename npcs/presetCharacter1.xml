@@ -1,0 +1,2418 @@
+<player>
+    <filename>$dataS/character/playerM/playerM.i3d</filename>
+    <i3dMappings>
+        <i3dMapping id="skeleton" node="0>"/>
+        <i3dMapping id="geo" node="1>"/>
+        <i3dMapping id="animationRootNode" node="2>"/>
+        <i3dMapping id="hips" node="0>0"/>
+        <i3dMapping id="spine" node="0>0|0"/>
+        <i3dMapping id="spine1" node="0>0|0|0"/>
+        <i3dMapping id="spine2" node="0>0|0|0|0"/>
+        <i3dMapping id="suspension" node="0>0|0"/>
+        <i3dMapping id="leftHandNode" node="0>0|0|0|0|1|0|0|1"/>
+        <i3dMapping id="rightHandNode" node="0>0|0|0|0|2|0|0|1"/>
+        <i3dMapping id="leftFootNode" node="0>0|1|0|0|0"/>
+        <i3dMapping id="rightFootNode" node="0>0|2|0|0|0"/>
+        <i3dMapping id="head" node="0>0|0|0|0|0|0"/>
+        <i3dMapping id="geoAttachment" node="1>1"/>
+        <i3dMapping id="headAttachment" node="0>0|0|0|0|0|0|6"/>
+        <i3dMapping id="hands" node="1>0|0|0"/>
+        <i3dMapping id="armsLower" node="1>0|0|1"/>
+        <i3dMapping id="armsUpper" node="1>0|0|2"/>
+        <i3dMapping id="shoulders" node="1>0|0|3"/>
+        <i3dMapping id="body" node="1>0|0|4"/>
+        <i3dMapping id="legs" node="1>0|0|5"/>
+        <i3dMapping id="feet" node="1>0|0|6"/>
+        <i3dMapping id="socks" node="1>0|0|7"/>
+    </i3dMappings>
+    <model>
+        <mesh node="geo"/>
+        <skeleton node="skeleton"/>
+        <animationRoot node="animationRootNode"/>
+        <spine node="spine" offset="0.225 0 0"/>
+        <hips node="hips"/>
+        <suspension node="suspension"/>
+        <leftHand node="leftHandNode"/>
+        <rightHand node="rightHandNode"/>
+        <leftFoot node="leftFootNode"/>
+        <rightFoot node="rightFootNode"/>
+        <head node="head"/>
+    </model>
+    <playerStyle neutralDiffuse="0.730 0.407 0.309">
+        <iconGeneration cameraRotX="-6.5" cameraRotY="40" cameraZoom="0.6" animation="idle1Source"/>
+        <attachPoints>
+            <attachPoint name="geo" node="geoAttachment"/>
+            <attachPoint name="head" node="headAttachment"/>
+        </attachPoints>
+        <bodyParts>
+            <bodyPart node="body"/>
+            <bodyPart node="armsLower"/>
+            <bodyPart node="armsUpper"/>
+            <bodyPart node="shoulders"/>
+            <bodyPart node="legs"/>
+            <bodyPart node="hands"/>
+            <bodyPart node="feet"/>
+            <bodyPart node="socks"/>
+        </bodyParts>
+        <faces>
+            <iconGeneration cameraRotX="-6.5" cameraRotY="40" cameraZoom="0" cameraOffset="0.04 0.04 0.55" animation="idle1Source">
+                <top name="tShirt01"/>
+                <hairStyle name="hair10"/>
+            </iconGeneration>
+            <face filename="$dataS/character/playerM/heads/mHead01.i3d" node="1|0|0" attachPoint="geo" name="head01" skinColor="0.91 0.77 0.73" iconFilename="$dataS/character/playerM/heads/mHead01.png">
+                <iconGeneration>
+                    <top name="tShirt01"/>
+                    <hairStyle name="hair10"/>
+                </iconGeneration>
+            </face>
+            <face filename="$dataS/character/playerM/heads/mHead02.i3d" node="1|0|0" attachPoint="geo" name="head02" skinColor="0.91 0.77 0.73" iconFilename="$dataS/character/playerM/heads/mHead02.png">
+                <iconGeneration>
+                    <top name="tShirt01"/>
+                    <hairStyle name="hair11"/>
+                </iconGeneration>
+            </face>
+            <face filename="$dataS/character/playerM/heads/mHead03.i3d" node="1|0|0" attachPoint="geo" name="head03" skinColor="0.19 0.11 0.11" iconFilename="$dataS/character/playerM/heads/mHead03.png">
+                <iconGeneration>
+                    <top name="tShirt01"/>
+                    <hairStyle name="hair01"/>
+                </iconGeneration>
+            </face>
+            <face filename="$dataS/character/playerM/heads/mHead04.i3d" node="1|0|0" attachPoint="geo" name="head04" skinColor="0.6 0.56 0.50" iconFilename="$dataS/character/playerM/heads/mHead04.png">
+                <iconGeneration>
+                    <top name="tShirt01"/>
+                    <hairStyle name="hair05"/>
+                </iconGeneration>
+                <animation filename="$dataS/character/playerM/heads/mHead04FacialAnim.i3d" expressionsFilename="$dataS/character/playerM/heads/mHead04FacialAnimExpressions.i3d" skeletonNode="1|0"/>
+            </face>
+            <face filename="$dataS/character/playerM/heads/mHead05.i3d" node="1|0|0" attachPoint="geo" name="head05" skinColor="0.48 0.31 0.24" iconFilename="$dataS/character/playerM/heads/mHead05.png">
+                <iconGeneration>
+                    <top name="tShirt01"/>
+                    <hairStyle name="hair08"/>
+                </iconGeneration>
+            </face>
+            <face filename="$dataS/character/playerM/heads/mHead06.i3d" node="1|0|0" attachPoint="geo" name="head06" skinColor="0.30 0.20 0.18" iconFilename="$dataS/character/playerM/heads/mHead06.png">
+                <iconGeneration>
+                    <top name="tShirt01"/>
+                    <hairStyle name="hair06"/>
+                </iconGeneration>
+            </face>
+            <face filename="$dataS/character/playerM/heads/npcQG01.i3d" node="1|0|0" attachPoint="geo" name="headNPCQG01" skinColor="0.99 0.55 0.51" isSelectable="false" iconFilename="$dataS/character/playerM/heads/headNPCQG01.png">
+                <animation filename="$dataS/character/playerM/heads/npcQG01FacialAnim.i3d" expressionsFilename="$dataS/character/playerM/heads/npcQG01FacialAnimExpressions.i3d" skeletonNode="1|0"/>
+            </face>
+            <face filename="$dataS/character/playerM/heads/mHead07.i3d" node="1|0|0" attachPoint="geo" name="head07" skinColor="0.6 0.56 0.50" isSelectable="false" iconFilename="$dataS/character/playerM/heads/mHead04.png">
+                <animation filename="$dataS/character/playerM/heads/mHead07FacialAnim.i3d" expressionsFilename="$dataS/character/playerM/heads/mHead07FacialAnimExpressions.i3d" skeletonNode="1|0"/>
+            </face>
+            <face filename="$dataS/character/playerM/heads/mHead08.i3d" node="1|0|0" attachPoint="geo" name="head08" skinColor="0.91 0.77 0.73" isSelectable="false" iconFilename="$dataS/character/playerM/heads/mHead02.png">
+                <animation filename="$dataS/character/playerM/heads/mHead08FacialAnim.i3d" expressionsFilename="$dataS/character/playerM/heads/mHead08FacialAnimExpressions.i3d" skeletonNode="1|0"/>
+            </face>
+            <face filename="$dataS/character/playerM/heads/npcFisherman.i3d" node="1|0|0" attachPoint="geo" name="headFisherman01" skinColor="0.99 0.55 0.51" isSelectable="false" iconFilename="$dataS/character/playerM/heads/headFisherman01.png">
+                <animation filename="$dataS/character/playerM/heads/npcFishermanFacialAnim.i3d" expressionsFilename="$dataS/character/playerM/heads/npcFishermanFacialAnimExpressions.i3d" skeletonNode="1|0"/>
+            </face>
+        </faces>
+        <colors>
+            <clothing>
+                <color primary="0.7913 0.7913 0.7913 1" secondary="1 1 1 1"/>
+                <color primary="0.6240 0.6240 0.6240 1" secondary="1 1 1 1"/>
+                <color primary="0.5271 0.5271 0.5271 1" secondary="1 1 1 1"/>
+                <color primary="0.4233 0.4233 0.4233 1" secondary="1 1 1 1"/>
+                <color primary="0.3324 0.3324 0.3324 1" secondary="1 1 1 1" default="true"/>
+                <color primary="0.2051 0.2051 0.2051 1" secondary="1 1 1 1"/>
+                <color primary="0.1384 0.1384 0.1384 1" secondary="1 1 1 1"/>
+                <color primary="0.0802 0.0802 0.0802 1" secondary="1 1 1 1"/>
+                <color primary="0.0408 0.0408 0.0408 1" secondary="1 1 1 1"/>
+                <color primary="0.0183 0.0183 0.0183 1" secondary="1 1 1 1"/>
+                <color primary="0.0086 0.0086 0.0086 1" secondary="1 1 1 1"/>
+                <color primary="0.0049 0.0049 0.0049 1" secondary="1 1 1 1"/>
+                <color primary="0.9911 0.1559 0.1470 1" secondary="1 1 1 1"/>
+                <color primary="1.0000 0.3324 0.1356 1" secondary="1 1 1 1"/>
+                <color primary="0.9734 0.5395 0.2232 1" secondary="1 1 1 1"/>
+                <color primary="0.9734 0.9301 0.3564 1" secondary="1 1 1 1"/>
+                <color primary="0.5457 0.7304 0.3467 1" secondary="1 1 1 1"/>
+                <color primary="0.2502 0.5972 0.3278 1" secondary="1 1 1 1"/>
+                <color primary="0.1590 0.5149 0.6105 1" secondary="1 1 1 1"/>
+                <color primary="0.2195 0.3813 0.6654 1" secondary="1 1 1 1"/>
+                <color primary="0.2747 0.2346 0.4969 1" secondary="1 1 1 1"/>
+                <color primary="0.3813 0.2541 0.5271 1" secondary="1 1 1 1"/>
+                <color primary="0.5972 0.2541 0.4852 1" secondary="1 1 1 1"/>
+                <color primary="0.6038 0.2159 0.3006 1" secondary="1 1 1 1"/>
+                <color primary="0.8963 0.0034 0.0331 1" secondary="1 1 1 1"/>
+                <color primary="1.0000 0.1529 0.0343 1" secondary="1 1 1 1"/>
+                <color primary="1.0000 0.3916 0.0382 1" secondary="1 1 1 1"/>
+                <color primary="0.9131 0.9131 0.0185 1" secondary="1 1 1 1"/>
+                <color primary="0.3278 0.7529 0.0685 1" secondary="1 1 1 1"/>
+                <color primary="0.0137 0.5333 0.0953 1" secondary="1 1 1 1"/>
+                <color primary="0.0000 0.5089 0.6867 1" secondary="1 1 1 1"/>
+                <color primary="0.0009 0.1651 0.6654 1" secondary="1 1 1 1"/>
+                <color primary="0.0723 0.0382 0.4678 1" secondary="1 1 1 1"/>
+                <color primary="0.2462 0.0284 0.4852 1" secondary="1 1 1 1"/>
+                <color primary="0.5906 0.0723 0.3916 1" secondary="1 1 1 1"/>
+                <color primary="0.6038 0.0561 0.1441 1" secondary="1 1 1 1"/>
+                <color primary="0.4179 0.0003 0.0130 1" secondary="1 1 1 1"/>
+                <color primary="0.4341 0.0630 0.0097 1" secondary="1 1 1 1"/>
+                <color primary="0.4621 0.1620 0.0091 1" secondary="1 1 1 1"/>
+                <color primary="0.5089 0.4678 0.0091 1" secondary="1 1 1 1"/>
+                <color primary="0.1274 0.3140 0.0307 1" secondary="1 1 1 1"/>
+                <color primary="0.0000 0.2346 0.0409 1" secondary="1 1 1 1"/>
+                <color primary="0.0000 0.1845 0.2918 1" secondary="1 1 1 1"/>
+                <color primary="0.0003 0.0612 0.2582 1" secondary="1 1 1 1"/>
+                <color primary="0.0252 0.0048 0.1878 1" secondary="1 1 1 1"/>
+                <color primary="0.1046 0.0000 0.2122 1" secondary="1 1 1 1"/>
+                <color primary="0.2582 0.0000 0.1620 1" secondary="1 1 1 1"/>
+                <color primary="0.2622 0.0006 0.0369 1" secondary="1 1 1 1"/>
+                <color primary="0.1845 0.0003 0.0015 1" secondary="1 1 1 1"/>
+                <color primary="0.1812 0.0252 0.0015 1" secondary="1 1 1 1"/>
+                <color primary="0.2126 0.0595 0.0000 1" secondary="1 1 1 1"/>
+                <color primary="0.1805 0.1730 0.0000 1" secondary="1 1 1 1"/>
+                <color primary="0.0382 0.1144 0.0116 1" secondary="1 1 1 1"/>
+                <color primary="0.0000 0.0953 0.0123 1" secondary="1 1 1 1"/>
+                <color primary="0.0000 0.0630 0.0953 1" secondary="1 1 1 1"/>
+                <color primary="0.0003 0.0212 0.0999 1" secondary="1 1 1 1"/>
+                <color primary="0.0086 0.0015 0.0844 1" secondary="1 1 1 1"/>
+                <color primary="0.0409 0.0003 0.0782 1" secondary="1 1 1 1"/>
+                <color primary="0.0865 0.0000 0.0648 1" secondary="1 1 1 1"/>
+                <color primary="0.0865 0.0000 0.0176 1" secondary="1 1 1 1"/>
+                <color primary="0.0358 0.0110 0.0034 1" secondary="1 1 1 1"/>
+                <color primary="0.0762 0.0222 0.0044 1" secondary="1 1 1 1"/>
+                <color primary="0.1144 0.0395 0.0086 1" secondary="1 1 1 1"/>
+                <color primary="0.1714 0.0723 0.0194 1" secondary="1 1 1 1"/>
+                <color primary="0.2502 0.1248 0.0482 1" secondary="1 1 1 1"/>
+                <color primary="0.5029 0.3050 0.1529 1" secondary="1 1 1 1"/>
+                <color primary="0.5089 0.4072 0.3050 1" secondary="1 1 1 1"/>
+                <color primary="0.3186 0.2346 0.1779 1" secondary="1 1 1 1"/>
+                <color primary="0.1683 0.1248 0.0999 1" secondary="1 1 1 1"/>
+                <color primary="0.0823 0.0648 0.0545 1" secondary="1 1 1 1"/>
+                <color primary="0.0397 0.0285 0.0243 1" secondary="1 1 1 1"/>
+                <color primary="0.0204 0.0138 0.0117 1" secondary="1 1 1 1"/>
+            </clothing>
+            <hair>
+                <color primary="0.756 0.540 0.251 1" secondary="0.70 0.70 0.70 1"/>
+                <color primary="0.653 0.391 0.158 1" secondary="0.70 0.70 0.70 1"/>
+                <color primary="0.448 0.245 0.066 1" secondary="0.70 0.60 0.50 1"/>
+                <color primary="0.358 0.175 0.036 1" secondary="0.60 0.50 0.40 1"/>
+                <color primary="0.305 0.147 0.078 1" secondary="0.61 0.54 0.48 1"/>
+                <color primary="0.310 0.110 0.038 1" secondary="0.74 0.45 0.40 1" default="true"/>
+                <color primary="0.210 0.060 0.030 1" secondary="0.55 0.31 0.19 1"/>
+                <color primary="0.109 0.025 0.012 1" secondary="0.61 0.28 0.15 1"/>
+                <color primary="0.181 0.023 0.018 1" secondary="0.61 0.280 0.150 1"/>
+                <color primary="0.131 0.013 0.008 1" secondary="0.61 0.280 0.150 1"/>
+                <color primary="0.063 0.005 0.008 1" secondary="0.41 0.180 0.050 1"/>
+                <color primary="0.041 0.006 0.018 1" secondary="0.39 0.150 0.050 1"/>
+                <color primary="0.090 0.041 0.030 1" secondary="0.44 0.22 0.08 1"/>
+                <color primary="0.061 0.022 0.009 1" secondary="0.48 0.14 0.04 1"/>
+                <color primary="0.053 0.023 0.017 1" secondary="0.39 0.14 0.08 1"/>
+                <color primary="0.042 0.022 0.018 1" secondary="0.42 0.19 0.08 1"/>
+                <color primary="0.016 0.006 0.002 1" secondary="0.1 0.1 0.1 1"/>
+                <color primary="0.016 0.019 0.026 1" secondary="0.1 0.1 0.1 1"/>
+                <color primary="0.010 0.011 0.012 1" secondary="0.1 0.1 0.1 1"/>
+                <color primary="0.011 0.013 0.016 1" secondary="0.1 0.1 0.1 1"/>
+                <color primary="0.637 0.644 0.658 1" secondary="0.30 0.30 0.30 1"/>
+                <color primary="0.532 0.531 0.537 1" secondary="0.50 0.50 0.50 1"/>
+                <color primary="0.309 0.305 0.305 1" secondary="0.50 0.50 0.50 1"/>
+                <color primary="0.159 0.147 0.144 1" secondary="0.50 0.50 0.50 1"/>
+            </hair>
+        </colors>
+        <hairStyles>
+            <iconGeneration cameraRotX="-6.5" cameraRotY="40" cameraZoom="0" cameraOffset="0 -0.01 0.55" animation="idle1Source">
+                <top name="tShirt01"/>
+                <face name="head01"/>
+            </iconGeneration>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleBuzzCut01.i3d" node="1|0|0" attachPoint="geo" name="hair01" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleBuzzCut01.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyle3070.i3d" node="1|0|0" attachPoint="geo" name="hair02" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyle3070.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleDiablo.i3d" node="1|0|0" attachPoint="geo" name="hair03" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleDiablo.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleFringe.i3d" node="1|0|0" attachPoint="geo" name="hair04" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleFringe.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleManBun.i3d" node="1|0|0" attachPoint="geo" name="hair05" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleManBun.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleMidParted01.i3d" node="1|0|0" attachPoint="geo" name="hair06" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleMidParted01.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleMohawk.i3d" node="1|0|0" attachPoint="geo" name="hair07" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleMohawk.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleMullet.i3d" node="1|0|0" attachPoint="geo" name="hair08" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleMullet.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleSideParted.i3d" node="1|0|0" attachPoint="geo" name="hair09" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleSideParted.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleSideSwept.i3d" node="1|0|0" attachPoint="geo" name="hair10" colorable="2" defaultPrimaryIndex="13" iconFilename="$dataS/character/playerM/hairStyles/hairStyleSideSwept.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleTopKnot.i3d" node="1|0|0" attachPoint="geo" name="hair11" colorable="2" defaultPrimaryIndex="6" iconFilename="$dataS/character/playerM/hairStyles/hairStyleTopKnot.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleUnkempt.i3d" node="1|0|0" attachPoint="geo" name="hair12" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleUnkempt.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleReceding01.i3d" node="1|0|0" attachPoint="geo" name="hair13" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleReceding01.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleReceding02.i3d" node="1|0|0" attachPoint="geo" name="hair14" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleReceding02.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleBaldTop.i3d" node="1|0|0" attachPoint="geo" name="hair15" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleBaldTop.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleBald.i3d" node="1|0|0" attachPoint="geo" name="hair16" colorable="2" defaultPrimaryIndex="18" iconFilename="$dataS/character/playerM/hairStyles/hairStyleBald.png"/>
+            <hairStyle filename="$dataS/character/playerM/hairStyles/hairStyleBuzzCut01.i3d" node="1|0|0" attachPoint="geo" name="gearHair" forHat="true"/>
+        </hairStyles>
+        <beards nullIconFilename="$dataS/character/playerM/empty.png">
+            <iconGeneration cameraRotX="-6.5" cameraRotY="40" cameraZoom="0" cameraOffset="0.06 0.075 0.5" animation="idle1Source">
+                <top name="tShirt01"/>
+                <face name="head01"/>
+            </iconGeneration>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/beardStubble.i3d" node="1|0|0|0" attachPoint="geo" name="stubble_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/beardStubble.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/beardStubble.i3d" node="1|0|0|0" attachPoint="geo" name="stubble_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/beardStubble.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/beardStubble.i3d" node="1|0|0|0" attachPoint="geo" name="stubble_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/beardStubble.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/beardStubble.i3d" node="1|0|0|0" attachPoint="geo" name="stubble_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/beardStubble.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/beardStubble.i3d" node="1|0|0|0" attachPoint="geo" name="stubble_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/beardStubble.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/beardStubble.i3d" node="1|0|0|0" attachPoint="geo" name="stubble_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/beardStubble.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/trimmedBeard.i3d" node="1|0|0|0" attachPoint="geo" name="trimmedBeard_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/trimmedBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/trimmedBeard.i3d" node="1|0|0|0" attachPoint="geo" name="trimmedBeard_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmedBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/trimmedBeard.i3d" node="1|0|0|0" attachPoint="geo" name="trimmedBeard_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmedBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/trimmedBeard.i3d" node="1|0|0|0" attachPoint="geo" name="trimmedBeard_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmedBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/trimmedBeard.i3d" node="1|0|0|0" attachPoint="geo" name="trimmedBeard_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmedBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/trimmedBeard.i3d" node="1|0|0|0" attachPoint="geo" name="trimmedBeard_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmedBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/trimmedBeard.i3d" node="1|0|0|0" attachPoint="geo" name="trimmedBeard_head07" face="head07" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmedBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/goatee01.i3d" node="1|0|0|0" attachPoint="geo" name="goatee01_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/goatee01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/goatee01.i3d" node="1|0|0|0" attachPoint="geo" name="goatee01_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/goatee01.i3d" node="1|0|0|0" attachPoint="geo" name="goatee01_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/goatee01.i3d" node="1|0|0|0" attachPoint="geo" name="goatee01_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/goatee01.i3d" node="1|0|0|0" attachPoint="geo" name="goatee01_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/goatee01.i3d" node="1|0|0|0" attachPoint="geo" name="goatee01_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/goatee02.i3d" node="1|0|0|0" attachPoint="geo" name="goatee02_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/goatee02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/goatee02.i3d" node="1|0|0|0" attachPoint="geo" name="goatee02_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/goatee02.i3d" node="1|0|0|0" attachPoint="geo" name="goatee02_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/goatee02.i3d" node="1|0|0|0" attachPoint="geo" name="goatee02_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/goatee02.i3d" node="1|0|0|0" attachPoint="geo" name="goatee02_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/goatee02.i3d" node="1|0|0|0" attachPoint="geo" name="goatee02_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/goatee02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/muttonChops01.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops01_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/muttonChops01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/muttonChops01.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops01_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/muttonChops01.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops01_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/muttonChops01.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops01_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/muttonChops01.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops01_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/muttonChops01.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops01_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops01.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/muttonChops02.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops02_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/muttonChops02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/muttonChops02.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops02_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/muttonChops02.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops02_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/muttonChops02.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops02_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/muttonChops02.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops02_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/muttonChops02.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops02_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops02.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/muttonChops03.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops03_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/muttonChops03.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/muttonChops03.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops03_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops03.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/muttonChops03.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops03_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops03.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/muttonChops03.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops03_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops03.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/muttonChops03.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops03_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops03.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/muttonChops03.i3d" node="1|0|0|0" attachPoint="geo" name="muttonChops03_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/muttonChops03.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/fullBeard.i3d" node="1|0|0|0" attachPoint="geo" name="fullBeard_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/fullBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/fullBeard.i3d" node="1|0|0|0" attachPoint="geo" name="fullBeard_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/fullBeard.i3d" node="1|0|0|0" attachPoint="geo" name="fullBeard_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/fullBeard.i3d" node="1|0|0|0" attachPoint="geo" name="fullBeard_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/fullBeard.i3d" node="1|0|0|0" attachPoint="geo" name="fullBeard_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/fullBeard.i3d" node="1|0|0|0" attachPoint="geo" name="fullBeard_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullBeard.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/trimmed.i3d" node="1|0|0|0" attachPoint="geo" name="trimmed_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/trimmed.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/trimmed.i3d" node="1|0|0|0" attachPoint="geo" name="trimmed_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmed.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/trimmed.i3d" node="1|0|0|0" attachPoint="geo" name="trimmed_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmed.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/trimmed.i3d" node="1|0|0|0" attachPoint="geo" name="trimmed_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmed.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/trimmed.i3d" node="1|0|0|0" attachPoint="geo" name="trimmed_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmed.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/trimmed.i3d" node="1|0|0|0" attachPoint="geo" name="trimmed_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/trimmed.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/walrusTame.i3d" node="1|0|0|0" attachPoint="geo" name="walrusTame_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/walrusTame.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/walrusTame.i3d" node="1|0|0|0" attachPoint="geo" name="walrusTame_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusTame.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/walrusTame.i3d" node="1|0|0|0" attachPoint="geo" name="walrusTame_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusTame.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/walrusTame.i3d" node="1|0|0|0" attachPoint="geo" name="walrusTame_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusTame.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/walrusTame.i3d" node="1|0|0|0" attachPoint="geo" name="walrusTame_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusTame.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/walrusTame.i3d" node="1|0|0|0" attachPoint="geo" name="walrusTame_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusTame.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/fullStash.i3d" node="1|0|0|0" attachPoint="geo" name="fullStash_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/fullStash.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/fullStash.i3d" node="1|0|0|0" attachPoint="geo" name="fullStash_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullStash.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/fullStash.i3d" node="1|0|0|0" attachPoint="geo" name="fullStash_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullStash.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/fullStash.i3d" node="1|0|0|0" attachPoint="geo" name="fullStash_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullStash.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/fullStash.i3d" node="1|0|0|0" attachPoint="geo" name="fullStash_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullStash.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/fullStash.i3d" node="1|0|0|0" attachPoint="geo" name="fullStash_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/fullStash.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/upwardHandlebar.i3d" node="1|0|0|0" attachPoint="geo" name="upwardHandlebar_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/upwardHandlebar.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/upwardHandlebar.i3d" node="1|0|0|0" attachPoint="geo" name="upwardHandlebar_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/upwardHandlebar.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/upwardHandlebar.i3d" node="1|0|0|0" attachPoint="geo" name="upwardHandlebar_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/upwardHandlebar.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/upwardHandlebar.i3d" node="1|0|0|0" attachPoint="geo" name="upwardHandlebar_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/upwardHandlebar.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/upwardHandlebar.i3d" node="1|0|0|0" attachPoint="geo" name="upwardHandlebar_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/upwardHandlebar.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/upwardHandlebar.i3d" node="1|0|0|0" attachPoint="geo" name="upwardHandlebar_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/upwardHandlebar.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/horseshoeMustache1.i3d" node="1|0|0|0" attachPoint="geo" name="horseshoe_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/horseshoeMustache1.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/horseshoeMustache1.i3d" node="1|0|0|0" attachPoint="geo" name="horseshoe_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/horseshoeMustache1.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/horseshoeMustache1.i3d" node="1|0|0|0" attachPoint="geo" name="horseshoe_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/horseshoeMustache1.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/horseshoeMustache1.i3d" node="1|0|0|0" attachPoint="geo" name="horseshoe_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/horseshoeMustache1.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/horseshoeMustache1.i3d" node="1|0|0|0" attachPoint="geo" name="horseshoe_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/horseshoeMustache1.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/horseshoeMustache1.i3d" node="1|0|0|0" attachPoint="geo" name="horseshoe_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/horseshoeMustache1.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/walrusFull.i3d" node="1|0|0|0" attachPoint="geo" name="walrusFull_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/walrusFull.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/walrusFull.i3d" node="1|0|0|0" attachPoint="geo" name="walrusFull_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusFull.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/walrusFull.i3d" node="1|0|0|0" attachPoint="geo" name="walrusFull_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusFull.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/walrusFull.i3d" node="1|0|0|0" attachPoint="geo" name="walrusFull_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusFull.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/walrusFull.i3d" node="1|0|0|0" attachPoint="geo" name="walrusFull_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusFull.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/walrusFull.i3d" node="1|0|0|0" attachPoint="geo" name="walrusFull_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusFull.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead01/walrusXL.i3d" node="1|0|0|0" attachPoint="geo" name="walrusXL_head01" face="head01" colorable="2" defaultPrimaryIndex="7" iconFilename="$dataS/character/playerM/facialHair/walrusXL.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead02/walrusXL.i3d" node="1|0|0|0" attachPoint="geo" name="walrusXL_head02" face="head02" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusXL.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead03/walrusXL.i3d" node="1|0|0|0" attachPoint="geo" name="walrusXL_head03" face="head03" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusXL.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead04/walrusXL.i3d" node="1|0|0|0" attachPoint="geo" name="walrusXL_head04" face="head04" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusXL.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead05/walrusXL.i3d" node="1|0|0|0" attachPoint="geo" name="walrusXL_head05" face="head05" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusXL.png"/>
+            <beard filename="$dataS/character/playerM/facialHair/mHead06/walrusXL.i3d" node="1|0|0|0" attachPoint="geo" name="walrusXL_head06" face="head06" colorable="2" iconFilename="$dataS/character/playerM/facialHair/walrusXL.png"/>
+        </beards>
+        <facegear/>
+        <glasses nullIconFilename="$dataS/character/playerM/empty.png">
+            <iconGeneration cameraRotX="-15" cameraRotY="30" cameraZoom="0.6" animation="idle1Source"/>
+            <glasses filename="$dataS/character/playerM/attachments/glassesAviators.i3d" node="1" attachPoint="head" name="aviator" iconFilename="$dataS/character/playerM/attachments/glassesAviators.png"/>
+            <glasses filename="$dataS/character/playerM/attachments/glassesClassic.i3d" node="1" attachPoint="head" name="classic" iconFilename="$dataS/character/playerM/attachments/glassesClassic.png"/>
+            <glasses filename="$dataS/character/playerM/attachments/glassesReading.i3d" node="1" attachPoint="head" name="reading" iconFilename="$dataS/character/playerM/attachments/glassesReading.png"/>
+            <glasses filename="$dataS/character/playerM/attachments/glassesSafety.i3d" node="1" attachPoint="head" name="safety" iconFilename="$dataS/character/playerM/attachments/glassesSafety.png"/>
+            <glasses filename="$dataS/character/playerM/attachments/glassesSports01.i3d" node="1" attachPoint="head" name="sports1" iconFilename="$dataS/character/playerM/attachments/glassesSports01.png"/>
+            <glasses filename="$dataS/character/playerM/attachments/glassesSports02.i3d" node="1" attachPoint="head" name="sports2" iconFilename="$dataS/character/playerM/attachments/glassesSports02.png"/>
+            <glasses filename="$dataS/character/playerM/attachments/glassesVintage.i3d" node="1" attachPoint="head" name="vintage" iconFilename="$dataS/character/playerM/attachments/glassesVintage.png"/>
+        </glasses>
+        <headgear nullIconFilename="$dataS/character/playerM/empty.png">
+            <iconGeneration cameraRotX="-15" cameraRotY="30" cameraZoom="0.6" animation="idle1Source"/>
+            <headgear filename="$dataS/character/playerM/attachments/headgearBallcap.i3d" node="1" attachPoint="head" name="ballcap" colorable="2" defaultPrimaryIndex="12" iconFilename="$dataS/character/playerM/attachments/headgearBallcap.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/headgearBeanie.i3d" node="1" attachPoint="head" name="beanie" colorable="1" defaultPrimaryIndex="44" iconFilename="$dataS/character/playerM/attachments/headgearBeanie.png">
+                <iconGeneration cameraRotX="-15" cameraRotY="30" cameraZoom="0.7" animation="idle1Source"/>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearBeret.i3d" node="1" attachPoint="head" name="beret" colorable="1" defaultPrimaryIndex="5" iconFilename="$dataS/character/playerM/attachments/headgearBeret.png">
+                <colors>
+                    <color primary="0.11 0.13 0.16 1"/>
+                    <color primary="0.16 0.13 0.11 1"/>
+                    <color primary="0.1 0.1 0.1 1"/>
+                    <color primary="0.12 0.08 0.075 1"/>
+                    <color primary="0.075 0.08 0.12 1"/>
+                    <color primary="0.05 0.05 0.05 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearCowboy.i3d" node="1" attachPoint="head" name="cowboy" colorable="1" defaultPrimaryIndex="5" iconFilename="$dataS/character/playerM/attachments/headgearCowboy.png">
+                <colors>
+                    <color primary="0.95 0.85 0.75 1"/>
+                    <color primary="0.6 0.545 0.5 1"/>
+                    <color primary="0.45 0.4 0.295 1"/>
+                    <color primary="0.315 0.24 0.15 1"/>
+                    <color primary="0.24 0.15 0.09 1"/>
+                    <color primary="0.15 0.1 0.08 1"/>
+                    <color primary="0.09 0.085 0.08 1"/>
+                    <color primary="0.09 0.0585 0.036 1"/>
+                    <color primary="0.04 0.035 0.035 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearFisherman.i3d" node="1" attachPoint="head" name="fisherman" colorable="1" defaultPrimaryIndex="67" iconFilename="$dataS/character/playerM/attachments/headgearFisherman.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/headgearMilitia.i3d" node="1" attachPoint="head" name="militia" colorable="1" defaultPrimaryIndex="3" iconFilename="$dataS/character/playerM/attachments/headgearMilitia.png">
+                <colors>
+                    <color primary="0.3 0.25 0.19 1"/>
+                    <color primary="0.21 0.17 0.12 1"/>
+                    <color primary="0.08 0.078 0.05 1"/>
+                    <color primary="0.045 0.055 0.085 1"/>
+                    <color primary="0.035 0.04 0.045 1"/>
+                    <color primary="0.025 0.02 0.02 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearMotorbike.i3d" node="1" attachPoint="head" name="motorbike" colorable="1" defaultPrimaryIndex="10" hideGlasses="true" iconFilename="$dataS/character/playerM/attachments/headgearMotorbike.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/headgearOutback.i3d" node="1" attachPoint="head" name="outback" colorable="1" defaultPrimaryIndex="2" iconFilename="$dataS/character/playerM/attachments/headgearOutback.png">
+                <colors>
+                    <color primary="0.315 0.24 0.15 1"/>
+                    <color primary="0.24 0.15 0.09 1"/>
+                    <color primary="0.15 0.1 0.08 1"/>
+                    <color primary="0.09 0.085 0.08 1"/>
+                    <color primary="0.09 0.0585 0.036 1"/>
+                    <color primary="0.04 0.035 0.035 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearRacing.i3d" node="1" attachPoint="head" name="racing" colorable="1" defaultPrimaryIndex="25" hideGlasses="true" iconFilename="$dataS/character/playerM/attachments/headgearRacing.png">
+                <iconGeneration cameraRotX="-15" cameraRotY="30" cameraZoom="0.7" animation="idle1Source"/>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearRiding.i3d" node="1" attachPoint="head" name="riding" colorable="1" defaultPrimaryIndex="2" iconFilename="$dataS/character/playerM/attachments/headgearRiding.png">
+                <colors>
+                    <color primary="0.1317 0.1609 0.2296 1"/>
+                    <color primary="0.0993 0.1208 0.1640 1"/>
+                    <color primary="0.0617 0.0749 0.1023 1"/>
+                    <color primary="0.0738 0.0620 0.0431 1"/>
+                    <color primary="0.0365 0.0413 0.0535 1"/>
+                    <color primary="0.0350 0.0350 0.0360 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearVintage.i3d" node="1" attachPoint="head" name="vintage" colorable="1" defaultPrimaryIndex="2" iconFilename="$dataS/character/playerM/attachments/headgearVintage.png">
+                <colors>
+                    <color primary="0.11 0.13 0.16 1"/>
+                    <color primary="0.16 0.13 0.11 1"/>
+                    <color primary="0.1 0.1 0.1 1"/>
+                    <color primary="0.12 0.08 0.075 1"/>
+                    <color primary="0.075 0.08 0.12 1"/>
+                    <color primary="0.05 0.05 0.05 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearBandana.i3d" node="1" attachPoint="head" name="headgearBandana" colorable="1" defaultPrimaryIndex="25" iconFilename="$dataS/character/playerM/attachments/headgearBandana.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/derbyTweedHat.i3d" node="1" attachPoint="head" name="derbyTweedHat" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/attachments/derbyTweedHat.png">
+                <colors>
+                    <color primary="0.47 0.35 0.12 1"/>
+                    <color primary="0.28 0.3 0.1 1"/>
+                    <color primary="0.4 0.53 0.53 1"/>
+                    <color primary="0.4 0.3 0.5 1"/>
+                    <color primary="0.95 0.8 0.6 1"/>
+                    <color primary="0.15 0.2 0.35 1"/>
+                    <color primary="0.14 0.25 0.3 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/ballCapTweed.i3d" node="1" attachPoint="head" name="ballCapTweed" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/attachments/ballCapTweed.png">
+                <colors>
+                    <color primary="0.47 0.35 0.12 1"/>
+                    <color primary="0.28 0.3 0.1 1"/>
+                    <color primary="0.4 0.53 0.53 1"/>
+                    <color primary="0.4 0.3 0.5 1"/>
+                    <color primary="0.95 0.8 0.6 1"/>
+                    <color primary="0.15 0.2 0.35 1"/>
+                    <color primary="0.14 0.25 0.3 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/strawHat.i3d" node="1" attachPoint="head" name="strawHat" iconFilename="$dataS/character/playerM/attachments/strawHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/hatWoolen.i3d" node="1" attachPoint="head" name="hatWoolen" iconFilename="$dataS/character/playerM/attachments/hatWoolen.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/headgearHusqvarna.i3d" node="1" attachPoint="head" name="husqvarna" brand="HUSQVARNA" iconFilename="$dataS/character/playerM/attachments/headgearHusqvarna.png">
+                <iconGeneration cameraRotX="-15" cameraRotY="30" cameraZoom="0.7" animation="idle1Source"/>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearJonsered.i3d" node="1" attachPoint="head" name="jonsered" brand="JONSERED" iconFilename="$dataS/character/playerM/attachments/headgearJonsered.png">
+                <iconGeneration cameraRotX="-15" cameraRotY="30" cameraZoom="0.7" animation="idle1Source"/>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearMcCulloch.i3d" node="1" attachPoint="head" name="mcculloch" brand="MCCULLOCH" iconFilename="$dataS/character/playerM/attachments/headgearMcCulloch.png">
+                <iconGeneration cameraRotX="-15" cameraRotY="30" cameraZoom="0.7" animation="idle1Source"/>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/headgearStihl.i3d" node="1" attachPoint="head" name="stihl" brand="STIHL" iconFilename="$dataS/character/playerM/attachments/headgearStihl.png">
+                <iconGeneration cameraRotX="-15" cameraRotY="30" cameraZoom="0.7" animation="idle1Source"/>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/straussConcreteCap.i3d" node="1" attachPoint="head" name="strauss" brand="STRAUSS" colorable="2" defaultPrimaryIndex="3" iconFilename="$dataS/character/playerM/attachments/straussConcreteCap.png">
+                <colors>
+                    <color primary="0.10 0.20 0.50 1" secondary="1 1 1 1"/>
+                    <color primary="0.50 0.30 0.10 1" secondary="1 1 1 1"/>
+                    <color primary="0.12 0.12 0.12 1" secondary="1 1 1 1"/>
+                    <color primary="0.04 0.04 0.04 1" secondary="1 1 1 1"/>
+                </colors>
+            </headgear>
+            <headgear filename="$dataS/character/playerM/attachments/caseIHhat.i3d" node="1" attachPoint="head" name="caseih" brand="CASEIH" iconFilename="$dataS/character/playerM/attachments/caseIHhat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/eroHat.i3d" node="1" attachPoint="head" name="eroHat" brand="ERO" iconFilename="$dataS/character/playerM/attachments/eroHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/fSHat.i3d" node="1" attachPoint="head" name="farmSimHat" brand="GIANTS" colorable="0" defaultPrimaryIndex="12" iconFilename="$dataS/character/playerM/attachments/fSHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/GIANTSCap.i3d" node="1" attachPoint="head" name="giants" brand="GIANTS" colorable="0" defaultPrimaryIndex="12" iconFilename="$dataS/character/playerM/attachments/GIANTSCap.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/johnDeereHatBlack.i3d" node="1" attachPoint="head" name="JDBlack" brand="JOHNDEERE" iconFilename="$dataS/character/playerM/attachments/johnDeereHatBlack.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/johnDeereHatGreen.i3d" node="1" attachPoint="head" name="JDGreen" brand="JOHNDEERE" iconFilename="$dataS/character/playerM/attachments/johnDeereHatGreen.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/kroneHat.i3d" node="1" attachPoint="head" name="kroneHat" brand="KRONE" iconFilename="$dataS/character/playerM/attachments/kroneHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/kubotaHat.i3d" node="1" attachPoint="head" name="kubotaHat" brand="KUBOTA" iconFilename="$dataS/character/playerM/attachments/kubotaHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/kubotaHat2.i3d" node="1" attachPoint="head" name="kubotaHat2" brand="KUBOTA" iconFilename="$dataS/character/playerM/attachments/kubotaHat2.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/masseyFergusonHat.i3d" node="1" attachPoint="head" name="MFhat" brand="MASSEYFERGUSON" iconFilename="$dataS/character/playerM/attachments/masseyFergusonHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/newHollandCap.i3d" node="1" attachPoint="head" name="newHolland" brand="NEWHOLLAND" iconFilename="$dataS/character/playerM/attachments/newHollandCap.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/planETHat.i3d" node="1" attachPoint="head" name="planETHat" brand="PLANET" iconFilename="$dataS/character/playerM/attachments/planETHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/valtraHat.i3d" node="1" attachPoint="head" name="ValtraHat" brand="VALTRA" iconFilename="$dataS/character/playerM/attachments/valtraHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/vermeerHat.i3d" node="1" attachPoint="head" name="vermeerHat" brand="VERMEER" iconFilename="$dataS/character/playerM/attachments/vermeerHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/volvoHat.i3d" node="1" attachPoint="head" name="VolvoHat" brand="VOLVO" iconFilename="$dataS/character/playerM/attachments/volvoHat.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/poettingerCap.i3d" node="1" attachPoint="head" name="poettingerCap" brand="POETTINGER" iconFilename="$dataS/character/playerM/attachments/poettingerCap.png"/>
+            <headgear filename="$dataS/character/playerM/attachments/crown.i3d" node="1" attachPoint="head" name="kinlaigCrown" iconFilename="$dataS/character/playerM/attachments/crown.png" extraContentId="CROWN"/>
+        </headgear>
+        <gloves nullIconFilename="$dataS/character/playerM/empty.png">
+            <iconGeneration cameraRotX="-35" cameraRotY="-60" cameraZoom="0.7" ignoreOneSide="true" animation=""/>
+            <gloves filename="$dataS/character/playerM/gloves/glovesGeneric.i3d" node="1|0|0" attachPoint="geo" name="generic" extent="over" colorable="2" defaultPrimaryIndex="3" iconFilename="$dataS/character/playerM/gloves/glovesGeneric.png">
+                <hidesBodypart name="hands"/>
+                <colors>
+                    <color primary="0.8870 0.8870 0.8870 1" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.4910 0.5647 0.7084 1" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.6845 0.5996 0.3879 1" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.3613 0.0262 0.0242 1" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.0012 0.1529 0.1912 1" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.0908 0.0886 0.0908 1" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.0578 0.0704 0.1022 1" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.0865 0.1195 0.0252 1" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.0260 0.0310 0.0395 1" secondary="0.029 0.029 0.029 1.00"/>
+                </colors>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/glovesHorseRiding.i3d" node="1|0|0" attachPoint="geo" name="riding" extent="over" colorable="1" defaultPrimaryIndex="2" iconFilename="$dataS/character/playerM/gloves/glovesHorseRiding.png">
+                <hidesBodypart name="hands"/>
+                <colors>
+                    <color primary="0.315 0.24 0.15 1"/>
+                    <color primary="0.24 0.15 0.09 1"/>
+                    <color primary="0.15 0.1 0.08 1"/>
+                    <color primary="0.09 0.085 0.08 1"/>
+                    <color primary="0.09 0.0585 0.036 1"/>
+                    <color primary="0.04 0.035 0.035 1"/>
+                </colors>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/glovesKevlar.i3d" node="1|0|0" attachPoint="geo" name="kevlar" extent="under" colorable="1" defaultPrimaryIndex="2" iconFilename="$dataS/character/playerM/gloves/glovesKevlar.png">
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="armsLower"/>
+                <colors>
+                    <color primary="0.315 0.24 0.15 1"/>
+                    <color primary="0.24 0.15 0.09 1"/>
+                    <color primary="0.15 0.1 0.08 1"/>
+                    <color primary="0.09 0.085 0.08 1"/>
+                    <color primary="0.09 0.0585 0.036 1"/>
+                    <color primary="0.04 0.035 0.035 1"/>
+                </colors>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/glovesLeather.i3d" node="1|0|0" attachPoint="geo" name="leather" extent="under" colorable="1" defaultPrimaryIndex="5" iconFilename="$dataS/character/playerM/gloves/glovesLeather.png">
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="armsLower"/>
+                <colors>
+                    <color primary="0.95 0.85 0.75 1"/>
+                    <color primary="0.6 0.545 0.5 1"/>
+                    <color primary="0.45 0.4 0.295 1"/>
+                    <color primary="0.315 0.24 0.15 1"/>
+                    <color primary="0.24 0.15 0.09 1"/>
+                    <color primary="0.15 0.1 0.08 1"/>
+                    <color primary="0.09 0.085 0.08 1"/>
+                    <color primary="0.09 0.0585 0.036 1"/>
+                    <color primary="0.04 0.035 0.035 1"/>
+                </colors>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/glovesMechanic.i3d" node="1|0|0" attachPoint="geo" name="mechanic" extent="over" colorable="2" defaultPrimaryIndex="8" iconFilename="$dataS/character/playerM/gloves/glovesMechanic.png">
+                <hidesBodypart name="hands"/>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/glovesRacing.i3d" node="1|0|0" attachPoint="geo" name="racing" extent="over" colorable="1" defaultPrimaryIndex="8" iconFilename="$dataS/character/playerM/gloves/glovesRacing.png">
+                <hidesBodypart name="hands"/>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/glovesRubber.i3d" node="1|0|0" attachPoint="geo" name="rubber" extent="under" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/gloves/glovesRubber.png">
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="armsLower"/>
+                <colors>
+                    <color primary="0.0744 0.1029 0.0608 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0379 0.0823 0.0468 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0293 0.0561 0.0317 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0180 0.0389 0.0222 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0150 0.0281 0.0150 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0112 0.0207 0.0128 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                </colors>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/husqvarna/glovesHusqvarna.i3d" node="1|0|0|0" attachPoint="geo" name="husqvarnaGloves" extent="under" brand="HUSQVARNA" iconFilename="$dataS/character/playerM/gloves/husqvarna/glovesHusqvarna.png">
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="armsLower"/>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/jonsered/glovesJonsered.i3d" node="1|0|0|0" attachPoint="geo" name="jonseredGloves" extent="under" brand="JONSERED" iconFilename="$dataS/character/playerM/gloves/jonsered/glovesJonsered.png">
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="armsLower"/>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/mcCulloch/glovesMcCulloch.i3d" node="1|0|0|0" attachPoint="geo" name="mccullochGloves" extent="under" brand="MCCULLOCH" iconFilename="$dataS/character/playerM/gloves/mcCulloch/glovesMcCulloch.png">
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="armsLower"/>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/stihl/glovesStihl.i3d" node="1|0|0|0" attachPoint="geo" name="stihlGloves" extent="under" brand="STIHL" iconFilename="$dataS/character/playerM/gloves/stihl/glovesStihl.png">
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="armsLower"/>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/strauss/glovesEsTrailLight.i3d" node="1|0|0|0" attachPoint="geo" name="esTrailLight" extent="over" brand="STRAUSS" iconFilename="$dataS/character/playerM/gloves/strauss/glovesEsTrailLight.png">
+                <hidesBodypart name="hands"/>
+            </gloves>
+            <gloves filename="$dataS/character/playerM/gloves/strauss/glovesEsTrailLight02.i3d" node="1|0|0|0" attachPoint="geo" name="esTrailLight02" extent="over" brand="STRAUSS" iconFilename="$dataS/character/playerM/gloves/strauss/glovesEsTrailLight02.png">
+                <hidesBodypart name="hands"/>
+            </gloves>
+        </gloves>
+        <tops>
+            <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.32" animation="idle1Source"/>
+            <top filename="$dataS/character/playerM/shirts/topTShirt01.i3d" node="1|0|0" attachPoint="geo" name="tShirt01" beltHidden="true" colorable="1" defaultPrimaryIndex="10" iconFilename="$dataS/character/playerM/shirts/topTShirt01.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.6" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/topTShirt02.i3d" node="1|0|0" attachPoint="geo" name="tShirt02" beltHidden="true" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shirts/topTShirt02.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.65" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <colors>
+                    <color primary="0.420 0.430 0.400 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.800 0.650 0.540 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.470 0.330 0.240 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.420 0.240 0.090 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.240 0.070 0.000 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.090 0.060 0.030 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.060 0.080 0.020 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.160 0.180 0.240 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.030 0.070 0.100 1.000" secondary="0 0 0 1.000"/>
+                    <color primary="0.020 0.020 0.040 1.000" secondary="0 0 0 1.000"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/topTankTop.i3d" node="1|0|0" attachPoint="geo" name="tankTop" beltHidden="true" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shirts/topTankTop.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.6" animation="idle1Source"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/topCollaredShirt01.i3d" node="1|0|0" attachPoint="geo" name="collaredShirt" beltHidden="false" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shirts/topCollaredShirt01.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.4" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/topLightSweater.i3d" node="1|0|0" attachPoint="geo" name="topLightSweater" beltHidden="true" colorable="1" defaultPrimaryIndex="9" iconFilename="$dataS/character/playerM/shirts/topLightSweater.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/topPlaidShirt01.i3d" node="1|0|0" attachPoint="geo" name="topPlaidShirt" beltHidden="false" colorable="1" defaultPrimaryIndex="16" iconFilename="$dataS/character/playerM/shirts/topPlaidShirt01.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.4179 0.0003 0.0125 1"/>
+                    <color primary="0.4341 0.0630 0.0097 1"/>
+                    <color primary="0.4621 0.1569 0.0121 1"/>
+                    <color primary="0.0513 0.1366 0.0108 1"/>
+                    <color primary="0.0007 0.1036 0.0189 1"/>
+                    <color primary="0.0003 0.0865 0.2789 1"/>
+                    <color primary="0.0006 0.1062 0.2159 1"/>
+                    <color primary="0.0071 0.0003 0.0673 1"/>
+                    <color primary="0.0330 0.0003 0.0642 1"/>
+                    <color primary="0.0782 0.0000 0.1620 1"/>
+                    <color primary="0.1683 0.0000 0.1274 1"/>
+                    <color primary="0.1683 0.0000 0.0452 1"/>
+                    <color primary="0.1860 0.0004 0.0010 1"/>
+                    <color primary="0.1879 0.0252 0.0008 1"/>
+                    <color primary="0.0383 0.0285 0.0253 1"/>
+                    <color primary="0.0809 0.0624 0.0534 1"/>
+                    <color primary="0.1651 0.1248 0.1022 1"/>
+                    <color primary="0.3155 0.2371 0.1867 1"/>
+                    <color primary="0.3690 0.2090 0.0872 1"/>
+                    <color primary="0.2502 0.1248 0.0472 1"/>
+                    <color primary="0.1697 0.0723 0.0197 1"/>
+                    <color primary="0.1161 0.0395 0.0079 1"/>
+                    <color primary="0.0768 0.0222 0.0043 1"/>
+                    <color primary="0.0365 0.0110 0.0034 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/topShirtLongSleeve.i3d" node="1|0|0" attachPoint="geo" name="topShirtLongSleeve" beltHidden="false" colorable="2" defaultPrimaryIndex="9" iconFilename="$dataS/character/playerM/shirts/topShirtLongSleeve.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topAviatorJacket.i3d" node="1|0|0" attachPoint="geo" name="aviatorJacket" beltHidden="true" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/topAviatorJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.155 0.140 0.140 0.25"/>
+                    <color primary="0.120 0.100 0.095 0.40"/>
+                    <color primary="0.100 0.095 0.111 0.55"/>
+                    <color primary="0.090 0.085 0.080 0.70"/>
+                    <color primary="0.080 0.055 0.040 0.85"/>
+                    <color primary="0.040 0.035 0.035 1.00"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topDenimJacket.i3d" node="1|0|0" attachPoint="geo" name="denimJacket" beltHidden="true" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/topDenimJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.19 0.26 0.33 1"/>
+                    <color primary="0.08 0.2 0.3 1"/>
+                    <color primary="0.04 0.1 0.2 1"/>
+                    <color primary="0.06 0.06 0.085 1"/>
+                    <color primary="0.025 0.035 0.085 1"/>
+                    <color primary="0.025 0.025 0.03 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topLeatherJacket.i3d" node="1|0|0" attachPoint="geo" name="leather" beltHidden="false" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/topLeatherJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.315 0.24 0.15 1"/>
+                    <color primary="0.24 0.15 0.09 1"/>
+                    <color primary="0.15 0.1 0.08 1"/>
+                    <color primary="0.09 0.085 0.08 1"/>
+                    <color primary="0.09 0.0585 0.036 1"/>
+                    <color primary="0.04 0.035 0.035 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topVest.i3d" node="1|0|0" attachPoint="geo" name="topVest" beltHidden="false" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/topVest.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.3" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.3690 0.2090 0.0872 1"/>
+                    <color primary="0.2502 0.1248 0.0472 1"/>
+                    <color primary="0.1697 0.0723 0.0197 1"/>
+                    <color primary="0.1161 0.0395 0.0079 1"/>
+                    <color primary="0.0768 0.0222 0.0043 1"/>
+                    <color primary="0.0365 0.0110 0.0034 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topVestM.i3d" node="1|0|0" attachPoint="geo" name="topVestM" beltHidden="false" colorable="1" defaultPrimaryIndex="9" iconFilename="$dataS/character/playerM/jacket/topVestM.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.35" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topFarmJacketM.i3d" node="1|0|0" attachPoint="geo" name="topFarmJacketM" beltHidden="false" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/topFarmJacketM.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.3690 0.2090 0.0872 1" secondary="0.3690 0.2090 0.0872 1"/>
+                    <color primary="0.2502 0.1248 0.0472 1" secondary="0.3690 0.2090 0.0872 1"/>
+                    <color primary="0.1697 0.0723 0.0197 1" secondary="0.3690 0.2090 0.0872 1"/>
+                    <color primary="0.1161 0.0395 0.0079 1" secondary="0.3690 0.2090 0.0872 1"/>
+                    <color primary="0.0768 0.0222 0.0043 1" secondary="0.3690 0.2090 0.0872 1"/>
+                    <color primary="0.0365 0.0110 0.0034 1" secondary="0.3690 0.2090 0.0872 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topWaterproofJacket.i3d" node="1|0|0" attachPoint="geo" name="waterProof" beltHidden="false" colorable="1" defaultPrimaryIndex="2" iconFilename="$dataS/character/playerM/jacket/topWaterproofJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.0744 0.1029 0.0608 1.0"/>
+                    <color primary="0.0379 0.0823 0.0468 1.0"/>
+                    <color primary="0.0293 0.0561 0.0317 1.0"/>
+                    <color primary="0.0180 0.0389 0.0222 1.0"/>
+                    <color primary="0.0150 0.0281 0.0150 1.0"/>
+                    <color primary="0.0112 0.0207 0.0128 1.0"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/zipNeckPullover.i3d" node="1|0|0" attachPoint="geo" name="zipNeckPullover" beltHidden="true" colorable="1" defaultPrimaryIndex="9" iconFilename="$dataS/character/playerM/shirts/zipNeckPullover.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topConstruction.i3d" node="1|0|0" attachPoint="geo" name="constructionVest" beltHidden="true" colorable="1" defaultPrimaryIndex="28" iconFilename="$dataS/character/playerM/jacket/topConstruction.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topWindBreaker.i3d" node="1|0|0" attachPoint="geo" name="windbreaker" beltHidden="true" colorable="1" defaultPrimaryIndex="13" iconFilename="$dataS/character/playerM/jacket/topWindBreaker.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.5089 0.4755 0.0097 1"/>
+                    <color primary="0.4621 0.1569 0.0121 1"/>
+                    <color primary="0.4341 0.0630 0.0097 1"/>
+                    <color primary="0.1879 0.0252 0.0008 1"/>
+                    <color primary="0.1860 0.0004 0.0010 1"/>
+                    <color primary="0.1683 0.0000 0.0452 1"/>
+                    <color primary="0.1683 0.0000 0.1274 1"/>
+                    <color primary="0.0782 0.0000 0.1620 1"/>
+                    <color primary="0.0330 0.0003 0.0642 1"/>
+                    <color primary="0.0003 0.2384 0.4678 1"/>
+                    <color primary="0.0003 0.0865 0.2789 1"/>
+                    <color primary="0.0188 0.0029 0.1590 1"/>
+                    <color primary="0.0071 0.0003 0.0673 1"/>
+                    <color primary="0.1329 0.3278 0.0319 1"/>
+                    <color primary="0.0513 0.1366 0.0108 1"/>
+                    <color primary="0.0006 0.2346 0.0545 1"/>
+                    <color primary="0.0007 0.1036 0.0189 1"/>
+                    <color primary="0.0383 0.0285 0.0253 1"/>
+                    <color primary="0.0116 0.0116 0.0116 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topPuffJacket.i3d" node="1|0|0" attachPoint="geo" name="puffJacket" beltHidden="true" colorable="2" defaultPrimaryIndex="4" iconFilename="$dataS/character/playerM/jacket/topPuffJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.920 0.920 0.820 0.85" secondary="1.000 0.310 0.090 0.84"/>
+                    <color primary="0.830 0.730 0.570 1" secondary="0.530 0.600 0.770 1"/>
+                    <color primary="0.700 0.700 0.800 1" secondary="0.080 0.080 0.110 0.84"/>
+                    <color primary="0.970 0.450 0.090 1" secondary="0.100 0.100 0.150 1"/>
+                    <color primary="0.870 0.100 0.120 0.96" secondary="0.080 0.080 0.110 0.93"/>
+                    <color primary="0.580 0.100 0.210 1" secondary="0.840 0.840 1.000 1"/>
+                    <color primary="0.520 0.260 0.850 1" secondary="0.080 0.100 0.210 0.84"/>
+                    <color primary="0.370 0.130 0.390 0.8" secondary="0.070 0.360 0.370 0.92"/>
+                    <color primary="0.070 0.220 0.220 1" secondary="0.560 0.310 0.090 1"/>
+                    <color primary="0.160 0.220 0.330 0.9" secondary="0.100 0.120 0.180 0.9"/>
+                    <color primary="0.021 0.020 0.022 1" secondary="0.021 0.020 0.022 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topDeckJacket.i3d" node="1|0|0" attachPoint="geo" name="topDeck" beltHidden="true" colorable="2" defaultPrimaryIndex="3" iconFilename="$dataS/character/playerM/jacket/topDeckJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="1.000 1.000 1.000 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.315 0.240 0.150 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.240 0.150 0.090 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.369 0.209 0.087 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.250 0.124 0.047 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.169 0.072 0.019 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.116 0.039 0.007 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.076 0.022 0.004 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.036 0.011 0.003 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.190 0.260 0.330 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.080 0.200 0.300 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.040 0.100 0.200 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.060 0.060 0.085 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.025 0.035 0.085 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.150 0.100 0.080 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.090 0.058 0.036 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.090 0.085 0.080 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.040 0.035 0.035 1" secondary="0.090 0.085 0.080 1"/>
+                    <color primary="0.025 0.025 0.030 1" secondary="0.090 0.085 0.080 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topSlimCoat.i3d" node="1|0|0" attachPoint="geo" name="winterVest" beltHidden="true" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/topSlimCoat.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.4" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.420 0.430 0.400 1.000" secondary="0.550 0.470 0.440 1.000"/>
+                    <color primary="0.800 0.650 0.540 1.000" secondary="0.700 0.520 0.370 1.000"/>
+                    <color primary="0.470 0.330 0.240 1.000" secondary="0.540 0.440 0.420 1.000"/>
+                    <color primary="0.420 0.240 0.090 1.000" secondary="0.630 0.450 0.370 1.000"/>
+                    <color primary="0.240 0.070 0.000 1.000" secondary="0.490 0.440 0.380 1.000"/>
+                    <color primary="0.090 0.060 0.030 1.000" secondary="0.460 0.440 0.380 1.000"/>
+                    <color primary="0.060 0.080 0.020 1.000" secondary="0.390 0.440 0.380 1.000"/>
+                    <color primary="0.160 0.180 0.240 1.000" secondary="0.490 0.400 0.380 1.000"/>
+                    <color primary="0.030 0.070 0.100 1.000" secondary="0.440 0.470 0.470 1.000"/>
+                    <color primary="0.020 0.020 0.040 1.000" secondary="0.460 0.440 0.380 1.000"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/topWorkJacket.i3d" node="1|0|0" attachPoint="geo" name="workJacket" beltHidden="true" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/topWorkJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.900 0.100 0.000 1.000" secondary="0.060 0.080 0.150 1.000"/>
+                    <color primary="0.000 0.600 0.000 1.000" secondary="0.060 0.080 0.150 1.000"/>
+                    <color primary="0.700 0.600 0.000 1.000" secondary="0.060 0.080 0.150 1.000"/>
+                    <color primary="0.000 0.600 0.400 1.000" secondary="0.540 0.540 0.000 1.000"/>
+                    <color primary="0.920 0.000 0.000 1.000" secondary="0.800 0.800 0.800 1.000"/>
+                    <color primary="0.920 0.000 0.000 1.000" secondary="0.820 0.520 0.000 1.000"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/tweedFieldCoat.i3d" node="1|0|0" attachPoint="geo" name="tweedFieldCoat" beltHidden="true" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/tweedFieldCoat.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.47 0.35 0.12 1" secondary="1 0.85 0.55 1"/>
+                    <color primary="0.28 0.3 0.1 1" secondary="1 0.85 0.55 1"/>
+                    <color primary="0.4 0.53 0.53 1" secondary="0.55 0.6 0.65 1"/>
+                    <color primary="0.4 0.3 0.5 1" secondary="0.4 0.6 0.454 1"/>
+                    <color primary="0.95 0.8 0.6 1" secondary="1 1 1 1 "/>
+                    <color primary="0.15 0.2 0.35 1" secondary="1 1 1 1 "/>
+                    <color primary="0.14 0.25 0.3 1" secondary="1 1 1 1 "/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/tweedSportsJacket.i3d" node="1|0|0" attachPoint="geo" name="tweedSportsJacket" beltHidden="true" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/jacket/tweedSportsJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.47 0.35 0.12 1" secondary="0.799 0.381 0.399 1"/>
+                    <color primary="0.28 0.3 0.1 1" secondary="0.799 0.381 0.399 1"/>
+                    <color primary="0.4 0.53 0.53 1" secondary="0.66 0.3 0.5 1"/>
+                    <color primary="0.4 0.3 0.5 1" secondary="0.4 0.6 0.454 1"/>
+                    <color primary="0.95 0.8 0.6 1" secondary="1 0.8 0.5 1"/>
+                    <color primary="0.15 0.2 0.35 1" secondary="0.72 0.66 0.7 1"/>
+                    <color primary="0.14 0.25 0.3 1" secondary="0.72 0.66 0.7 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/strauss/sweatshirt.i3d" node="1|0|0|0" attachPoint="geo" name="straussSweatshirt" beltHidden="true" brand="STRAUSS" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shirts/strauss/sweatshirt.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.06 0.06 0.06 1" secondary="0.81 0.81 0.81 1"/>
+                    <color primary="0.06 0.06 0.06 1" secondary="0.98 0.98 0 1"/>
+                    <color primary="0.98 0.03 0.08 1" secondary="0.81 0.81 0.81 1"/>
+                    <color primary="0.03 0.13 0.06 1" secondary="0.13 0.31 0.09 1"/>
+                    <color primary="0.24 0.13 0.09 1" secondary="0.13 0.31 0.09 1"/>
+                    <color primary="0.06 0.08 0.22 1" secondary="0.08 0.46 0.95 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/strauss/straussTShirtMerino.i3d" node="1|0|0|0" attachPoint="geo" name="straussTShirtMerino" beltHidden="true" brand="STRAUSS" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shirts/strauss/straussTShirtMerino.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <colors>
+                    <color primary="0.98 0.98 0.02 1" secondary="0.05 0.05 0.05 1"/>
+                    <color primary="0.05 0.05 0.05 1" secondary="0.05 0.05 0.05 1"/>
+                    <color primary="0.37 0.325 0.05 1" secondary="0.68 0.86 0.18 1"/>
+                    <color primary="0.50 0.50 0.50 1" secondary="0.98 0.95 0.02 1"/>
+                    <color primary="0.28 0.82 0.98 1" secondary="0.02 0.02 0.02 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/strauss/straussTShirtMerino2ndVariant.i3d" node="1|0|0|0" attachPoint="geo" name="straussTShirtMerino2nd" beltHidden="true" brand="STRAUSS" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shirts/strauss/straussTShirtMerino2nd.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <colors>
+                    <color primary="0.05 0.05 0.05 1 " secondary="0.98 0.98 0.02 1"/>
+                    <color primary="0.06 0.11 0.28 1" secondary="1 1 1 1"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/strauss/concreteJacket.i3d" node="1|0|0|0" attachPoint="geo" name="concreteJacket" beltHidden="true" colorable="2" defaultPrimaryIndex="1" brand="STRAUSS" iconFilename="$dataS/character/playerM/jacket/strauss/concreteJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.150 0.140 0.110 0.600" secondary="0.270 0.260 0.220 1.000"/>
+                    <color primary="0.060 0.120 0.330 0.800" secondary="0.070 0.080 0.150 1.000"/>
+                    <color primary="0.104 0.105 0.120 0.800" secondary="0.762 0.768 0.782 1.000"/>
+                    <color primary="0.030 0.035 0.040 0.800" secondary="0.030 0.035 0.040 1.000"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/strauss/motion2020Jacket.i3d" node="1|0|0|0" attachPoint="geo" name="motion2020Jacket" beltHidden="true" colorable="2" defaultPrimaryIndex="7" brand="STRAUSS" iconFilename="$dataS/character/playerM/jacket/strauss/motion2020Jacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.912 0.914 0.952 1.000" secondary="0.000 0.080 0.260 1.000"/>
+                    <color primary="0.403 0.412 0.461 1.000" secondary="0.030 0.064 0.135 1.000"/>
+                    <color primary="0.104 0.105 0.120 1.000" secondary="0.762 0.768 0.782 1.000"/>
+                    <color primary="0.191 0.167 0.155 1.000" secondary="0.505 0.493 0.511 1.000"/>
+                    <color primary="0.107 0.074 0.061 1.000" secondary="0.070 0.560 0.060 1.000"/>
+                    <color primary="0.510 0.040 0.050 1.000" secondary="0.330 0.630 0.040 1.000"/>
+                    <color primary="0.019 0.070 0.045 1.000" secondary="0.070 0.560 0.060 1.000"/>
+                    <color primary="0.026 0.140 0.291 1.000" secondary="0.008 0.013 0.037 1.000"/>
+                    <color primary="0.050 0.096 0.218 1.000" secondary="0.510 0.040 0.050 1.000"/>
+                    <color primary="0.045 0.053 0.102 1.000" secondary="0.000 0.240 0.700 1.000"/>
+                    <color primary="0.030 0.035 0.040 1.000" secondary="0.762 0.768 0.782 1.000"/>
+                    <color primary="0.032 0.038 0.049 1.000" secondary="0.000 0.240 0.700 1.000"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/strauss/motion2020Jacket2ndVariant.i3d" node="1|0|0|0" attachPoint="geo" name="motion2020Jacket2nd" beltHidden="true" colorable="0" defaultPrimaryIndex="1" brand="STRAUSS" iconFilename="$dataS/character/playerM/jacket/strauss/motion2020Jacket2nd.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/strauss/motionJacket.i3d" node="1|0|0|0" attachPoint="geo" name="motionJacket" beltHidden="true" colorable="2" defaultPrimaryIndex="3" brand="STRAUSS" iconFilename="$dataS/character/playerM/jacket/strauss/motionJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <colors>
+                    <color primary="0.779 0.810 0.921 0.780" secondary="0.095 0.104 0.132 0.780"/>
+                    <color primary="0.480 0.480 0.480 0.780" secondary="0.220 0.190 0.170 0.780"/>
+                    <color primary="0.377 0.305 0.254 0.780" secondary="0.262 0.183 0.157 0.780"/>
+                    <color primary="0.201 0.146 0.116 0.780" secondary="0.079 0.052 0.038 0.680"/>
+                    <color primary="0.129 0.140 0.170 0.880" secondary="0.038 0.037 0.044 0.880"/>
+                    <color primary="0.120 0.127 0.140 0.780" secondary="0.195 0.218 0.248 0.780"/>
+                    <color primary="0.035 0.040 0.050 0.680" secondary="0.035 0.040 0.050 0.780"/>
+                    <color primary="0.290 0.271 0.179 0.680" secondary="0.120 0.117 0.078 0.780"/>
+                    <color primary="0.040 0.170 0.090 0.680" secondary="0.030 0.040 0.050 0.780"/>
+                    <color primary="0.089 0.151 0.321 0.600" secondary="0.048 0.067 0.114 0.780"/>
+                    <color primary="0.043 0.130 0.418 0.600" secondary="0.035 0.040 0.050 0.780"/>
+                    <color primary="0.060 0.070 0.150 0.780" secondary="0.040 0.040 0.040 0.780"/>
+                    <color primary="0.510 0.040 0.050 0.780" secondary="0.035 0.040 0.050 0.780"/>
+                </colors>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/caseIH/caseIHTop.i3d" node="1|0|0|0" attachPoint="geo" name="caseih" beltHidden="true" brand="CASEIH" iconFilename="$dataS/character/playerM/jacket/caseIH/caseIHTop.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/claas/claasTop.i3d" node="1|0|0|0" attachPoint="geo" name="claas" brand="CLAAS" iconFilename="$dataS/character/playerM/jacket/claas/claasTop.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/elten/topEltenTShirt.i3d" node="1|0|0|0" attachPoint="geo" name="topEltenTShirt" beltHidden="true" brand="ELTEN" iconFilename="$dataS/character/playerM/shirts/elten/topEltenTShirt.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/elten/topEltenHoodie.i3d" node="1|0|0|0" attachPoint="geo" name="topEltenHoodie" beltHidden="true" brand="ELTEN" iconFilename="$dataS/character/playerM/shirts/elten/topEltenHoodie.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/ero/eroSweater.i3d" node="1|0|0|0" attachPoint="geo" name="eroSweater" beltHidden="true" brand="ERO" iconFilename="$dataS/character/playerM/shirts/ero/eroSweater.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/fendt/fendtTop.i3d" node="1|0|0|0" attachPoint="geo" name="fendt" beltHidden="true" brand="FENDT" iconFilename="$dataS/character/playerM/jacket/fendt/fendtTop.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/farmingSimulator/fSTshirt.i3d" node="1|0|0|0" attachPoint="geo" name="farmSimTshirt" beltHidden="true" brand="GIANTS" iconFilename="$dataS/character/playerM/shirts/farmingSimulator/fsTshirt.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/farmingSimulator/fSHoodie.i3d" node="1|0|0|0" attachPoint="geo" name="farmSimHoodie" beltHidden="true" brand="GIANTS" iconFilename="$dataS/character/playerM/shirts/farmingSimulator/fsHoodie.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/giants/topHoodieGiants.i3d" node="1|0|0|0" attachPoint="geo" name="topHoodieGiants" brand="GIANTS" beltHidden="true" iconFilename="$dataS/character/playerM/shirts/giants/topHoodieGiants.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/hardi/hardiTshirt.i3d" node="1|0|0|0" attachPoint="geo" name="hardiTshirt" beltHidden="true" brand="HARDI" iconFilename="$dataS/character/playerM/shirts/hardi/hardiTshirt.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/husqvarna/husqvarnaTop.i3d" node="1|0|0|0" attachPoint="geo" name="husqvarnaJacket" beltHidden="true" brand="HUSQVARNA" iconFilename="$dataS/character/playerM/jacket/husqvarna/husqvarnaTop.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/johnDeere/johnDeereTshirt.i3d" node="1|0|0|0" attachPoint="geo" name="JDShirt" beltHidden="true" brand="JOHNDEERE" iconFilename="$dataS/character/playerM/shirts/johnDeere/johnDeereTshirt.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/johnDeere/johnDeereHoodie.i3d" node="1|0|0|0" attachPoint="geo" name="JDHoodie" beltHidden="true" brand="JOHNDEERE" iconFilename="$dataS/character/playerM/shirts/johnDeere/johnDeereHoodie.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/krone/kroneVest.i3d" node="1|0|0|0" attachPoint="geo" name="kroneVest" beltHidden="false" brand="KRONE" iconFilename="$dataS/character/playerM/jacket/krone/kroneVest.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/kubota/kubotaHoodieDark.i3d" node="1|0|0|0" attachPoint="geo" name="kubotaHoodieDark" beltHidden="true" brand="KUBOTA" iconFilename="$dataS/character/playerM/shirts/kubota/kubotaHoodieDark.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/kubota/kubotaHoodieWhite.i3d" node="1|0|0|0" attachPoint="geo" name="kubotaHoodieWhite" beltHidden="true" brand="KUBOTA" iconFilename="$dataS/character/playerM/shirts/kubota/kubotaHoodieWhite.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/kubota/kubotaSweatshirt.i3d" node="1|0|0|0" attachPoint="geo" name="kubotaSweatshirt" beltHidden="true" brand="KUBOTA" iconFilename="$dataS/character/playerM/shirts/kubota/kubotaSweatshirt.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/kubota/kubotaPolo.i3d" node="1|0|0|0" attachPoint="geo" name="kubotaPolo" beltHidden="true" brand="KUBOTA" iconFilename="$dataS/character/playerM/shirts/kubota/kubotaPolo.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/masseyFerguson/masseyFergusonHoodie.i3d" node="1|0|0|0" attachPoint="geo" name="MFHoodie1" beltHidden="true" brand="MASSEYFERGUSON" iconFilename="$dataS/character/playerM/shirts/masseyFerguson/masseyFergusonHoodie.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/masseyFerguson/masseyFergusonHoodie2.i3d" node="1|0|0|0" attachPoint="geo" name="MFHoodie2" beltHidden="true" brand="MASSEYFERGUSON" iconFilename="$dataS/character/playerM/shirts/masseyFerguson/masseyFergusonHoodie2.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/planET/planETHoodie.i3d" node="1|0|0|0" attachPoint="geo" name="planETHoodie" beltHidden="true" brand="PLANET" iconFilename="$dataS/character/playerM/shirts/planET/planETHoodie.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/valtra/valtraTshirt.i3d" node="1|0|0|0" attachPoint="geo" name="ValtraShirt" brand="VALTRA" iconFilename="$dataS/character/playerM/jacket/valtra/valtraTshirt.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/valtra/valtraTop.i3d" node="1|0|0|0" attachPoint="geo" name="ValtraJacket" brand="VALTRA" iconFilename="$dataS/character/playerM/jacket/valtra/valtraTop.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/vermeer/vermeerHoodie.i3d" node="1|0|0|0" attachPoint="geo" name="vermeerHoodie" beltHidden="true" brand="VERMEER" iconFilename="$dataS/character/playerM/shirts/vermeer/vermeerHoodie.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/vermeer/vermeerSweater.i3d" node="1|0|0|0" attachPoint="geo" name="vermeerSweater" beltHidden="true" brand="VERMEER" iconFilename="$dataS/character/playerM/shirts/vermeer/vermeerSweater.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/vermeer/vermeerTshirt.i3d" node="1|0|0|0" attachPoint="geo" name="vermeerTshirt" beltHidden="true" brand="VERMEER" iconFilename="$dataS/character/playerM/shirts/vermeer/vermeerTshirt.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/volvo/volvoFunctionalJacket.i3d" node="1|0|0|0" attachPoint="geo" name="volvoFunctionalJacket" beltHidden="true" brand="VOLVO" iconFilename="$dataS/character/playerM/jacket/volvo/volvoFunctionalJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/volvo/volvoSoftshellJacket.i3d" node="1|0|0|0" attachPoint="geo" name="volvoSoftJacket" beltHidden="true" brand="VOLVO" iconFilename="$dataS/character/playerM/jacket/volvo/volvoSoftshellJacket.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/jacket/volvo/volvoSoftshellJacket2.i3d" node="1|0|0|0" attachPoint="geo" name="volvoSoftJacket2" beltHidden="true" brand="VOLVO" iconFilename="$dataS/character/playerM/jacket/volvo/volvoSoftshellJacket2.png">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/volvo/volvoTshirt.i3d" node="1|0|0|0" attachPoint="geo" name="VolvoShirt" beltHidden="true" brand="VOLVO" iconFilename="$dataS/character/playerM/shirts/volvo/volvoTshirt.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/poettinger/poettingerTshirt.i3d" node="1|0|0|0" attachPoint="geo" name="PoettingerShirt" beltHidden="true" brand="POETTINGER" iconFilename="$dataS/character/playerM/shirts/poettinger/poettingerTshirt.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+            </top>
+            <top filename="$dataS/character/playerM/shirts/poettinger/poettingerSweater.i3d" node="1|0|0|0" attachPoint="geo" name="PoettingerSweater" beltHidden="true" brand="POETTINGER" iconFilename="$dataS/character/playerM/shirts/poettinger/poettingerSweater.png">
+                <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+            </top>
+        </tops>
+        <bottoms>
+            <iconGeneration cameraRotX="-10" cameraRotY="35" cameraZoom="0.55" animation="idle1Source"/>
+            <bottom filename="$dataS/character/playerM/pants/botJeans.i3d" node="1|0|0" attachPoint="geo" name="jeans" extent="low" colorable="1" defaultPrimaryIndex="5" iconFilename="$dataS/character/playerM/pants/botJeans.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.69 0.82 0.9 1"/>
+                    <color primary="0.45 0.6 0.8 1"/>
+                    <color primary="0.3 0.45 0.7 1"/>
+                    <color primary="0.19 0.26 0.33 1"/>
+                    <color primary="0.08 0.2 0.3 1"/>
+                    <color primary="0.04 0.1 0.2 1"/>
+                    <color primary="0.06 0.06 0.085 1"/>
+                    <color primary="0.025 0.035 0.085 1"/>
+                    <color primary="0.025 0.025 0.03 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botChinos.i3d" node="1|0|0" attachPoint="geo" name="chinos" extent="low" colorable="1" defaultPrimaryIndex="4" iconFilename="$dataS/character/playerM/pants/botChinos.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.65 0.54 0.52 1"/>
+                    <color primary="0.52 0.42 0.33 1"/>
+                    <color primary="0.46 0.32 0.2 1"/>
+                    <color primary="0.3 0.25 0.19 1"/>
+                    <color primary="0.21 0.17 0.12 1"/>
+                    <color primary="0.08 0.078 0.05 1"/>
+                    <color primary="0.045 0.055 0.085 1"/>
+                    <color primary="0.035 0.04 0.045 1"/>
+                    <color primary="0.025 0.02 0.02 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botCargo.i3d" node="1|0|0" attachPoint="geo" name="cargo" extent="low" colorable="1" defaultPrimaryIndex="6" iconFilename="$dataS/character/playerM/pants/botCargo.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.65 0.54 0.52 1"/>
+                    <color primary="0.52 0.42 0.33 1"/>
+                    <color primary="0.46 0.32 0.2 1"/>
+                    <color primary="0.3 0.25 0.19 1"/>
+                    <color primary="0.21 0.17 0.12 1"/>
+                    <color primary="0.08 0.078 0.05 1"/>
+                    <color primary="0.045 0.055 0.085 1"/>
+                    <color primary="0.035 0.04 0.045 1"/>
+                    <color primary="0.025 0.02 0.02 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botEquestrian.i3d" node="1|0|0" attachPoint="geo" name="equestrian" extent="high" colorable="2" defaultPrimaryIndex="3" iconFilename="$dataS/character/playerM/pants/botEquestrian.png">
+                <hidesBodypart name="legs"/>
+                <colors>
+                    <color primary="0.120 0.190 0.220 1" secondary="1 1 1 1"/>
+                    <color primary="0.147 0.091 0.074 1" secondary="1 1 1 1"/>
+                    <color primary="0.065 0.065 0.066 1" secondary="1 1 1 1"/>
+                    <color primary="0.040 0.050 0.072 1" secondary="1 1 1 1"/>
+                    <color primary="0.070 0.042 0.025 1" secondary="1 1 1 1"/>
+                    <color primary="0.030 0.030 0.035 1" secondary="1 1 1 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botLeather.i3d" node="1|0|0" attachPoint="geo" name="leather" extent="low" colorable="1" defaultPrimaryIndex="2" iconFilename="$dataS/character/playerM/pants/botLeather.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.315 0.24 0.15 1"/>
+                    <color primary="0.24 0.15 0.09 1"/>
+                    <color primary="0.15 0.1 0.08 1"/>
+                    <color primary="0.09 0.085 0.08 1"/>
+                    <color primary="0.09 0.0585 0.036 1"/>
+                    <color primary="0.04 0.035 0.035 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/tweedTrousers.i3d" node="1|0|0" attachPoint="geo" name="tweedTrousers" extent="low" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/pants/tweedTrousers.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.47 0.35 0.12 1"/>
+                    <color primary="0.28 0.3 0.1 1"/>
+                    <color primary="0.4 0.53 0.53 1"/>
+                    <color primary="0.4 0.3 0.5 1"/>
+                    <color primary="0.95 0.8 0.6 1"/>
+                    <color primary="0.15 0.2 0.35 1"/>
+                    <color primary="0.14 0.25 0.3 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botWaterproofTrousers.i3d" node="1|0|0" attachPoint="geo" name="waterProof" extent="low" colorable="1" defaultPrimaryIndex="2" iconFilename="$dataS/character/playerM/pants/botWaterproofTrousers.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.0744 0.1029 0.0608 1.0"/>
+                    <color primary="0.0379 0.0823 0.0468 1.0"/>
+                    <color primary="0.0293 0.0561 0.0317 1.0"/>
+                    <color primary="0.0180 0.0389 0.0222 1.0"/>
+                    <color primary="0.0150 0.0281 0.0150 1.0"/>
+                    <color primary="0.0112 0.0207 0.0128 1.0"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botJeanShorts.i3d" node="1|0|0" attachPoint="geo" name="jeanShorts" extent="high" colorable="1" defaultPrimaryIndex="5" iconFilename="$dataS/character/playerM/pants/botJeanShorts.png">
+                <belt node="1"/>
+                <colors>
+                    <color primary="0.69 0.82 0.9 1"/>
+                    <color primary="0.45 0.6 0.8 1"/>
+                    <color primary="0.3 0.45 0.7 1"/>
+                    <color primary="0.19 0.26 0.33 1"/>
+                    <color primary="0.08 0.2 0.3 1"/>
+                    <color primary="0.04 0.1 0.2 1"/>
+                    <color primary="0.06 0.06 0.085 1"/>
+                    <color primary="0.025 0.035 0.085 1"/>
+                    <color primary="0.025 0.025 0.03 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botCargoShorts.i3d" node="1|0|0" attachPoint="geo" name="cargoShorts" extent="high" colorable="1" defaultPrimaryIndex="6" iconFilename="$dataS/character/playerM/pants/botCargoShorts.png">
+                <belt node="1"/>
+                <colors>
+                    <color primary="0.65 0.54 0.52 1"/>
+                    <color primary="0.52 0.42 0.33 1"/>
+                    <color primary="0.46 0.32 0.2 1"/>
+                    <color primary="0.3 0.25 0.19 1"/>
+                    <color primary="0.21 0.17 0.12 1"/>
+                    <color primary="0.08 0.078 0.05 1"/>
+                    <color primary="0.045 0.055 0.085 1"/>
+                    <color primary="0.035 0.04 0.045 1"/>
+                    <color primary="0.025 0.02 0.02 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botSlacks.i3d" node="1|0|0" attachPoint="geo" name="botSlacks" extent="low" colorable="1" defaultPrimaryIndex="4" iconFilename="$dataS/character/playerM/pants/botSlacks.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.65 0.54 0.52 1"/>
+                    <color primary="0.52 0.42 0.33 1"/>
+                    <color primary="0.46 0.32 0.2 1"/>
+                    <color primary="0.3 0.25 0.19 1"/>
+                    <color primary="0.21 0.17 0.12 1"/>
+                    <color primary="0.08 0.078 0.05 1"/>
+                    <color primary="0.045 0.055 0.085 1"/>
+                    <color primary="0.035 0.04 0.045 1"/>
+                    <color primary="0.025 0.02 0.02 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botCargoShorts.i3d" node="1|0|0" attachPoint="geo" name="skirt01" extent="high" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/pants/botCargoShorts.png" isSelectable="false">
+                <belt node="1"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botCargoShorts.i3d" node="1|0|0" attachPoint="geo" name="skirt02" extent="high" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/pants/botCargoShorts.png" isSelectable="false">
+                <belt node="1"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botCargoShorts.i3d" node="1|0|0" attachPoint="geo" name="skirt03" extent="high" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/pants/botCargoShorts.png" isSelectable="false">
+                <belt node="1"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/botCargoShorts.i3d" node="1|0|0" attachPoint="geo" name="skirt04" extent="high" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/pants/botCargoShorts.png" isSelectable="false">
+                <belt node="1"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/strauss/trousersMale.i3d" node="1|0|0|0" attachPoint="geo" name="straussTrousers" extent="low" colorable="2" defaultPrimaryIndex="1" brand="STRAUSS" iconFilename="$dataS/character/playerM/pants/strauss/trousersMale.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.41 0.37 0.09 1" secondary="0.79 0.77 0.25 1"/>
+                    <color primary="0.08 0.08 0.08 1" secondary="0.05 1.00 1.00 1"/>
+                    <color primary="0.08 0.08 0.08 1" secondary="0.11 0.11 0.11 1"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/strauss/trousersMale2ndVariant.i3d" node="1|0|0|0" attachPoint="geo" name="straussTrousers2nd" extent="low" colorable="0" defaultPrimaryIndex="1" brand="STRAUSS" iconFilename="$dataS/character/playerM/pants/strauss/trousersMale2nd.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/strauss/trousersMale3rdVariant.i3d" node="1|0|0|0" attachPoint="geo" name="straussTrousers3rd" extent="low" colorable="0" defaultPrimaryIndex="1" brand="STRAUSS" iconFilename="$dataS/character/playerM/pants/strauss/trousersMale3rd.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/strauss/trousersMale4thVariant.i3d" node="1|0|0|0" attachPoint="geo" name="straussTrousers4th" extent="low" colorable="0" defaultPrimaryIndex="1" brand="STRAUSS" iconFilename="$dataS/character/playerM/pants/strauss/trousersMale4th.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/strauss/concretePants.i3d" node="1|0|0|0" attachPoint="geo" name="concretePants" extent="low" colorable="2" defaultPrimaryIndex="1" brand="STRAUSS" iconFilename="$dataS/character/playerM/pants/strauss/concretePants.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.150 0.140 0.110 0.600" secondary="0.270 0.260 0.220 1.000"/>
+                    <color primary="0.060 0.120 0.330 0.800" secondary="0.070 0.080 0.150 1.000"/>
+                    <color primary="0.104 0.105 0.120 0.800" secondary="0.762 0.768 0.782 1.000"/>
+                    <color primary="0.030 0.035 0.040 0.800" secondary="0.030 0.035 0.040 1.000"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/strauss/motion2020Pants.i3d" node="1|0|0|0" attachPoint="geo" name="motion2020Pants" extent="low" colorable="2" defaultPrimaryIndex="7" brand="STRAUSS" iconFilename="$dataS/character/playerM/pants/strauss/motion2020Pants.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.912 0.914 0.952 1.000" secondary="0.000 0.080 0.260 1.000"/>
+                    <color primary="0.403 0.412 0.461 1.000" secondary="0.030 0.064 0.135 1.000"/>
+                    <color primary="0.104 0.105 0.120 1.000" secondary="0.762 0.768 0.782 1.000"/>
+                    <color primary="0.191 0.167 0.155 1.000" secondary="0.505 0.493 0.511 1.000"/>
+                    <color primary="0.107 0.074 0.061 1.000" secondary="0.070 0.560 0.060 1.000"/>
+                    <color primary="0.510 0.040 0.050 1.000" secondary="0.330 0.630 0.040 1.000"/>
+                    <color primary="0.019 0.070 0.045 1.000" secondary="0.070 0.560 0.060 1.000"/>
+                    <color primary="0.026 0.140 0.291 1.000" secondary="0.008 0.013 0.037 1.000"/>
+                    <color primary="0.050 0.096 0.218 1.000" secondary="0.510 0.040 0.050 1.000"/>
+                    <color primary="0.045 0.053 0.102 1.000" secondary="0.000 0.240 0.700 1.000"/>
+                    <color primary="0.030 0.035 0.040 1.000" secondary="0.762 0.768 0.782 1.000"/>
+                    <color primary="0.032 0.038 0.049 1.000" secondary="0.000 0.240 0.700 1.000"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/strauss/motion2020Pants2ndVariant.i3d" node="1|0|0|0" attachPoint="geo" name="motion2020Pants2nd" extent="low" colorable="0" defaultPrimaryIndex="1" brand="STRAUSS" iconFilename="$dataS/character/playerM/pants/strauss/motion2020Pants2nd.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/strauss/motionPants.i3d" node="1|0|0|0" attachPoint="geo" name="motionPants" extent="low" colorable="2" defaultPrimaryIndex="3" brand="STRAUSS" iconFilename="$dataS/character/playerM/pants/strauss/motionPants.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.779 0.810 0.921 0.780" secondary="0.095 0.104 0.132 0.780"/>
+                    <color primary="0.480 0.480 0.480 0.780" secondary="0.220 0.190 0.170 0.780"/>
+                    <color primary="0.377 0.305 0.254 0.780" secondary="0.262 0.183 0.157 0.780"/>
+                    <color primary="0.201 0.146 0.116 0.780" secondary="0.079 0.052 0.038 0.680"/>
+                    <color primary="0.129 0.140 0.170 0.880" secondary="0.038 0.037 0.044 0.880"/>
+                    <color primary="0.120 0.127 0.140 0.780" secondary="0.195 0.218 0.248 0.780"/>
+                    <color primary="0.035 0.040 0.050 0.680" secondary="0.035 0.040 0.050 0.780"/>
+                    <color primary="0.290 0.271 0.179 0.680" secondary="0.120 0.117 0.078 0.780"/>
+                    <color primary="0.040 0.170 0.090 0.680" secondary="0.030 0.040 0.050 0.780"/>
+                    <color primary="0.089 0.151 0.321 0.600" secondary="0.048 0.067 0.114 0.780"/>
+                    <color primary="0.043 0.130 0.418 0.600" secondary="0.035 0.040 0.050 0.780"/>
+                    <color primary="0.060 0.070 0.150 0.780" secondary="0.040 0.040 0.040 0.780"/>
+                    <color primary="0.510 0.040 0.050 0.780" secondary="0.035 0.040 0.050 0.780"/>
+                </colors>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/claas/claasBottom.i3d" node="1|0|0|0" attachPoint="geo" name="claas" extent="low" brand="CLAAS" iconFilename="$dataS/character/playerM/pants/claas/claasBottom.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/fendt/fendtBottom.i3d" node="1|0|0|0" attachPoint="geo" name="fendt" extent="low" brand="FENDT" iconFilename="$dataS/character/playerM/pants/fendt/fendtBottom.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/husqvarna/husqvarnaBottom.i3d" node="1|0|0|0" attachPoint="geo" name="husqvarnaPants" extent="low" brand="HUSQVARNA" iconFilename="$dataS/character/playerM/pants/johnDeere/husqvarnaBottom.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/johnDeere/johnDeereBottom.i3d" node="1|0|0|0" attachPoint="geo" name="JDPants01" extent="low" brand="JOHNDEERE" iconFilename="$dataS/character/playerM/pants/johnDeere/johnDeereBottom.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/johnDeere/johnDeereBottom2.i3d" node="1|0|0|0" attachPoint="geo" name="JDPants02" extent="low" brand="JOHNDEERE" iconFilename="$dataS/character/playerM/pants/johnDeere/johnDeereBottom2.png">
+                <hidesBodypart name="legs"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/valtra/valtraBottom.i3d" node="1|0|0|0" attachPoint="geo" name="ValtraPants" extent="low" brand="VALTRA" iconFilename="$dataS/character/playerM/pants/valtra/valtraBottom.png">
+                <hidesBodypart name="legs"/>
+                <belt node="3"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/volvo/volvoPants.i3d" node="1|0|0|0" attachPoint="geo" name="VolvoPants" extent="low" brand="VOLVO" iconFilename="$dataS/character/playerM/pants/volvo/volvoPants.png">
+                <hidesBodypart name="legs"/>
+                <extent node="2" type="low"/>
+                <extent node="1" type="high"/>
+            </bottom>
+            <bottom filename="$dataS/character/playerM/pants/poettinger/poettingerShort.i3d" node="1|0|0|0" attachPoint="geo" name="PoettingerShorts" extent="high" brand="POETTINGER" iconFilename="$dataS/character/playerM/pants/poettinger/poettingerShort.png"/>
+        </bottoms>
+        <footwear>
+            <iconGeneration cameraRotX="-20" cameraRotY="40" cameraZoom="0.8" animation=""/>
+            <footwear filename="$dataS/character/playerM/shoes/workboot02.i3d" node="1|0|0" attachPoint="geo" name="workBoots2" extent="low" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shoes/workboot02.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+                <colors>
+                    <color primary="0.52 0.32 0.22 0.3" secondary="0.29 0.29 0.29 1.00"/>
+                    <color primary="0.32 0.22 0.18 0.6" secondary="0.29 0.29 0.29 1.00"/>
+                    <color primary="0.25 0.16 0.12 1.0" secondary="0.29 0.29 0.29 1.00"/>
+                </colors>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/workboot01.i3d" node="1|0|0" attachPoint="geo" name="workBoots1" extent="low" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shoes/workboot01.png">
+                <hidesBodypart name="feet"/>
+                <colors>
+                    <color primary="0.09 0.085 0.08 0.7"/>
+                    <color primary="0.09 0.0585 0.036 0.8"/>
+                    <color primary="0.04 0.035 0.035 0.9"/>
+                </colors>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/crok.i3d" node="1|0|0" attachPoint="geo" name="crok" extent="low" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shoes/crok.png">
+                <hidesBodypart name="socks"/>
+                <colors>
+                    <color primary="0.420 0.430 0.400 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.800 0.650 0.540 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.470 0.330 0.240 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.420 0.240 0.090 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.240 0.070 0.000 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.090 0.060 0.030 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.060 0.080 0.020 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.160 0.180 0.240 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.030 0.070 0.100 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                    <color primary="0.020 0.020 0.040 1.000" secondary="0.029 0.029 0.029 1.00"/>
+                </colors>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/galoshes.i3d" node="1|0|0" attachPoint="geo" name="galoshes" extent="high" colorable="2" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shoes/galoshes.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+                <colors>
+                    <color primary="0.0744 0.1029 0.0608 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0379 0.0823 0.0468 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0293 0.0561 0.0317 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0180 0.0389 0.0222 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0150 0.0281 0.0150 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                    <color primary="0.0112 0.0207 0.0128 0.65" secondary="0.62 0.48 0.23 1.00"/>
+                </colors>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/racing.i3d" node="1|0|0" attachPoint="geo" name="racing" extent="low" iconFilename="$dataS/character/playerM/shoes/racing.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/riding.i3d" node="1|0|0" attachPoint="geo" name="riding" extent="low" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shoes/riding.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+                <extent node="1" type="high"/>
+                <colors>
+                    <color primary="0.100 0.100 0.075 0.8"/>
+                    <color primary="0.035 0.040 0.070 0.9"/>
+                    <color primary="0.025 0.025 0.028 1.0"/>
+                </colors>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/laceUpSneaker.i3d" node="1|0|0" attachPoint="geo" name="laceUpSneaker" extent="low" iconFilename="$dataS/character/playerM/shoes/laceUpSneaker.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/leatherChelsea01.i3d" node="1|0|0" attachPoint="geo" name="chelsea01" extent="low" iconFilename="$dataS/character/playerM/shoes/leatherChelsea01.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/leatherChelsea02.i3d" node="1|0|0" attachPoint="geo" name="chelsea02" extent="low" iconFilename="$dataS/character/playerM/shoes/leatherChelsea02.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/sandalM01.i3d" node="1|0|0" attachPoint="geo" name="sandal01" extent="low" iconFilename="$dataS/character/playerM/shoes/sandalM01.png">
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/sandalM02.i3d" node="1|0|0" attachPoint="geo" name="sandal02" extent="low" iconFilename="$dataS/character/playerM/shoes/sandalM02.png">
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/sandalM03.i3d" node="1|0|0" attachPoint="geo" name="sandal03" extent="low" iconFilename="$dataS/character/playerM/shoes/sandalM03.png">
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/sandalM04.i3d" node="1|0|0" attachPoint="geo" name="sandal04" extent="low" iconFilename="$dataS/character/playerM/shoes/sandalM04.png">
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/loafers.i3d" node="1|0|0" attachPoint="geo" name="loafers" extent="low" iconFilename="$dataS/character/playerM/shoes/loafers.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/sneaker01.i3d" node="1|0|0" attachPoint="geo" name="sneakers" extent="low" colorable="2" defaultPrimaryIndex="32" iconFilename="$dataS/character/playerM/shoes/sneaker01.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/sportSneaker.i3d" node="1|0|0" attachPoint="geo" name="sportSneakers" extent="low" iconFilename="$dataS/character/playerM/shoes/sportSneaker.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/cowboy.i3d" node="1|0|0" attachPoint="geo" name="cowboy" extent="high" colorable="1" defaultPrimaryIndex="1" iconFilename="$dataS/character/playerM/shoes/cowboy.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+                <colors>
+                    <color primary="0.24 0.15 0.09 0.3"/>
+                    <color primary="0.15 0.1 0.08 0.5"/>
+                    <color primary="0.09 0.085 0.08 0.7"/>
+                    <color primary="0.09 0.0585 0.036 0.85"/>
+                    <color primary="0.04 0.035 0.035 1"/>
+                </colors>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/terenceXXG5.i3d" node="1|0|0|0" attachPoint="geo" name="eltenTerenceXXG5" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/terenceXXG5.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/maverick.i3d" node="1|0|0|0" attachPoint="geo" name="eltenMaverick" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/maverick.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/arborist.i3d" node="1|0|0|0" attachPoint="geo" name="eltenArborist" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/arborist.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+                <extent node="1" type="high"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/sensationXX10.i3d" node="1|0|0|0" attachPoint="geo" name="eltenSensationXX10" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/sensationXX10.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/alessio.i3d" node="1|0|0|0" attachPoint="geo" name="eltenAlessio" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/alessio.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/maddoxLowRed.i3d" node="1|0|0|0" attachPoint="geo" name="eltenMaddoxLowRed" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/maddoxLowRed.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/maddoxLowBlack.i3d" node="1|0|0|0" attachPoint="geo" name="eltenMaddoxLowBlack" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/maddoxLowBlack.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/maddoxLowBlue.i3d" node="1|0|0|0" attachPoint="geo" name="eltenMaddoxLowBlue" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/maddoxLowBlue.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/maddoxLowGrey.i3d" node="1|0|0|0" attachPoint="geo" name="eltenMaddoxLowGrey" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/maddoxLowGrey.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/elten/maddoxLowYellow.i3d" node="1|0|0|0" attachPoint="geo" name="eltenMaddoxLowYellow" extent="low" brand="ELTEN" iconFilename="$dataS/character/playerM/shoes/elten/maddoxLowYellow.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/husqvarna/husqvarna01.i3d" node="1|0|0|0" attachPoint="geo" name="husqvarnaBoots" extent="low" brand="HUSQVARNA" iconFilename="$dataS/character/playerM/shoes/husqvarna/husqvarna01.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+                <extent node="1" type="high"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/johnDeere/johnDeere01.i3d" node="1|0|0|0" attachPoint="geo" name="johnDeereBoots" extent="low" brand="JOHNDEERE" iconFilename="$dataS/character/playerM/shoes/johnDeere/johnDeere01.png">
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+            </footwear>
+            <footwear filename="$dataS/character/playerM/shoes/newHolland/newHolland01.i3d" node="1|0|0|0" attachPoint="geo" name="newHollandBoots" extent="low" brand="NEWHOLLAND" iconFilename="$dataS/character/playerM/shoes/newHolland/newHolland01.png">
+                <hidesBodypart name="feet"/>
+            </footwear>
+        </footwear>
+        <onepieces nullIconFilename="$dataS/character/playerM/empty.png">
+            <onepiece filename="$dataS/character/playerM/fullBody/onePieceBeekeeper.i3d" node="1|0|0" attachPoint="geo" name="beekeeper" extent="low" colorable="1" defaultPrimaryIndex="1">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <disablesOption name="headgear"/>
+                <extent node="2" type="hands"/>
+                <extent node="3" type="under"/>
+                <extent node="4" type="over"/>
+                <extent node="5" type="low"/>
+                <extent node="6" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/onePieceRacing.i3d" node="1|0|0" attachPoint="geo" name="racing" extent="low" colorable="2" defaultPrimaryIndex="25">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="low"/>
+                <extent node="5" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/onePieceSynthetic.i3d" node="1|0|0" attachPoint="geo" name="synthetic" extent="low" colorable="1" defaultPrimaryIndex="2">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="low"/>
+                <extent node="2" type="high"/>
+                <colors>
+                    <color primary="0.65 0.54 0.52 1"/>
+                    <color primary="0.52 0.42 0.33 1"/>
+                    <color primary="0.46 0.32 0.2 1"/>
+                    <color primary="0.3 0.25 0.19 1"/>
+                    <color primary="0.21 0.17 0.12 1"/>
+                    <color primary="0.08 0.078 0.05 1"/>
+                    <color primary="0.045 0.055 0.085 1"/>
+                    <color primary="0.035 0.04 0.045 1"/>
+                    <color primary="0.025 0.02 0.02 1"/>
+                </colors>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/onePieceJeans.i3d" node="1|0|0" attachPoint="geo" name="jeans" extent="low" colorable="1" defaultPrimaryIndex="5">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="2" type="low"/>
+                <extent node="3" type="high"/>
+                <colors>
+                    <color primary="0.6 0.8 1.0 1"/>
+                    <color primary="0.35 0.5 0.75 1"/>
+                    <color primary="0.19 0.26 0.33 1"/>
+                    <color primary="0.075 0.2 0.35 1"/>
+                    <color primary="0.04 0.1 0.23 1"/>
+                    <color primary="0.06 0.06 0.085 1"/>
+                    <color primary="0.02 0.03 0.08 1"/>
+                    <color primary="0.02 0.02 0.025 1"/>
+                </colors>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/onePieceJumpsuit.i3d" node="1|0|0" attachPoint="geo" name="jumpsuit" extent="low" colorable="1" defaultPrimaryIndex="3">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="2" type="hands"/>
+                <extent node="3" type="under"/>
+                <extent node="4" type="over"/>
+                <extent node="5" type="low"/>
+                <extent node="6" type="high"/>
+                <colors>
+                    <color primary="0.9 0.9 0.9 1"/>
+                    <color primary="0.95 0.8 0.03 1"/>
+                    <color primary="0.9 0.1 0.05 1"/>
+                    <color primary="0.85 0.03 0.03 1"/>
+                    <color primary="0.1 0.2 0.75 1"/>
+                    <color primary="0.075 0.38 0.075 1"/>
+                </colors>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/onePieceMechanic.i3d" node="1|0|0" attachPoint="geo" name="mechanic" extent="low" colorable="2" defaultPrimaryIndex="1">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="low"/>
+                <extent node="5" type="high"/>
+                <colors>
+                    <color primary="0.15 0.12 0.15 1" secondary="0.97 0.12 0.00 1"/>
+                    <color primary="0.08 0.12 0.18 1" secondary="0.62 0.62 0.62 1"/>
+                    <color primary="0.08 0.08 0.08 1" secondary="0.97 0.74 0.00 1"/>
+                </colors>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/strauss/motion2020PantsVariant.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="motion2020Suit" colorable="2" defaultPrimaryIndex="7" brand="STRAUSS">
+                <hidesBodypart name="legs"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="2" type="low"/>
+                <extent node="3" type="high"/>
+                <colors>
+                    <color primary="0.912 0.914 0.952 1.000" secondary="0.000 0.080 0.260 1.000"/>
+                    <color primary="0.403 0.412 0.461 1.000" secondary="0.030 0.064 0.135 1.000"/>
+                    <color primary="0.104 0.105 0.120 1.000" secondary="0.762 0.768 0.782 1.000"/>
+                    <color primary="0.191 0.167 0.155 1.000" secondary="0.505 0.493 0.511 1.000"/>
+                    <color primary="0.107 0.074 0.061 1.000" secondary="0.070 0.560 0.060 1.000"/>
+                    <color primary="0.510 0.040 0.050 1.000" secondary="0.330 0.630 0.040 1.000"/>
+                    <color primary="0.019 0.070 0.045 1.000" secondary="0.070 0.560 0.060 1.000"/>
+                    <color primary="0.026 0.140 0.291 1.000" secondary="0.008 0.013 0.037 1.000"/>
+                    <color primary="0.050 0.096 0.218 1.000" secondary="0.510 0.040 0.050 1.000"/>
+                    <color primary="0.045 0.053 0.102 1.000" secondary="0.000 0.240 0.700 1.000"/>
+                    <color primary="0.030 0.035 0.040 1.000" secondary="0.762 0.768 0.782 1.000"/>
+                    <color primary="0.032 0.038 0.049 1.000" secondary="0.000 0.240 0.700 1.000"/>
+                </colors>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/strauss/motionPantsVariant.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="motionSuit" colorable="2" defaultPrimaryIndex="3" brand="STRAUSS">
+                <hidesBodypart name="legs"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="2" type="low"/>
+                <extent node="3" type="high"/>
+                <colors>
+                    <color primary="0.779 0.810 0.921 0.780" secondary="0.095 0.104 0.132 0.780"/>
+                    <color primary="0.480 0.480 0.480 0.780" secondary="0.220 0.190 0.170 0.780"/>
+                    <color primary="0.377 0.305 0.254 0.780" secondary="0.262 0.183 0.157 0.780"/>
+                    <color primary="0.201 0.146 0.116 0.780" secondary="0.079 0.052 0.038 0.680"/>
+                    <color primary="0.129 0.140 0.170 0.880" secondary="0.038 0.037 0.044 0.880"/>
+                    <color primary="0.120 0.127 0.140 0.780" secondary="0.195 0.218 0.248 0.780"/>
+                    <color primary="0.035 0.040 0.050 0.680" secondary="0.035 0.040 0.050 0.780"/>
+                    <color primary="0.290 0.271 0.179 0.680" secondary="0.120 0.117 0.078 0.780"/>
+                    <color primary="0.040 0.170 0.090 0.680" secondary="0.030 0.040 0.050 0.780"/>
+                    <color primary="0.089 0.151 0.321 0.600" secondary="0.048 0.067 0.114 0.780"/>
+                    <color primary="0.043 0.130 0.418 0.600" secondary="0.035 0.040 0.050 0.780"/>
+                    <color primary="0.060 0.070 0.150 0.780" secondary="0.040 0.040 0.040 0.780"/>
+                    <color primary="0.510 0.040 0.050 0.780" secondary="0.035 0.040 0.050 0.780"/>
+                </colors>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/strauss/motion2020PantsVariant2ndVariant.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="motion2020Suit2nd" colorable="0" defaultPrimaryIndex="1" brand="STRAUSS">
+                <hidesBodypart name="legs"/>
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="2" type="low"/>
+                <extent node="3" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/fendt/fendtOnePiece.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="fendt" brand="FENDT">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="2" type="hands"/>
+                <extent node="3" type="under"/>
+                <extent node="4" type="over"/>
+                <extent node="5" type="low"/>
+                <extent node="6" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/emergPack.i3d" node="1|0|0" attachPoint="geo" name="emergPack" extent="low">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <disablesOption name="gloves"/>
+                <disablesOption name="footwear"/>
+                <disablesOption name="headgear"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/johnDeere/johnDeereOnePiece.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="JDSuit" brand="JOHNDEERE">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="low"/>
+                <extent node="5" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/kubota/kubotaOnePiece.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="KubotaSuit" brand="KUBOTA">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="low"/>
+                <extent node="5" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/masseyFerguson/masseyFergusonOnePiece.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="MFSuit" brand="MASSEYFERGUSON">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="low"/>
+                <extent node="5" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/valtra/valtraOnePiece.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="ValtraSuit" brand="VALTRA">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="low"/>
+                <extent node="5" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/volvo/volvoOnePiece.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="VolvoSuit" brand="VOLVO">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="high"/>
+                <extent node="5" type="low"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/volvo/volvoServiceOnePiece.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="VolvoServSuit" brand="VOLVO">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="high"/>
+                <extent node="5" type="low"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/poettinger/poettingerOverall.i3d" node="1|0|0|0" attachPoint="geo" extent="low" name="PoettingerOverall" brand="POETTINGER">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <disablesOption name="bottom"/>
+                <disablesOption name="top"/>
+                <extent node="1" type="hands"/>
+                <extent node="2" type="under"/>
+                <extent node="3" type="over"/>
+                <extent node="4" type="low"/>
+                <extent node="5" type="high"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/fullBodyNpcQG01.i3d" node="1|0|0" attachPoint="geo" name="bodyNPCQG01" isSelectable="false">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+            </onepiece>
+            <onepiece filename="$dataS/character/playerM/fullBody/fullBodyNpcFisherman.i3d" node="1|0|0" attachPoint="geo" name="bodyFisherman01" isSelectable="false">
+                <hidesBodypart name="body"/>
+                <hidesBodypart name="shoulders"/>
+                <hidesBodypart name="armsUpper"/>
+                <hidesBodypart name="legs"/>
+                <hidesBodypart name="hands"/>
+                <hidesBodypart name="feet"/>
+                <hidesBodypart name="socks"/>
+            </onepiece>
+        </onepieces>
+        <presets>
+            <preset text="IACharacterCustomOne" name="IACharacterCustomOne" iconFilename="$dataS/character/playerM/presets/mechanic.png">
+                <onepiece name="mechanic"/>
+                <gloves name="mechanic"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <headgear name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="DefaultClothes" name="DefaultClothes" iconFilename="$dataS/character/playerM/presets/preset1.png">
+                <top name="tShirt01"/>
+                <bottom name="jeans"/>
+                <footwear name="workBoots1"/>
+                <gloves name="none"/>
+                <glasses name="none"/>
+                <headgear name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Rancher" name="rancher" iconFilename="$dataS/character/playerM/presets/rancher.png">
+                <top name="leather"/>
+                <bottom name="leather"/>
+                <footwear name="cowboy"/>
+                <gloves name="kevlar"/>
+                <headgear name="cowboy"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Forestry" name="forestry" iconFilename="$dataS/character/playerM/presets/forestry.png">
+                <top name="constructionVest"/>
+                <bottom name="cargo"/>
+                <gloves name="stihlGloves"/>
+                <headgear name="stihl"/>
+                <footwear name="eltenArborist"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Horseback Rider" name="horsebackRider" iconFilename="$dataS/character/playerM/presets/horsebackRider.png">
+                <top name="windbreaker"/>
+                <bottom name="equestrian"/>
+                <glasses name="sports1"/>
+                <headgear name="riding"/>
+                <footwear name="riding"/>
+                <gloves name="riding"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Long Haul Trucker" name="longHaulTrucker" iconFilename="$dataS/character/playerM/presets/longHaulTrucker.png">
+                <top name="aviatorJacket"/>
+                <bottom name="jeans"/>
+                <headgear name="ballcap"/>
+                <footwear name="workBoots2"/>
+                <glasses name="aviator"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Wet Work" name="wetwork" iconFilename="$dataS/character/playerM/presets/wetWork.png">
+                <top name="waterProof"/>
+                <bottom name="waterProof"/>
+                <headgear name="none"/>
+                <footwear name="galoshes"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Livestock Farmer" name="livestockFarmer" iconFilename="$dataS/character/playerM/presets/livestockFarmer.png">
+                <onepiece name="synthetic"/>
+                <gloves name="none"/>
+                <headgear name="none"/>
+                <footwear name="galoshes"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Bee Keeper" name="beekeeper" iconFilename="$dataS/character/playerM/presets/beekeeper.png">
+                <onepiece name="beekeeper"/>
+                <gloves name="none"/>
+                <headgear name="none"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Crops Farmer" name="cropsFarmer" iconFilename="$dataS/character/playerM/presets/cropsFarmer.png">
+                <onepiece name="jeans"/>
+                <gloves name="leather"/>
+                <headgear name="vintage"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Motorbike Racer" name="motorbikeRacer" iconFilename="$dataS/character/playerM/presets/motorbikeRacer.png">
+                <onepiece name="racing"/>
+                <gloves name="racing"/>
+                <headgear name="motorbike"/>
+                <footwear name="racing"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Hazmat" name="hazmat" iconFilename="$dataS/character/playerM/presets/hazmat.png">
+                <onepiece name="jumpsuit"/>
+                <gloves name="rubber"/>
+                <footwear name="galoshes"/>
+                <headgear name="none"/>
+                <glasses name="safety"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="Mechanic" name="mechanic" iconFilename="$dataS/character/playerM/presets/mechanic.png">
+                <onepiece name="mechanic"/>
+                <gloves name="mechanic"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <headgear name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="chainsawSetJonsered" name="chainsawSetJonsered" isSelectable="false" iconFilename="$dataS/character/playerM/presets/chainsawSetJonsered.png">
+                <top name="constructionVest"/>
+                <bottom name="cargo"/>
+                <gloves name="jonseredGloves"/>
+                <headgear name="jonsered"/>
+                <footwear name="eltenArborist"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="chainsawSetMcculloch" name="chainsawSetMcculloch" isSelectable="false" iconFilename="$dataS/character/playerM/presets/chainsawSetMcculloch.png">
+                <top name="constructionVest"/>
+                <bottom name="cargo"/>
+                <gloves name="mccullochGloves"/>
+                <headgear name="mcculloch"/>
+                <footwear name="eltenArborist"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="chainsawSetStihl" name="chainsawSetStihl" isSelectable="false" iconFilename="$dataS/character/playerM/presets/chainsawSetStihl.png">
+                <top name="constructionVest"/>
+                <bottom name="cargo"/>
+                <gloves name="stihlGloves"/>
+                <headgear name="stihl"/>
+                <footwear name="eltenArborist"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="CASEIH" name="caseIHSet" brand="CASEIH" iconFilename="$dataS/character/playerM/presets/caseIHSet.png">
+                <top name="caseih"/>
+                <bottom name="jeans"/>
+                <headgear name="caseih"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="none"/>
+            </preset>
+            <preset text="CLAAS" name="claas" brand="CLAAS" iconFilename="$dataS/character/playerM/presets/claas.png">
+                <top name="claas"/>
+                <bottom name="claas"/>
+                <headgear name="none"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="none"/>
+            </preset>
+            <preset text="EMERGENCY PACK" name="emergPack" iconFilename="$dataS/character/playerM/presets/emergPack.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="none"/>
+                <footwear name="none"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="emergPack"/>
+            </preset>
+            <preset text="STRAUSS MOTION 2020" name="strauss2020Suit" brand="STRAUSS" iconFilename="$dataS/character/playerM/presets/strauss2020Suit.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="none"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="motion2020Suit"/>
+            </preset>
+            <preset text="STRAUSS MOTION" name="straussMotionSuit" brand="STRAUSS" iconFilename="$dataS/character/playerM/presets/straussMotionSuit.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="none"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="motionSuit"/>
+            </preset>
+            <preset text="STRAUSS MOTION 2020" name="strauss2020Suit2nd" brand="STRAUSS" iconFilename="$dataS/character/playerM/presets/strauss2020Suit2nd.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="none"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="motion2020Suit2nd"/>
+            </preset>
+            <preset text="FENDT" name="fendt" brand="FENDT" iconFilename="$dataS/character/playerM/presets/fendt.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="none"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="fendt"/>
+            </preset>
+            <preset text="Husqvarna" name="chainsawSetHusqvarna" brand="HUSQVARNA" iconFilename="$dataS/character/playerM/presets/chainsawSetHusqvarna.png">
+                <top name="husqvarnaJacket"/>
+                <bottom name="husqvarnaPants"/>
+                <gloves name="husqvarnaGloves"/>
+                <headgear name="husqvarna"/>
+                <footwear name="husqvarnaBoots"/>
+                <glasses name="none"/>
+                <facegear name="none"/>
+            </preset>
+            <preset text="JOHNDEERE" name="johnDeereSuit" brand="JOHNDEERE" iconFilename="$dataS/character/playerM/presets/johnDeereSuit.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="JDGreen"/>
+                <footwear name="johnDeereBoots"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="JDSuit"/>
+            </preset>
+            <preset text="KUBOTA" name="KubotaSuitPreset" brand="KUBOTA" iconFilename="$dataS/character/playerM/presets/KubotaSuitPreset.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="kubotaHat2"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="KubotaSuit"/>
+            </preset>
+            <preset text="MASSEYFERGUSON" name="masseySuit" brand="MASSEYFERGUSON" iconFilename="$dataS/character/playerM/presets/masseySuit.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="MFhat"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="MFSuit"/>
+            </preset>
+            <preset text="VALTRA" name="ValtraSuitPreset" brand="VALTRA" iconFilename="$dataS/character/playerM/presets/ValtraSuitPreset.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="ValtraHat"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="ValtraSuit"/>
+            </preset>
+            <preset text="VOLVO" name="VolvoSuitPreset" brand="VOLVO" iconFilename="$dataS/character/playerM/presets/VolvoSuitPreset.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="VolvoHat"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="VolvoSuit"/>
+            </preset>
+            <preset text="VOLVOService" name="VolvoServiceSuitPreset" brand="VOLVO" iconFilename="$dataS/character/playerM/presets/VolvoServiceSuitPreset.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="VolvoHat"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="VolvoServSuit"/>
+            </preset>
+            <preset text="POETTINGER" name="PoettingerOverallPreset" brand="POETTINGER" iconFilename="$dataS/character/playerM/presets/poettingerOverallPreset.png">
+                <top name="none"/>
+                <bottom name="none"/>
+                <headgear name="poettingerCap"/>
+                <footwear name="workBoots1"/>
+                <glasses name="none"/>
+                <gloves name="none"/>
+                <facegear name="none"/>
+                <onepiece name="PoettingerOverall"/>
+            </preset>
+            <preset text="MotorBikeSafety" name="MotorBikeSafety" isSelectable="false" iconFilename="$dataS/character/playerM/empty.png">
+                <onepiece name="keepCurrent"/>
+                <top name="keepCurrent"/>
+                <bottom name="keepCurrent"/>
+                <footwear name="keepCurrent"/>
+                <gloves name="keepCurrent"/>
+                <headgear name="motorbike"/>
+                <glasses name="keepCurrent"/>
+                <facegear name="keepCurrent"/>
+            </preset>
+        </presets>
+    </playerStyle>
+    <ikChains>
+        <ikChain id="rightFoot" target="0" targetOffset="-0.036 -0.086 0" targetRotationOffset="-96 75 82" alignToTarget="true" isDirtyOnLoad="true" positionThreshold="0.001">
+            <node index="0|0|2" minRx="-2" maxRx="2" minRy="-30" maxRy="30" minRz="-30" maxRz="80" localLimits="true"/>
+            <node index="0|0|2|0" minRx="-2" maxRx="2" minRy="0" maxRy="0" minRz="-120" maxRz="-2" localLimits="true"/>
+            <node index="0|0|2|0|0"/>
+        </ikChain>
+        <ikChain id="leftFoot" target="0" targetOffset="0.036 0.086 0" targetRotationOffset="84 -75 -84" alignToTarget="true" isDirtyOnLoad="true" positionThreshold="0.001">
+            <node index="0|0|1" minRx="-2" maxRx="2" minRy="-30" maxRy="30" minRz="-120" maxRz="150" localLimits="true"/>
+            <node index="0|0|1|0" minRx="-2" maxRx="2" minRy="0" maxRy="0" minRz="-120" maxRz="-2" localLimits="true"/>
+            <node index="0|0|1|0|0"/>
+        </ikChain>
+        <ikChain id="rightArm" target="0" targetOffset="0.08 -0.025 0" targetRotationOffset="180 0 0" alignToTarget="true" isDirtyOnLoad="true" positionThreshold="0.001">
+            <node index="0|0|0|0|0|2|0" minRx="-90" maxRx="5" minRy="-130" maxRy="30" minRz="-90" maxRz="-20" localLimits="true"/>
+            <node index="0|0|0|0|0|2|0|0" minRx="-25" maxRx="25" minRy="-144" maxRy="-25" minRz="0" maxRz="0" localLimits="true"/>
+            <node index="0|0|0|0|0|2|0|0|1"/>
+            <pose id="narrowFingers" isDefaultPose="true">
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4" rotation="4 -41 -45"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4|0" rotation="19 35 10"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4|0|0" rotation="0 33 0"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3" rotation="0 0 -65"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3|0|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2" rotation="0 0 -65"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2|0" rotation="0 0 -60"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2|0|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1" rotation="0 0 -65"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1|0" rotation="0 0 -55"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1|0|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0|0|0" rotation="0 0 -45"/>
+            </pose>
+            <pose id="wideFingers">
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4" rotation="-15 -55 -22"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4|0" rotation="15 -1 0"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4|0|0" rotation="0 10 0"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3|0" rotation="0 0 -20"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3|0|0" rotation="0 0 -30"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2" rotation="0 0 -40"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2|0" rotation="0 0 -30"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2|0|0" rotation="0 0 -40"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1" rotation="0 0 -40"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1|0" rotation="0 0 -30"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1|0|0" rotation="0 0 -30"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0" rotation="0 0 -35"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0|0" rotation="0 0 -10"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0|0|0" rotation="0 0 -20"/>
+            </pose>
+            <pose id="flatFingers">
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4" rotation="-27 -48 -7.5"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4|0" rotation="16 25 7"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|4|0|0" rotation="0 15 0"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3" rotation="0 0 -25"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3|0" rotation="0 0 0"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|3|0|0" rotation="0 0 -15"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2" rotation="0 0 -20"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2|0" rotation="0 0 -10"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|2|0|0" rotation="0 0 -15"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1" rotation="0 0 -15"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1|0" rotation="0 0 -10"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|1|0|0" rotation="0 0 -10"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0" rotation="0 0 -20"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0|0" rotation="0 0 0"/>
+                <rotationNode index="0|0|0|0|0|2|0|0|1|0|0|0" rotation="0 0 0"/>
+            </pose>
+        </ikChain>
+        <ikChain id="leftArm" target="0" targetOffset="-0.08 0.025 0" targetRotationOffset="0 0 0" alignToTarget="true" isDirtyOnLoad="true" positionThreshold="0.001">
+            <node index="0|0|0|0|0|1|0" minRx="-90" maxRx="5" minRy="-130" maxRy="30" minRz="-90" maxRz="-20" localLimits="true"/>
+            <node index="0|0|0|0|0|1|0|0" minRx="-25" maxRx="25" minRy="-144" maxRy="-25" minRz="0" maxRz="0" localLimits="true"/>
+            <node index="0|0|0|0|0|1|0|0|1"/>
+            <pose id="narrowFingers" isDefaultPose="true">
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4" rotation="4 -41 -45"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4|0" rotation="19 35 10"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4|0|0" rotation="0 33 0"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3" rotation="0 0 -65"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3|0|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2" rotation="0 0 -65"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2|0" rotation="0 0 -60"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2|0|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1" rotation="0 0 -65"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1|0" rotation="0 0 -55"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1|0|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0|0" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0|0|0" rotation="0 0 -45"/>
+            </pose>
+            <pose id="wideFingers">
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4" rotation="-15 -55 -22"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4|0" rotation="15 -1 0"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4|0|0" rotation="0 10 0"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3" rotation="0 0 -45"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3|0" rotation="0 0 -20"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3|0|0" rotation="0 0 -30"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2" rotation="0 0 -40"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2|0" rotation="0 0 -30"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2|0|0" rotation="0 0 -40"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1" rotation="0 0 -40"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1|0" rotation="0 0 -30"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1|0|0" rotation="0 0 -30"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0" rotation="0 0 -35"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0|0" rotation="0 0 -10"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0|0|0" rotation="0 0 -20"/>
+            </pose>
+            <pose id="flatFingers">
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4" rotation="-27 -48 -7.5"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4|0" rotation="16 25 7"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|4|0|0" rotation="0 15 0"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3" rotation="0 0 -25"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3|0" rotation="0 0 0"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|3|0|0" rotation="0 0 -15"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2" rotation="0 0 -20"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2|0" rotation="0 0 -10"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|2|0|0" rotation="0 0 -15"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1" rotation="0 0 -15"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1|0" rotation="0 0 -10"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|1|0|0" rotation="0 0 -10"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0" rotation="0 0 -20"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0|0" rotation="0 0 0"/>
+                <rotationNode index="0|0|0|0|0|1|0|0|1|0|0|0" rotation="0 0 0"/>
+            </pose>
+        </ikChain>
+        <ikChain id="spine" target="0" isDirtyOnLoad="true">
+            <node index="0|0|0"/>
+            <node index="0|0|0|0"/>
+            <node index="0|0|0|0|0"/>
+            <node index="0|0|0|0|0|0"/>
+        </ikChain>
+    </ikChains>
+    <animation filename="$dataS/character/playerAnimations/animationsM.xml"/>
+    <sounds filename="$dataS/character/playerM/sounds.xml"/>
+</player>
