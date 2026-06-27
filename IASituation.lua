@@ -1817,6 +1817,10 @@ function IASituation:blockFarmland()
 	end
 
 	if self.farmlandId ~= nil and self.farmland ~= nil and self.vehicle ~= nil then
+		-- Save the original owner so we can restore it in unblockFarmland.
+		-- This prevents player-owned fields from becoming unowned after NPC fieldwork completes.
+		self._preBlockFarmlandOwnerFarmId = self.farmland.farmId
+		self._preBlockFarmlandFieldStateOwnerFarmId = self.farmland.field.fieldState.ownerFarmId
 		g_farmlandManager:setLandOwnership(self.farmland.id, self.vehicle.farmId)
 		self.farmland:setOwnerFarmId( self.vehicle.farmId)
 		self.farmland.npcIndex = self.vehicle.farmId
@@ -1830,11 +1834,18 @@ function IASituation:unblockFarmland()
 	end
 
 	if self.farmlandId ~= nil and self.farmland ~= nil and self.vehicle ~= nil then
-		g_farmlandManager:setLandOwnership(self.farmland.id, 0)
-		self.farmland:setOwnerFarmId(0)
-		self.farmland.npcIndex = 0
+		-- Restore the original owner that was saved in blockFarmland.
+		-- If the field was player-owned before the NPC started, it stays player-owned.
+		local restoreFarmId = self._preBlockFarmlandOwnerFarmId or 0
+		local restoreFieldStateFarmId = self._preBlockFarmlandFieldStateOwnerFarmId or 0
+		g_farmlandManager:setLandOwnership(self.farmland.id, restoreFarmId)
+		self.farmland:setOwnerFarmId(restoreFarmId)
+		self.farmland.npcIndex = restoreFarmId
 		--self.farmland.showOnFarmlandsScreen = true
-		self.farmland.field.fieldState.ownerFarmId = 0
+		self.farmland.field.fieldState.ownerFarmId = restoreFieldStateFarmId
+		-- Clear saved state to avoid stale values on next use
+		self._preBlockFarmlandOwnerFarmId = nil
+		self._preBlockFarmlandFieldStateOwnerFarmId = nil
 	end
 end
 

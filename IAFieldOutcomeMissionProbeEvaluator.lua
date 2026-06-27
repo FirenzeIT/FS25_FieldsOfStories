@@ -185,7 +185,7 @@ end
 --- @param table|nil expState expected keys
 --- @param string|nil jobRaw raw fieldwork string (fertilize spray equivalence)
 --- @param function sampleAt function(x, z) -> FieldState|nil
---- @param table|nil opts maxMissLogLines (default 48), mismatchAnnot (sprayType / fruitTypeIndex formatters)
+--- @param table|nil opts maxMissLogLines (default 48), mismatchAnnot (sprayType / fruitTypeIndex formatters), probeThreshold (default 1.0 — fraction of probes that must match for allFinished=true)
 --- @return table matched, total, nVertex, nInterior, missLines, missCounts, allFinished, fieldPercentageDone
 function IAFieldOutcomeMissionProbeEvaluator.evaluateAllProbes(plist, expState, jobRaw, sampleAt, opts)
 	opts = opts or {}
@@ -253,7 +253,8 @@ function IAFieldOutcomeMissionProbeEvaluator.evaluateAllProbes(plist, expState, 
 			end
 		end
 	end
-	local allFinished = (matched == total)
+	local threshold = opts.probeThreshold or 1.0
+	local allFinished = (total > 0 and (matched / total) >= threshold)
 	local fp = 0
 	if total > 0 then
 		fp = math.max(0, math.min(1, matched / total))

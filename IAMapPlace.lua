@@ -284,6 +284,15 @@ function IAMapPlace:isBlockedByCollision(optionsOrRadiusM, excludeNodeIdLegacy)
 		return false, {}, {}
 	end
 
+	-- NEW: Skip physics collision for character_homebase on-foot places
+    -- (spawn points intentionally placed inside buildings / interiors).
+    -- Occupancy checks (isPlaceBlockedByOccupancy) still prevent two
+    -- characters from sharing the same place.
+    local sem = (self.getSemanticType ~= nil and self:getSemanticType()) or self.type
+    if sem ~= nil and string.lower(tostring(sem)) == "character_homebase" and self.withVehicle ~= true then
+        return false, {}, {}
+    end
+
 	local options
 	if type(optionsOrRadiusM) == "table" then
 		options = optionsOrRadiusM

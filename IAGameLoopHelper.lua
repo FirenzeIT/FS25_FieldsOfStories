@@ -1381,6 +1381,13 @@ function IAGameLoopHelper:validateScheduleEntry(neighbour, entry, opts)
 		rejectLog("no-farmland-or-field")
 		return nil
 	end
+	-- Reject farmlands owned by the player (farmId 1 = player farm / farmId from g_localPlayer.farmId).
+	-- This guards against stale schedule entries that were built before the player bought the field;
+	-- updateFarmlands removes the field from assignedFarmlands but schedule rebuild only happens on day change.
+	if farmland.isOwned == true and farmland.farmId ~= 99 then
+		rejectLog("farmland-player-owned farmId=" .. tostring(farmland.farmId))
+		return nil
+	end
 	-- ia_field_outcome: standalone mod mission; no cached fieldState / trigger-gate checks here (custom rules later).
 	if fwLower ~= "ia_field_outcome" then
 		if farmland.field.fieldState == nil then

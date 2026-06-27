@@ -1,12 +1,10 @@
---
+﻿--
 -- FS25 - InteractiveNeighbours
 --
--- @Interface: 1.0.0.0
+-- @Interface: 1.0.0.1
 -- @Author: AirFoxTwo
--- @Date: 30.12.2025
--- @Version: 1.0.0.0
--- Changelog:
--- 	v1.0.0.0
+-- @Date: 27.06.2026
+-- @Version: 1.0.0.1
 
 IANeighbours = {}
 IANeighbours.dir = g_currentModDirectory
@@ -46,7 +44,8 @@ IANeighbours.BlockMod = false
 IANeighbours.didStripVanillaFieldMissionsOnLoad = false
 --- First-time-only: after farmlands are assigned to Farmer neighbours on a brand-new save, foreign crops
 --- (not in IAFieldwork.CHARACTER_HARVEST_FRUIT_NAMES) on those fields are normalized to wheat (harvest-ready).
-IANeighbours.didNormalizeAssignedFieldCropsOnFirstLoad = false
+--- DISABLED: set to true to leave field state unchanged on initial farmland assignment.
+IANeighbours.didNormalizeAssignedFieldCropsOnFirstLoad = true
 IANeighbours.mapInitJobRun = false  -- When true, map-init mode is active for missing map config (no vehicle spawn)
 IANeighbours.pendingMapPlacesBootstrap = false  -- No map config: wait for user OK in IAMapPlacesGenDialogGUI before heavy place generation
 IANeighbours.mapPlacesBootstrapDialogShown = false  -- true after showDialog queued successfully (retry if show failed)
@@ -236,7 +235,7 @@ function IANeighbours:loadMap()
 	end
 
 	IANeighbours.didStripVanillaFieldMissionsOnLoad = false
-	IANeighbours.didNormalizeAssignedFieldCropsOnFirstLoad = false
+	IANeighbours.didNormalizeAssignedFieldCropsOnFirstLoad = true -- DISABLED: leave field state unchanged on initial farmland assignment
 
 	local ui = g_currentMission.inGameMenu
 
@@ -261,8 +260,13 @@ function IANeighbours:loadMap()
 		IAFieldOutcomeMission.registerWithMissionManager()
 	end
 
-	-- Lift active mission cap (vanilla uses hasFarmReachedMissionLimit for generation/UI).
+	-- Lift active mission cap (vanilla uses hasFarmReachedMissionLimit and MAX_MISSIONS for generation/UI).
+	-- Set MAX_MISSIONS on the CLASS table (not g_missionManager instance) so getFreeActiveMissionId
+	-- and getCanStartNewMissionGeneration both see the raised limit (1000).
 	if MissionManager ~= nil and MissionManager.hasFarmReachedMissionLimit ~= nil then
+		MissionManager.MAX_MISSIONS = 1000
+
+		-- Per-farm limit: always return false (unlimited).
 		MissionManager.hasFarmReachedMissionLimit = Utils.overwrittenFunction(
 			MissionManager.hasFarmReachedMissionLimit,
 			IANeighbours.hasFarmReachedMissionLimit)
@@ -281,6 +285,13 @@ function IANeighbours:loadMap()
 		addConsoleCommand("iaToggleFieldworkBorderDebug", "Fields of Stories: toggle fieldwork border/alignment debug markers (all active fieldworks)", "consoleCommandIaToggleFieldworkBorderDebug", IANeighbours)
 		addConsoleCommand("iaToggleFieldMissionProbeDebug", "Fields of Stories: toggle field-outcome mission probe debug markers (active phone contracts)", "consoleCommandIaToggleFieldMissionProbeDebug", IANeighbours)
 		addConsoleCommand("iaDumpGrowthStates", "Fields of Stories: dump all growth state names via getFruitTypeGrowthStateName (optional fruit name filter)", "consoleCommandIaDumpGrowthStates", IANeighbours, "[fruitName]")
+		-- Performance debugging console commands
+		addConsoleCommand("iaPerfToggleNeighbours", "Fields of Stories: toggle skipNeighbourUpdate (disable all neighbour per-frame updates)", "consoleCommandIaPerfToggleNeighbours", IANeighbours)
+		addConsoleCommand("iaPerfToggleDebugDrawing", "Fields of Stories: toggle skipDebugDrawing (disable all per-frame debug visual overlays)", "consoleCommandIaPerfToggleDebugDrawing", IANeighbours)
+		addConsoleCommand("iaPerfToggleBorrowUpdate", "Fields of Stories: toggle skipBorrowUpdate (disable per-frame IAMissionBorrow.update)", "consoleCommandIaPerfToggleBorrowUpdate", IANeighbours)
+		addConsoleCommand("iaPerfStatus", "Fields of Stories: print current performance debugging toggle states", "consoleCommandIaPerfStatus", IANeighbours)
+		addConsoleCommand("iaPerfEnableAll", "Fields of Stories: enable debugPerformance + set threshold to 0 (always log)", "consoleCommandIaPerfEnableAll", IANeighbours)
+		addConsoleCommand("iaPerfDisableAll", "Fields of Stories: disable all performance debugging toggles and guards", "consoleCommandIaPerfDisableAll", IANeighbours)
 	end
 
 	-- Mod settings: load persisted values and register the in-game settings page UI
@@ -551,7 +562,7 @@ function IANeighbours:requestRemoveMod()
 	-- Outbound minimal XML is written on the next career save (savegame folder is not writable outside saveToXMLFile on FS25/UWP).
 end
 
---- Always allow more missions for this farm (disables limit).
+--- Always allow more missions for this farm (disables per-farm limit).
 function IANeighbours:hasFarmReachedMissionLimit(superFunc, farmId)
 	return false
 end
@@ -822,6 +833,52 @@ function IANeighbours:drawFieldworkBorderDebugMarkers()
 			end
 		end
 	end
+end
+
+--- Performance debugging: iaPerfToggleNeighbours
+function IANeighbours:consoleCommandIaPerfToggleNeighbours()
+	IANeighbours.skipNeighbourUpdate = not IANeighbours.skipNeighbourUpdate
+	print("[iaPerf] skipNeighbourUpdate = " .. tostring(IANeighbours.skipNeighbourUpdate))
+end
+
+--- Performance debugging: iaPerfToggleDebugDrawing
+function IANeighbours:consoleCommandIaPerfToggleDebugDrawing()
+	IANeighbours.skipDebugDrawing = not IANeighbours.skipDebugDrawing
+	print("[iaPerf] skipDebugDrawing = " .. tostring(IANeighbours.skipDebugDrawing))
+end
+
+--- Performance debugging: iaPerfToggleBorrowUpdate
+function IANeighbours:consoleCommandIaPerfToggleBorrowUpdate()
+	IANeighbours.skipBorrowUpdate = not IANeighbours.skipBorrowUpdate
+	print("[iaPerf] skipBorrowUpdate = " .. tostring(IANeighbours.skipBorrowUpdate))
+end
+
+--- Performance debugging: iaPerfStatus — print all toggle states
+function IANeighbours:consoleCommandIaPerfStatus()
+	print("=== [iaPerf] Performance Debug State ===")
+	print("  debugPerformance       = " .. tostring(IANeighbours.debugPerformance))
+	print("  frameTimeLogThresholdMs = " .. tostring(IANeighbours.frameTimeLogThresholdMs))
+	print("  skipNeighbourUpdate     = " .. tostring(IANeighbours.skipNeighbourUpdate))
+	print("  skipDebugDrawing        = " .. tostring(IANeighbours.skipDebugDrawing))
+	print("  skipBorrowUpdate        = " .. tostring(IANeighbours.skipBorrowUpdate))
+	print("=======================================")
+end
+
+--- Performance debugging: iaPerfEnableAll — enable profiling and set threshold to 0 (always log)
+function IANeighbours:consoleCommandIaPerfEnableAll()
+	IANeighbours.debugPerformance = true
+	IANeighbours.frameTimeLogThresholdMs = 0
+	print("[iaPerf] debugPerformance = true, frameTimeLogThresholdMs = 0 (always log)")
+end
+
+--- Performance debugging: iaPerfDisableAll — disable profiling and reset all skip guards
+function IANeighbours:consoleCommandIaPerfDisableAll()
+	IANeighbours.debugPerformance = false
+	IANeighbours.frameTimeLogThresholdMs = 2
+	IANeighbours.skipNeighbourUpdate = false
+	IANeighbours.skipDebugDrawing = false
+	IANeighbours.skipBorrowUpdate = false
+	print("[iaPerf] All performance debugging reset: profiling OFF, all skip guards cleared")
 end
 
 --- Developer console: iaForceSituation [index|id|name]; [situationId]
@@ -1593,10 +1650,12 @@ function IANeighbours:update(dt)
 
 	IANeighbours:updateNeighbours(dt,self.gameSeconds,game5Seconds)
 
-	if IAMissionBorrow ~= nil and type(IAMissionBorrow.update) == "function" then
+	if not IANeighbours.skipBorrowUpdate and IAMissionBorrow ~= nil and type(IAMissionBorrow.update) == "function" then
 		IAMissionBorrow.update(dt)
 	end
 
+	-- Debug drawing block: skipped entirely when skipDebugDrawing is true
+	if not IANeighbours.skipDebugDrawing then
 	if IANeighbours.debugVehiclePresencePositions == true then
 		IANeighbours:drawVehiclePresenceDebugMarkers()
 	end
@@ -1665,6 +1724,7 @@ function IANeighbours:update(dt)
 			IAHelper_drawMapInitPlaceDebugBoxes(IANeighbours, refX, refY, refZ, debugPointDrawRangeSq)
 		end
 	end
+	end -- IANeighbours.skipDebugDrawing guard
 
 	if frameTimer ~= nil then
 		IAHelper_frameTimerEnd(frameTimer, IANeighbours.frameTimeLogThresholdMs, "IANeighbours:update")
@@ -2276,6 +2336,11 @@ function IANeighbours:normalizeAssignedFieldCropsOnFirstLoad(farmlands, farmerNe
 	end
 end
 function IANeighbours:updateNeighbours(dt,gameSeconds,game5Seconds)
+	-- Performance guard: skip entire neighbour update loop when toggled via iaPerfToggleNeighbours
+	if IANeighbours.skipNeighbourUpdate then
+		return
+	end
+	local _timer = IANeighbours.debugPerformance and IAHelper_frameTimerStart() or nil
 	local neighbourInRange = false
 	local nearbySituation = nil
 	local bestDistance = nil
@@ -2320,6 +2385,9 @@ function IANeighbours:updateNeighbours(dt,gameSeconds,game5Seconds)
 		IANeighbours:disableConversationKeybind()
 	end
 	IANeighbours.refreshConversationActionEvents(conversationAvailable)
+	if _timer ~= nil then
+		IAHelper_frameTimerEnd(_timer, IANeighbours.frameTimeLogThresholdMs, "updateNeighbours")
+	end
 end
 
 

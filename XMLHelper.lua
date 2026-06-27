@@ -1510,6 +1510,8 @@ function IAXMLHelper:loadSituationFromXML(xmlFile, neighbourKey, existingNeighbo
 		end
 	end
 	situation.initCommitted = getXMLBool(xmlFile, situationKey.."#initCommitted", false)
+	situation._preBlockFarmlandOwnerFarmId = getXMLInt(xmlFile, situationKey.."#preBlockFarmlandOwnerFarmId", nil)
+	situation._preBlockFarmlandFieldStateOwnerFarmId = getXMLInt(xmlFile, situationKey.."#preBlockFarmlandFieldStateOwnerFarmId", nil)
 	
 	-- Load dialog messages
 	local dialogMessages = {}
@@ -3976,6 +3978,12 @@ function IAXMLHelper:saveOutboundXMLToXMLFile()
 					end
 					if situation.initCommitted ~= nil then
 						setXMLBool(xmlFile, situationKey.."#initCommitted", situation.initCommitted)
+					end
+					if situation._preBlockFarmlandOwnerFarmId ~= nil then
+						setXMLInt(xmlFile, situationKey.."#preBlockFarmlandOwnerFarmId", situation._preBlockFarmlandOwnerFarmId)
+					end
+					if situation._preBlockFarmlandFieldStateOwnerFarmId ~= nil then
+						setXMLInt(xmlFile, situationKey.."#preBlockFarmlandFieldStateOwnerFarmId", situation._preBlockFarmlandFieldStateOwnerFarmId)
 					end
 					if situation.dialogMessageId ~= nil then
 						setXMLInt(xmlFile, situationKey.."#dialogMessageId", situation.dialogMessageId)

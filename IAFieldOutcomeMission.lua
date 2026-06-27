@@ -40,6 +40,8 @@ IAFieldOutcomeMission.MIN_INTERIOR_PROBE_SLOTS = 24
 IAFieldOutcomeMission.MAX_PROBES = 64
 IAFieldOutcomeMission.BORDER_INSET_MIN_M = 5
 IAFieldOutcomeMission.BORDER_INSET_MAX_M = 10
+--- Fraction of probes that must match expected FieldState for the mission to be considered finished (0.0-1.0).
+IAFieldOutcomeMission.PROBE_COMPLETION_THRESHOLD = 0.9
 
 -- Persisted on outbound fieldOutcomeMission rows (#<key>); order drives save + restore.
 -- When MissionManager refuses startMission (e.g. another contract still PREPARING), entries are retried from processDeferredOutboundRestoreStarts.
@@ -559,6 +561,16 @@ function IAFieldOutcomeMission.tryStartAfterRegister(mission, farmId, spawnVehic
 		runPostUpdate = true
 	end
 	local ok, res = pcall(g_missionManager.startMission, g_missionManager, mission, farmId, spawnVehicles == true)
+	-- When no vehicles are spawned, the engine sets PREPARING but the async vehicle
+	-- spawn never completes, so the mission stays PREPARING indefinitely. This blocks
+	-- subsequent startMission calls in the same batch (bundled phone contracts),
+	-- because vanilla refuses all new starts while any mission is PREPARING.
+	-- Force PREPARING -> RUNNING immediately for vehicle-less missions.
+	if ok and res == (MissionStartState ~= nil and MissionStartState.OK or 0) and not spawnVehicles then
+		if MissionStatus ~= nil and mission.status == MissionStatus.PREPARING then
+			mission.status = MissionStatus.RUNNING
+		end
+	end
 	if runPostUpdate and g_missionManager.updateMissions ~= nil then
 		g_missionManager:updateMissions(0)
 	end
@@ -1341,6 +1353,7 @@ function IAFieldOutcomeMission:iaSyncProbeEvaluation()
 		{
 			maxMissLogLines = maxMissLogLines,
 			mismatchAnnot = IAFieldOutcomeMission.iaProbeMismatchAnnotators(),
+			probeThreshold = IAFieldOutcomeMission.PROBE_COMPLETION_THRESHOLD,
 		}
 	)
 	local matched = res.matched
@@ -1360,12 +1373,13 @@ function IAFieldOutcomeMission:iaSyncProbeEvaluation()
 		local preamble = self:iaDebugFieldPreamble(total, nVertex, nInterior)
 		IAFieldOutcomeMission.iaLog(
 			string.format(
-				"iaSyncProbeEvaluation %s | matched=%d/%d allFinished=%s HUD_completion=%.3f (progress = probes_passing / total_probes; each probe must match every key in iaExpectedFieldState)",
+				"iaSyncProbeEvaluation %s | matched=%d/%d allFinished=%s HUD_completion=%.3f (threshold=%.0f%%; each probe must match every key in iaExpectedFieldState)",
 				preamble,
 				matched,
 				total,
 				tostring(self.iaProbeEvalAllFinished),
-				(total > 0) and (matched / total) or 0
+				(total > 0) and (matched / total) or 0,
+				(IAFieldOutcomeMission.PROBE_COMPLETION_THRESHOLD or 1.0) * 100
 			)
 		)
 		local nMissLogged = #missLines
@@ -1429,8 +1443,11 @@ function IAFieldOutcomeMission:getFieldCompletion()
 	local t = math.max(1, self.iaProbeEvalTotal or 1)
 	local m = self.iaProbeEvalMatched or 0
 	local comp = math.max(0, math.min(1, m / t))
-	if self.iaFoSBorrowReturnPending == true and self.iaProbeEvalAllFinished == true then
-		return math.min(0.99, comp)
+	if self.iaProbeEvalAllFinished == true then
+		if self.iaFoSBorrowReturnPending == true then
+			return 0.99
+		end
+		return 1.0
 	end
 	return comp
 end

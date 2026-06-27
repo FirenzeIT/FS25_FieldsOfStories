@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="109">
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
 	<author>AirFoxTwo</author>
 	<title>
 		<de>Fields Of Stories - Rollenspiel</de>
@@ -15,6 +15,7 @@ Each character has an individual daily routine and tasks.
 You meet characters randomly at the gas station, in the field, at the dealer, or anywhere across the map.
 Have conversations, build relationships, and support them when they need help.
 
+BETA note: Please check the roadmap and the features that are still planned. Report bugs and feature requests via GitHub.
 GitHub: https://github.com/AirFoxTwo/FS25_FieldsOfStories
 
 Features:
@@ -83,6 +84,13 @@ Relationships: Relationships are measured with points and levels. Each conversat
 Conversations: Conversations are based on the current situation and the characters behavior (e.g. suspicious, friendly, etc.). They have real vehicle and work informations in it, like regular outages of Skoda cars, hydraulic parts of a tractor, etc.
 Voices: All conversations are voiced in German and English. Language and voice are determined automatically by the downloaded voice pack.
 Missions: In later versions, the current conversations will be expanded with missions that you can accept as a player. There are already conversations hinting at this, but they currently don’t trigger any missions yet.
+
+-------- Changelog --------
+
+1.0.0.1:
+- Bugfix: Recently acquired fields are no longer used by the NPC
+- Bugfix: Fields are not longer adjusted to NPC-supported crops.
+- Bugfix: 10% Threshold for Fieldwork Missions completion.
 ]]></en>
 		<de><![CDATA[Fields of Stories – Lebendige Charaktere im Landwirtschafts-Simulator
 
@@ -91,6 +99,7 @@ Jeder Charakter hat einen individuellen Tagesablauf und Aufgaben.
 Du begegnest Charakteren zufällig an der Tankstelle, auf dem Feld, beim Händler oder überall verteilt auf der Karte.
 Führe Gespräche, baue Beziehungen auf und unterstütze sie, wenn sie Hilfe benötigen.
 
+BETA-Hinweis: Beachte bitte die Roadmap und die Features, die noch geplant sind. Melde Fehler und Feature-Wünsche über GitHub.
 GitHub: https://github.com/AirFoxTwo/FS25_FieldsOfStories
 
 Features:
@@ -159,6 +168,15 @@ Beziehungen: Beziehungen werden mit Punkten und Leveln gemessen. Jedes Gespräch
 Gespräche: Gespräche basieren auf der aktuellen Situation und dem Verhalten der Charaktere (z.B. misstrauisch, freundlich, etc.). Sie enthalten echte Fahrzeug- und Arbeitsinformationen, wie regelmäßige Ausfälle von Skoda-Fahrzeugen, Hydraulikteile eines bestimmten Traktors, etc.
 Stimmen: Alle Gespräche sind in Deutsch und Englisch vertont. Sprache und Stimme ergeben sich automatisch aus dem heruntergeladenen Sprachpaket.
 Missionen: In späteren Versionen werden die bisherigen Gespräche um Missionen erweitert, die du als Spieler annehmen kannst. Es gibt bereits Gespräche, die darauf hindeuten, aber aktuell lösen sie noch keine Missionen aus.
+
+
+
+-------- Changelog --------
+
+1.0.0.1:
+- Bugfix: Kürzlich erworbene Felder werden nun nicht mehr vom NPC verwendet
+- Bugfix: Felder werden nicht mehr an die vom NPC unterstützten Kulturen angepasst.
+- Bugfix: 10% Schwelle für die Fertigstellung von Feldarbeits-Missionen.
 ]]></de>
 	</description>
 	<iconFilename>icon_FieldsOfStories.dds</iconFilename>
