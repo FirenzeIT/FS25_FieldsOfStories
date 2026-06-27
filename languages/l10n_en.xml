@@ -54,7 +54,7 @@
             <text name="gui_relationship_strained" text="Strained"/>
             <text name="gui_mapinit_tab_help" text="Help"/>
             <text name="gui_mapinit_help_info_title" text="Where to find help"/>
-            <text name="gui_mapinit_help_info_body" text="The full Fields of Stories guide lives in the in-game Help menu.&#10;&#10;Press Esc to open the menu, go to Help, and look under the 'Roleplay' and 'Setup' categories to read about every feature - meeting neighbours, conversations, relationships, field contracts, homebases, creating map places and more.&#10;&#10;This Settings tab holds the place and character tools for setting up a map."/>
+            <text name="gui_mapinit_help_info_body" text="The full Fields of Stories guide lives in the in-game Help menu. Press Esc to open the menu, go to Help, and look under the 'Roleplay' and 'Setup' categories to read about every feature - meeting neighbours, conversations, relationships, field contracts, homebases, creating map places and more. The Settings tab in this dialog holds the place and character tools for setting up a map."/>
             <text name="gui_help_category_title" text="Roleplay"/>
             <text name="gui_help_category_setup_title" text="Setup"/>
             <text name="gui_help_overview_title" text="Overview"/>
@@ -181,9 +181,9 @@
             <text name="gui_mapinit_notify_nudge_vehicle_no_vehicle" text="Get in a vehicle to use this."/>
             <text name="gui_mapinit_notify_nudge_vehicle_ai" text="Stop vehicle AI before nudging."/>
             <text name="gui_mapinit_notify_nudge_vehicle_failed" text="Could not move vehicle: %s"/>
-            <text name="ingame_relationship_improved" text="Relationship improved with %s (+%s)"/>
+            <text name="ingame_relationship_improved" text="Relationship improved with %s (+%s Points)"/>
             <text name="ingame_relationship_levelup" text="Relationship level increased with %s (Level %s)"/>
-            <text name="ingame_relationship_decreased" text="Relationship not improved with %s (-%s)"/>
+            <text name="ingame_relationship_decreased" text="Relationship worsened with %s (-%s Points)"/>
             <text name="ingame_situation_at_player_farm" text="%s is waiting at your farm."/>
             <text name="ia_field_outcome_mission_title_for_neighbour" text="%s for %s"/>
             <text name="ia_field_outcome_mission_desc_short" text="Use a %s to finish this task."/>

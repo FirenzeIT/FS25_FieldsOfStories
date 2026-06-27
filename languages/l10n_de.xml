@@ -54,7 +54,7 @@
             <text name="gui_relationship_strained" text="Angespannt"/>
             <text name="gui_mapinit_tab_help" text="Hilfe"/>
             <text name="gui_mapinit_help_info_title" text="Wo du Hilfe findest"/>
-            <text name="gui_mapinit_help_info_body" text="Der vollständige Fields-of-Stories-Leitfaden befindet sich im Spiel-Hilfemenü.&#10;&#10;Drücke Esc, um das Menü zu öffnen, gehe zu Hilfe und schau in der Hauptkategorie 'Fields of Stories - Rollenspiel' nach, um alles über jede Funktion zu lesen.&#10;&#10;Dieser Tab Einstellungen enthält die Orts- und Charakter-Tools zum Einrichten einer Karte."/>
+            <text name="gui_mapinit_help_info_body" text="Der vollständige Fields-of-Stories-Leitfaden befindet sich im Spiel-Hilfemenü. Drücke Esc, um das Menü zu öffnen, gehe zu Hilfe und schau in der Hauptkategorie 'Fields of Stories - Rollenspiel' nach, um alles über jede Funktion zu lesen. Der Tab Einstellungen in diesem Fenster enthält die Orts- und Charakter-Tools zum Einrichten einer Karte."/>
             <text name="gui_help_category_title" text="Rollenspiel"/>
             <text name="gui_help_category_setup_title" text="Konfiguration"/>
             <text name="gui_help_overview_title" text="Überblick"/>
@@ -181,9 +181,9 @@
             <text name="gui_mapinit_notify_nudge_vehicle_no_vehicle" text="Setz dich ins Fahrzeug, um das zu nutzen."/>
             <text name="gui_mapinit_notify_nudge_vehicle_ai" text="Fahrzeug-KI stoppen, bevor du verschiebst."/>
             <text name="gui_mapinit_notify_nudge_vehicle_failed" text="Fahrzeug konnte nicht verschoben werden: %s"/>
-            <text name="ingame_relationship_improved" text="Beziehung zu %s verbessert (+%s)"/>
+            <text name="ingame_relationship_improved" text="Beziehung zu %s verbessert (+%s Punkte)"/>
             <text name="ingame_relationship_levelup" text="Beziehungslevel mit %s erhöht (Level %s)"/>
-            <text name="ingame_relationship_decreased" text="Beziehung zu %s hat sich nicht verbessert (-%s)"/>
+            <text name="ingame_relationship_decreased" text="Beziehung zu %s hat sich verschlechtert (-%s Punkte)"/>
             <text name="ingame_situation_at_player_farm" text="%s wartet auf deinem Hof."/>
             <text name="ia_field_outcome_mission_title_for_neighbour" text="%s für %s"/>
             <text name="ia_field_outcome_mission_desc_short" text="Nutze %s, um die Aufgabe zu erledigen."/>

@@ -8036,22 +8036,6 @@
             <relRotation>-0.523599</relRotation>
             <collisionExcludeRefId id="46546"/>
         </place>
-        <place id="542" nodeName="hydrant02" mapRefNodeId="46542">
-            <name>public_infrastructure at hydrant02 #2</name>
-            <type>public_infrastructure</type>
-            <x>-221.915039</x>
-            <y>59.773678</y>
-            <z>64.524452</z>
-            <rotation>-2.094395</rotation>
-            <sizeType>character</sizeType>
-            <withVehicle>false</withVehicle>
-            <withAttachment>false</withAttachment>
-            <offsetX>0.859050</offsetX>
-            <offsetY>-0.034821</offsetY>
-            <offsetZ>0.007039</offsetZ>
-            <relRotation>-0.523599</relRotation>
-            <collisionExcludeRefId id="46542"/>
-        </place>
         <place id="543" nodeName="hydrant02" mapRefNodeId="93962">
             <name>public_infrastructure at hydrant02 #3</name>
             <type>public_infrastructure</type>
@@ -8499,22 +8483,6 @@
             <offsetZ>1.984592</offsetZ>
             <relRotation>-2.292783</relRotation>
             <collisionExcludeRefId id="123453"/>
-        </place>
-        <place id="571" nodeName="billboard2x3" mapRefNodeId="123441">
-            <name>public_infrastructure at billboard2x3 #4</name>
-            <type>public_infrastructure</type>
-            <x>-222.557587</x>
-            <y>59.319191</y>
-            <z>80.624794</z>
-            <rotation>2.419606</rotation>
-            <sizeType>character</sizeType>
-            <withVehicle>false</withVehicle>
-            <withAttachment>false</withAttachment>
-            <offsetX>0.165096</offsetX>
-            <offsetY>-0.855509</offsetY>
-            <offsetZ>1.984592</offsetZ>
-            <relRotation>-2.292783</relRotation>
-            <collisionExcludeRefId id="123441"/>
         </place>
         <place id="572" nodeName="billboard2x3" mapRefNodeId="123411">
             <name>public_infrastructure at billboard2x3 #5</name>
@@ -71636,22 +71604,6 @@
             <relRotation>3.092659</relRotation>
             <collisionExcludeRefId id="123480"/>
         </place>
-        <place id="4524" nodeName="billboard2x1" mapRefNodeId="123438">
-            <name>public_infrastructure at billboard2x1 #7</name>
-            <type>public_infrastructure</type>
-            <x>-224.502808</x>
-            <y>60.125500</y>
-            <z>61.967247</z>
-            <rotation>1.521863</rotation>
-            <sizeType>character</sizeType>
-            <withVehicle>false</withVehicle>
-            <withAttachment>false</withAttachment>
-            <offsetX>0.020544</offsetX>
-            <offsetY>-0.066305</offsetY>
-            <offsetZ>3.910814</offsetZ>
-            <relRotation>3.092659</relRotation>
-            <collisionExcludeRefId id="123438"/>
-        </place>
         <place id="4525" nodeName="billboard2x1" mapRefNodeId="123456">
             <name>public_infrastructure at billboard2x1 #8</name>
             <type>public_infrastructure</type>
@@ -80683,102 +80635,6 @@
             <withAttachment>true</withAttachment>
             <description>ownerFarmId=0; isSellingPoint=true; rootNodeName=sawmill; supportedFillTypes=22; unloadTriggerIndex=2; aiNode=14245790; stationId=314</description>
         </place>
-        <place id="5253">
-            <name>Shop spawn (store 1 row 1 col 1)</name>
-            <type>workshop</type>
-            <x>-238.250000</x>
-            <y>60.134438</y>
-            <z>82.000000</z>
-            <rotation>1.570796</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=3.00 t=7.75; L=40.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=14099084</description>
-        </place>
-        <place id="5433">
-            <name>Shop spawn (store 1 row 2 col 1)</name>
-            <type>workshop</type>
-            <x>-238.250000</x>
-            <y>60.134438</y>
-            <z>77.500000</z>
-            <rotation>1.570796</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=7.50 t=7.75; L=40.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=14099084</description>
-        </place>
-        <place id="5255">
-            <name>Shop spawn (store 1 row 3 col 1)</name>
-            <type>workshop</type>
-            <x>-238.250000</x>
-            <y>60.118874</y>
-            <z>73.000000</z>
-            <rotation>1.570796</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=12.00 t=7.75; L=40.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=14099084</description>
-        </place>
-        <place id="5425">
-            <name>Shop spawn (store 1 row 4 col 1)</name>
-            <type>workshop</type>
-            <x>-238.250000</x>
-            <y>60.126656</y>
-            <z>68.500000</z>
-            <rotation>1.570796</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=16.50 t=7.75; L=40.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=14099084</description>
-        </place>
-        <place id="5257">
-            <name>Shop spawn (store 1 row 5 col 1)</name>
-            <type>workshop</type>
-            <x>-238.250000</x>
-            <y>60.134438</y>
-            <z>64.000000</z>
-            <rotation>1.570796</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=21.00 t=7.75; L=40.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=14099084</description>
-        </place>
-        <place id="5429">
-            <name>Shop spawn (store 1 row 6 col 1)</name>
-            <type>workshop</type>
-            <x>-238.250000</x>
-            <y>60.134438</y>
-            <z>59.500000</z>
-            <rotation>1.570796</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=25.50 t=7.75; L=40.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=14099084</description>
-        </place>
-        <place id="5259">
-            <name>Shop spawn (store 1 row 7 col 1)</name>
-            <type>workshop</type>
-            <x>-238.250000</x>
-            <y>60.142220</y>
-            <z>55.000000</z>
-            <rotation>1.570796</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=30.00 t=7.75; L=40.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=14099084</description>
-        </place>
-        <place id="5427">
-            <name>Shop spawn (store 1 row 8 col 1)</name>
-            <type>workshop</type>
-            <x>-238.250000</x>
-            <y>60.134438</y>
-            <z>50.500000</z>
-            <rotation>1.570796</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=34.50 t=7.75; L=40.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=14099084</description>
-        </place>
         <place id="5402">
             <name>Place 5250</name>
             <type>dirt_road</type>
@@ -82341,6 +82197,61 @@
             <withVehicle>true</withVehicle>
             <withAttachment>true</withAttachment>
         </place>
+        <place id="5473">
+            <name>Place 5473</name>
+            <type>workshop</type>
+            <x>-248.908875</x>
+            <y>60.023582</y>
+            <z>88.559647</z>
+            <rotation>1.540451</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="5474">
+            <name>Place 5474</name>
+            <type>workshop</type>
+            <x>-224.662704</x>
+            <y>59.977993</y>
+            <z>73.647827</z>
+            <rotation>3.128834</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="5475">
+            <name>Place 5475</name>
+            <type>workshop</type>
+            <x>-224.390961</x>
+            <y>59.905354</y>
+            <z>53.171444</z>
+            <rotation>3.128108</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="5476">
+            <name>Place 5476</name>
+            <type>workshop</type>
+            <x>-259.190857</x>
+            <y>60.017288</y>
+            <z>59.917103</z>
+            <rotation>-0.008742</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="5477">
+            <name>Place 5477</name>
+            <type>workshop</type>
+            <x>-259.366028</x>
+            <y>60.022449</y>
+            <z>79.811386</z>
+            <rotation>-0.008967</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
     </places>
     <neighbourHomebaseAssignments>
         <neighbour id="21">
@@ -82516,7 +82427,7 @@
             <placeId id="4624"/>
         </neighbour>
     </neighbourWorkplaceAssignments>
-	<hiddenObjects>
+    <hiddenObjects>
         <object name="gate6m" index="7|0|0|12|19|9" x="-266.000000" y="59.015003" z="136.000000"/>
     </hiddenObjects>
 </mapConfiguration>

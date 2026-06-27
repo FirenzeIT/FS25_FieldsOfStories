@@ -27,24 +27,42 @@
                             <BoxLayout profile="ia_mapinit_storyHelpTextLayout" id="storyHelpTextLayout">
                                 <Text profile="ia_mapinit_storyHelpTitle" text="$l10n_gui_mapinit_help_info_title" />
                                 <Text profile="ia_mapinit_storyHelpBody" text="$l10n_gui_mapinit_help_info_body" />
+                                <Text profile="ia_mapinit_storyHelpTitle" text="$l10n_gui_mapinit_characters_title" />
                             </BoxLayout>
                         </GuiElement>
 
                         <!-- Character list (scrollable). Populated at runtime from the template button. -->
-                        <Text profile="ia_mapinit_label" text="$l10n_gui_mapinit_characters_title" id="storyCharacterListLabel" />
                         <GuiElement profile="ia_mapinit_storyListScrollContainer" id="storyCharacterListScrollContainer">
+                            <!-- framed background (existing) -->
                             <ThreePartBitmap profile="fs25_textInputBg" position="-15px 0px"/>
-                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout" id="storyCharacterListScrollingLayout">
+
+                            <!-- small invisible bitmaps used as top/bottom clippers for the scrolling viewport -->
+                            <Bitmap id="storyListTopClipper" profile="emptyPanel" position="0px 0px" size="100% 6px" imageColor="0 0 0 0"/>
+                            <Bitmap id="storyListBottomClipper" profile="emptyPanel" position="0px 0px" size="100% 6px" imageColor="0 0 0 0"/>
+
+                            <!-- Scrolling layout — note the clipper attribute names pointing to the above elements -->
+                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout"
+                                            id="storyCharacterListScrollingLayout"
+                                            topClipperElementName="storyListTopClipper"
+                                            bottomClipperElementName="storyListBottomClipper">
                                 <BoxLayout profile="ia_mapinit_placeButtonsBox" id="storyCharacterListBox">
                                     <Button profile="ia_mapinit_placeButton" id="storyCharacterButtonTemplate" name="storyCharacterButtonTemplate" onClick="onClickStoryCharacter" />
                                 </BoxLayout>
                             </ScrollingLayout>
+
+                            <!-- Vertical scrollbar track + engine Slider bound to the scrolling layout.
+                                Adjust the `position` x offset so the track sits on the right edge of the framed background. -->
+                            <ThreePartBitmap profile="ia_mapinit_listSliderTrack" size="8px 100%">
+                                <Slider profile="fs25_listSlider"
+                                        position="1px 0px"
+                                        dataElementId="storyCharacterListScrollingLayout"
+                                        size="8px 100%"/>
+                            </ThreePartBitmap>
                         </GuiElement>
                     </BoxLayout>
 
                     <!-- Right area (~66%): selected character portrait + relationship -->
                     <BoxLayout profile="ia_mapinit_storyRightColumn" id="storyRightColumn">
-                        <Text profile="ia_mapinit_title" text="-" id="storyCharacterDataTitle" />
                         <GuiElement profile="ia_mapinit_storyDataPanel" id="storyCharacterDataPanel">
                             <!-- No negative x-offset here: it would bleed the grey background into the gap between the two columns. -->
                             <ThreePartBitmap profile="fs25_textInputBg" position="0px 0px"/>
@@ -52,6 +70,7 @@
                                 <BoxLayout profile="ia_mapinit_storyPortraitRow" id="storyPortraitRow">
                                     <Bitmap profile="ia_mapinit_storyPortrait" id="storyCharacterPortrait" />
                                     <BoxLayout profile="ia_mapinit_storyInfoColumn" id="storyInfoColumn">
+                                        <Text profile="ia_mapinit_storyDetailName" text="-" id="storyCharacterDataTitle" />
                                         <Text profile="ia_mapinit_storyDetailLabel" text="$l10n_gui_mapinit_story_relationship" id="storyRelationshipLabel" />
                                         <Text profile="ia_mapinit_storyDetailValue" text="-" id="storyRelationshipValue" />
                                         <Text profile="ia_mapinit_storyDetailLabel" text="$l10n_gui_mapinit_story_relationship_level" id="storyRelationshipLevelLabel" />
@@ -82,7 +101,9 @@
                         <GuiElement profile="ia_mapinit_scrollContainer" id="placeButtonsScrollContainer">
                             <!-- Subtle framed background so it's obvious this list can scroll -->
                             <ThreePartBitmap profile="fs25_textInputBg" position="-15px 0px"/>
-                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout" id="placeButtonsScrollingLayout">
+                            <Bitmap id="placeButtonsTopClipper" profile="emptyPanel" position="0px 0px" size="100% 6px" imageColor="0 0 0 0"/>
+                            <Bitmap id="placeButtonsBottomClipper" profile="emptyPanel" position="0px 0px" size="100% 6px" imageColor="0 0 0 0"/>
+                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout" id="placeButtonsScrollingLayout" topClipperElementName="placeButtonsTopClipper" bottomClipperElementName="placeButtonsBottomClipper">
                                 <BoxLayout profile="ia_mapinit_placeButtonsBox" id="placeButtonsBox">
                                     <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_shop" onClick="onClickPlaceType" />
                                     <Button profile="ia_mapinit_placeButton" text="$l10n_gui_mapinit_place_type_gas_station" onClick="onClickPlaceType" />
@@ -102,6 +123,9 @@
                                     <Button profile="ia_mapinit_placeButton" id="characterHomeButtonTemplate" name="characterHomeButtonTemplate" onClick="onClickPlaceType" />
                                 </BoxLayout>
                             </ScrollingLayout>
+                            <ThreePartBitmap profile="ia_mapinit_listSliderTrack" size="8px 100%">
+                                <Slider profile="fs25_listSlider" dataElementId="placeButtonsScrollingLayout" position="1px 0px" size="8px 100%"/>
+                            </ThreePartBitmap>
                         </GuiElement>
                         <BoxLayout profile="ia_mapinit_actionsColumn" id="mapInitActionsColumn">
                             <BoxLayout profile="ia_mapinit_actionsLayout">
@@ -130,7 +154,9 @@
                         <!-- Character details (scrollable, same container/scroll structure as left box) -->
                         <GuiElement profile="ia_mapinit_scrollContainer" id="characterDetailsScrollContainer">
                             <ThreePartBitmap profile="fs25_textInputBg" position="-15px 0px"/>
-                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout" id="characterDetailsScrollingLayout">
+                            <Bitmap id="characterDetailsTopClipper" profile="emptyPanel" position="0px 0px" size="100% 6px" imageColor="0 0 0 0"/>
+                            <Bitmap id="characterDetailsBottomClipper" profile="emptyPanel" position="0px 0px" size="100% 6px" imageColor="0 0 0 0"/>
+                            <ScrollingLayout profile="ia_mapinit_placeButtonsScrollingLayout" id="characterDetailsScrollingLayout" topClipperElementName="characterDetailsTopClipper" bottomClipperElementName="characterDetailsBottomClipper">
                                 <BoxLayout profile="ia_mapinit_characterDetailsBox" id="characterDetailsBox">
                                     <Text profile="ia_mapinit_characterDetailText" id="characterDetailName" text="Name: -" />
                                     <Text profile="ia_mapinit_characterDetailText" id="characterDetailJob" text="Job: -" />
@@ -146,6 +172,9 @@
                                     <Text profile="ia_mapinit_characterDetailText" id="characterDetailSchedule" text="-" />
                                 </BoxLayout>
                             </ScrollingLayout>
+                            <ThreePartBitmap profile="ia_mapinit_listSliderTrack" size="8px 100%">
+                                <Slider profile="fs25_listSlider" dataElementId="characterDetailsScrollingLayout" position="1px 0px" size="8px 100%"/>
+                            </ThreePartBitmap>
                         </GuiElement>
 
                         <!-- Character actions -->
@@ -183,6 +212,10 @@
     <GUIProfiles>
         <Profile name="ia_mapinit_dialogBg" extends="baseReference" with="pivotMiddleCenter">
             <size value="95% 80%"/>
+        </Profile>
+
+        <Profile name="ia_mapinit_listSliderTrack" extends="fs25_listSliderBox" with="anchorTopRight pivotTopRight">
+            <position value="15px 0px"/>
         </Profile>
 
         <Profile name="ia_mapinit_contentLayout" extends="baseReference" with="pivotTopLeft">
@@ -352,7 +385,7 @@
 
         <!-- ===== Story tab layout: left column (help card + character list) | right data area ===== -->
         <!-- Spacing comes from the column margins (outer edges + shared gap), like columnContainer/contentWrapper; no elementSpacing here. -->
-        <Profile name="ia_mapinit_storyColumnsRow" extends="baseReference" with="anchorTopLeft">
+        <Profile name="ia_mapinit_storyColumnsRow" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
             <size value="100% 100%"/>
             <position value="0px 0px"/>
             <imageColor value="0 0 0 0"/>
@@ -366,23 +399,23 @@
         </Profile>
 
         <!-- margin = left top right bottom. 24px outer-left + 12px half of the gap; widths + margins stay < 100%. -->
-        <Profile name="ia_mapinit_storyLeftColumn" extends="baseReference" with="anchorTopLeft">
-            <size value="33% 100%"/>
+        <Profile name="ia_mapinit_storyLeftColumn" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="33% 85%"/>
             <position value="0px 0px"/>
-            <margin value="24px 0px 12px 0px"/>
+            <margin value="12px 0px 24px 0px"/>
             <imageColor value="0 0 0 0"/>
             <color value="0 0 0 0"/>
             <flowDirection value="vertical"/>
             <fillDirectionY value="topToBottom"/>
-            <elementSpacing value="10px"/>
+            <elementSpacing value="0px"/>
             <alignmentX value="left"/>
             <alignmentY value="top"/>
             <fitFlowToElements value="false"/>
         </Profile>
 
         <!-- 12px half of the gap + 24px outer-right edge. -->
-        <Profile name="ia_mapinit_storyRightColumn" extends="baseReference" with="anchorTopLeft">
-            <size value="60% 100%"/>
+        <Profile name="ia_mapinit_storyRightColumn" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="60% 85%"/>
             <position value="0px 0px"/>
             <margin value="12px 0px 24px 0px"/>
             <imageColor value="0 0 0 0"/>
@@ -395,9 +428,9 @@
             <fitFlowToElements value="false"/>
         </Profile>
 
-        <!-- Small help card pinned to the upper-left of the story area. Transparent interior; white outline drawn by 4 border bars. -->
+        <!-- Small help card pinned to the upper-left of the story area. Transparent interior; white outline drawn by 4 border bars. Fixed pixel height so the stretchy scroll container below fills exactly the remaining column height. -->
         <Profile name="ia_mapinit_storyHelpBox" extends="emptyPanel" with="anchorTopStretchingX pivotTopLeft">
-            <size value="100% 160px"/>
+            <size value="100% 20%"/>
             <position value="0px 0px"/>
             <imageColor value="0 0 0 0"/>
             <color value="0 0 0 0"/>
@@ -437,7 +470,7 @@
             <elementSpacing value="6px"/>
             <alignmentX value="left"/>
             <alignmentY value="top"/>
-            <fitFlowToElements value="false"/>
+            <fitFlowToElements value="true"/>
         </Profile>
 
         <Profile name="ia_mapinit_storyHelpTitle" extends="baseReference" with="anchorTopStretchingX">
@@ -455,22 +488,22 @@
             <textAlignment value="left"/>
             <textVerticalAlignment value="top"/>
             <textAutoHeight value="true"/>
-            <textMaxWidth value="300px"/>
-            <textMaxNumLines value="8"/>
+            <textMaxWidth value="450px"/>
+            <textMaxNumLines value="5"/>
             <imageColor value="0 0 0 0"/>
         </Profile>
 
-        <!-- Story character list viewport. anchorTopStretchingX (not stretchingY) so it keeps its flow slot and doesn't overlap the help card. -->
-        <Profile name="ia_mapinit_storyListScrollContainer" extends="emptyPanel" with="anchorTopStretchingX pivotTopLeft">
-            <size value="100% 300px"/>
+        <!-- Story character list viewport. anchorTopStretchingX so it fills the remaining vertical space below the help card. -->
+        <Profile name="ia_mapinit_storyListScrollContainer" extends="emptyPanel" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="100% 80%"/>
             <position value="0px 0px"/>
             <imageColor value="0 0 0 0"/>
             <color value="0 0 0 0"/>
         </Profile>
 
         <!-- Right-side character data panel with portrait and relationship info. -->
-        <Profile name="ia_mapinit_storyDataPanel" extends="emptyPanel" with="anchorTopStretchingX pivotTopLeft">
-            <size value="100% 460px"/>
+        <Profile name="ia_mapinit_storyDataPanel" extends="emptyPanel" with="anchorStretchingYStretchingX pivotTopLeft">
+            <size value="100% 100%"/>
             <position value="0px 0px"/>
             <imageColor value="0 0 0 0"/>
             <color value="0 0 0 0"/>
@@ -478,7 +511,7 @@
 
         <Profile name="ia_mapinit_storyDataContent" extends="baseReference" with="anchorStretchingYStretchingX pivotTopLeft">
             <size value="100% 100%"/>
-            <position value="0px 0px"/>
+            <position value="10px 10px"/>
             <margin value="18px 18px 18px 18px"/>
             <imageColor value="0 0 0 0"/>
             <color value="0 0 0 0"/>
@@ -521,6 +554,17 @@
             <alignmentX value="left"/>
             <alignmentY value="top"/>
             <fitFlowToElements value="false"/>
+        </Profile>
+
+
+        <Profile name="ia_mapinit_storyDetailName" extends="baseReference" with="anchorTopStretchingX">
+            <size value="100% 20px"/>
+            <textSize value="22px"/>
+            <textBold value="true"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <imageColor value="0 0 0 0"/>
         </Profile>
 
         <Profile name="ia_mapinit_storyDetailLabel" extends="baseReference" with="anchorTopStretchingX">

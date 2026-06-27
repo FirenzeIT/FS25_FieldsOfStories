@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="109">
     <version>1.0.0.0</version>
-	<author><![CDATA[AirFoxTwo]]></author>
+	<author>AirFoxTwo</author>
 	<title>
 		<de>Fields Of Stories - Rollenspiel</de>
 		<en>Fields Of Stories - Roleplay</en>
@@ -15,7 +15,6 @@ Each character has an individual daily routine and tasks.
 You meet characters randomly at the gas station, in the field, at the dealer, or anywhere across the map.
 Have conversations, build relationships, and support them when they need help.
 
-BETA note: Please check the roadmap and the features that are still planned. Report bugs and feature requests via GitHub.
 GitHub: https://github.com/AirFoxTwo/FS25_FieldsOfStories
 
 Features:
@@ -92,7 +91,6 @@ Jeder Charakter hat einen individuellen Tagesablauf und Aufgaben.
 Du begegnest Charakteren zufällig an der Tankstelle, auf dem Feld, beim Händler oder überall verteilt auf der Karte.
 Führe Gespräche, baue Beziehungen auf und unterstütze sie, wenn sie Hilfe benötigen.
 
-BETA-Hinweis: Beachte bitte die Roadmap und die Features, die noch geplant sind. Melde Fehler und Feature-Wünsche über GitHub.
 GitHub: https://github.com/AirFoxTwo/FS25_FieldsOfStories
 
 Features:

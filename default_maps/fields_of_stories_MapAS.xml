@@ -19504,246 +19504,6 @@
             <withAttachment>true</withAttachment>
             <description>ownerFarmId=0; isSellingPoint=true; rootNodeName=palletLoadingWarehouse; supportedFillTypes=57,103,84,100,56,58,144,101,106,102,104,88,89,87,99,55,83; unloadTriggerIndex=1; aiNode=3625523; stationId=396</description>
         </place>
-        <place id="1498">
-            <name>Shop spawn (store 1 row 1 col 1)</name>
-            <type>workshop</type>
-            <x>-535.479065</x>
-            <y>19.784319</y>
-            <z>-20.987917</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=2.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1499">
-            <name>Shop spawn (store 1 row 2 col 1)</name>
-            <type>workshop</type>
-            <x>-532.326172</x>
-            <y>19.784319</y>
-            <z>-24.198734</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=6.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1500">
-            <name>Shop spawn (store 1 row 3 col 1)</name>
-            <type>workshop</type>
-            <x>-529.173279</x>
-            <y>19.784319</y>
-            <z>-27.409550</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=11.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1501">
-            <name>Shop spawn (store 1 row 4 col 1)</name>
-            <type>workshop</type>
-            <x>-526.020447</x>
-            <y>19.784319</y>
-            <z>-30.620365</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=15.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1502">
-            <name>Shop spawn (store 1 row 5 col 1)</name>
-            <type>workshop</type>
-            <x>-522.867554</x>
-            <y>19.784319</y>
-            <z>-33.831181</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=20.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1503">
-            <name>Shop spawn (store 1 row 6 col 1)</name>
-            <type>workshop</type>
-            <x>-519.714661</x>
-            <y>19.784319</y>
-            <z>-37.041996</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=24.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1504">
-            <name>Shop spawn (store 1 row 7 col 1)</name>
-            <type>workshop</type>
-            <x>-516.561768</x>
-            <y>19.784319</y>
-            <z>-40.252815</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=29.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1505">
-            <name>Shop spawn (store 1 row 8 col 1)</name>
-            <type>workshop</type>
-            <x>-513.408875</x>
-            <y>19.784319</y>
-            <z>-43.463631</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=33.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1506">
-            <name>Shop spawn (store 1 row 9 col 1)</name>
-            <type>workshop</type>
-            <x>-510.256012</x>
-            <y>19.784319</y>
-            <z>-46.674446</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=38.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1507">
-            <name>Shop spawn (store 1 row 10 col 1)</name>
-            <type>workshop</type>
-            <x>-507.103149</x>
-            <y>19.784319</y>
-            <z>-49.885262</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[1]; s=42.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431136</description>
-        </place>
-        <place id="1508">
-            <name>Shop spawn (store 2 row 1 col 1)</name>
-            <type>workshop</type>
-            <x>-528.343933</x>
-            <y>19.784319</y>
-            <z>-13.981514</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=2.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1509">
-            <name>Shop spawn (store 2 row 2 col 1)</name>
-            <type>workshop</type>
-            <x>-525.191040</x>
-            <y>19.784319</y>
-            <z>-17.192331</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=6.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1510">
-            <name>Shop spawn (store 2 row 3 col 1)</name>
-            <type>workshop</type>
-            <x>-522.038147</x>
-            <y>19.784319</y>
-            <z>-20.403147</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=11.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1511">
-            <name>Shop spawn (store 2 row 4 col 1)</name>
-            <type>workshop</type>
-            <x>-518.885315</x>
-            <y>19.784319</y>
-            <z>-23.613962</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=15.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1512">
-            <name>Shop spawn (store 2 row 5 col 1)</name>
-            <type>workshop</type>
-            <x>-515.732422</x>
-            <y>19.784319</y>
-            <z>-26.824780</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=20.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1513">
-            <name>Shop spawn (store 2 row 6 col 1)</name>
-            <type>workshop</type>
-            <x>-512.579529</x>
-            <y>19.784319</y>
-            <z>-30.035595</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=24.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1514">
-            <name>Shop spawn (store 2 row 7 col 1)</name>
-            <type>workshop</type>
-            <x>-509.426636</x>
-            <y>19.784319</y>
-            <z>-33.246410</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=29.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1515">
-            <name>Shop spawn (store 2 row 8 col 1)</name>
-            <type>workshop</type>
-            <x>-506.273773</x>
-            <y>19.784319</y>
-            <z>-36.457226</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=33.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1516">
-            <name>Shop spawn (store 2 row 9 col 1)</name>
-            <type>workshop</type>
-            <x>-503.120880</x>
-            <y>19.784319</y>
-            <z>-39.668045</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=38.25 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
-        <place id="1517">
-            <name>Shop spawn (store 2 row 10 col 1)</name>
-            <type>workshop</type>
-            <x>-499.968018</x>
-            <y>19.784319</y>
-            <z>-42.878860</z>
-            <rotation>0.794502</rotation>
-            <sizeType>vehicle_attachment</sizeType>
-            <withVehicle>true</withVehicle>
-            <withAttachment>true</withAttachment>
-            <description>storeSpawnPlaces[2]; s=42.75 t=7.00; L=45.00 W=20.00; pitchS=4.50 pitchT=14.00; startNode=3431138</description>
-        </place>
         <place id="1519">
             <name>Place 1519</name>
             <type>character_homebase</type>
@@ -21545,6 +21305,61 @@
             <z>732.008179</z>
             <rotation>1.583825</rotation>
             <sizeType>oversize_vehicle</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="1692">
+            <name>Place 1692</name>
+            <type>workshop</type>
+            <x>-549.982117</x>
+            <y>19.823681</y>
+            <z>-48.241638</z>
+            <rotation>0.005546</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="1693">
+            <name>Place 1693</name>
+            <type>workshop</type>
+            <x>-554.308044</x>
+            <y>19.822510</y>
+            <z>-6.803027</z>
+            <rotation>-0.040029</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="1694">
+            <name>Place 1694</name>
+            <type>workshop</type>
+            <x>-543.566833</x>
+            <y>19.822884</y>
+            <z>2.724105</z>
+            <rotation>1.550868</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="1695">
+            <name>Place 1695</name>
+            <type>workshop</type>
+            <x>-494.300262</x>
+            <y>19.820690</y>
+            <z>-70.735168</z>
+            <rotation>-0.764656</rotation>
+            <sizeType>vehicle_attachment</sizeType>
+            <withVehicle>true</withVehicle>
+            <withAttachment>true</withAttachment>
+        </place>
+        <place id="1696">
+            <name>Place 1696</name>
+            <type>workshop</type>
+            <x>-475.819336</x>
+            <y>19.824821</y>
+            <z>-67.542480</z>
+            <rotation>2.347242</rotation>
+            <sizeType>vehicle_attachment</sizeType>
             <withVehicle>true</withVehicle>
             <withAttachment>true</withAttachment>
         </place>
